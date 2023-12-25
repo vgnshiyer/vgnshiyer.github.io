@@ -30,8 +30,10 @@ const Post = (props: any) => {
     const post = getPostConent(slug);
     return (
         <div>
-            <h1>{post.data.title}</h1>
-            <Markdown>{post.content}</Markdown>
+            <h1 className='text-2xl text-violet-600 font-bold'>{post.data.title}</h1>
+            <article className='prose lg:prose-xl'>
+                <Markdown>{post.content}</Markdown>
+            </article>
         </div>
     )
 };
