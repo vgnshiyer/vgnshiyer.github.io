@@ -1,6 +1,8 @@
 import React from 'react'
-import getPostMetadata from '@/components/getPostMetadata';
+import getPostMetadata from '@/helpers/getPostMetadata';
 import PostPreview from '@/components/PostPreview';
+import Banner from '@/components/Banner';
+import Readme from '@/components/Readme';
 
 export default function page() {
     const postMetadata = getPostMetadata();
@@ -9,8 +11,12 @@ export default function page() {
     ));
 
     return (
-        <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
-            {postPreviews}
-        </div>
+        <>
+            <Banner />
+            <div className='grid grid-cols-1 gap-4'>
+                {postPreviews}
+            </div>
+            <Readme />
+        </>
     );
 }

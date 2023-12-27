@@ -13,18 +13,18 @@ export default function RootLayout({
 }) {
   const header = (
     <header>
-      <div className="text-center bg-slate-800 p-8 my-6 rounded-md">
+      <div className="my-6">
         <Link href="/">
-          <h1 className="text-3xl text-white font-bold">Vignesh Iyer</h1>
+          <img src="/images/logo.png" alt="Vignesh Iyer" className="w-80" />
         </Link>
-        <p className="text-slate-300">My personal blog.</p>
+
       </div>
     </header>
   );
 
   const footer = (
     <footer>
-      <div className="border border-slate-600 mt-6 py-6 text-center text-slate-400 rounded-md">
+      <div className="mt-6 py-6  text-slate-400 text-left">
         <p>© 2023 Vignesh Iyer</p>
       </div>
     </footer>
@@ -32,8 +32,8 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body>
-        <div className="mx-auto max-w-2xl px-6">
+      <body className="bg-primary">
+        <div className="mx-auto max-w-6xl px-6">
           {header}
           {children}
           {footer}

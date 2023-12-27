@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { PostMetadata } from "./PostMetadata";
+import { PostMetadata } from "../types/PostMetadata";
 
 
 const PostPreview = (props: PostMetadata) => {
