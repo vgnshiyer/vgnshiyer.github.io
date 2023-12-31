@@ -4,7 +4,7 @@ import getFilesRecursively from './getFilesRecursively';
 import path from 'path';
 
 const getPostConent = (slug: string) => {
-    const folder = 'posts/';
+    const folder = 'public/blogs/';
     const files = getFilesRecursively(folder);
     const markdownFiles = files.filter((fn) => fn.endsWith('.md'));
     const file = markdownFiles.find((fn) => path.basename(fn, '.md') === slug);

@@ -5,7 +5,7 @@ import getFilesRecursively from './getFilesRecursively';
 import path from 'path';
 
 const getPostMetadata = (): PostMetadata[] => {
-    const folder = 'posts/';
+    const folder = 'public/blogs/';
     const files = getFilesRecursively(folder);
     const markdownFiles = files.filter((fn) => fn.endsWith('.md'));
     

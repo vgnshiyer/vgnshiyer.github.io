@@ -2,18 +2,11 @@ import Markdown from 'markdown-to-jsx';
 import getPostMetadata from '@/helpers/getPostMetadata';
 import getPostConent from '@/helpers/getPostContent';
 
-export const getStaticPaths = async () => {
+export const generateStaticParams = async () => {
     const posts = getPostMetadata();
-    const paths = posts.map((post) => ({
-        params: {
-            slug: post.slug,
-        },
+    return posts.map((post: any) => ({
+        slug: post.slug,
     }));
-
-    return {
-        paths,
-        fallback: false,
-    };
 };
 
 const Post = (props: any) => {
@@ -21,7 +14,7 @@ const Post = (props: any) => {
     const post = getPostConent(slug);
     if (!post) {
         console.error(`No post found for slug: ${slug}`);
-        return null;
+        return null;``
     }
     return (
         <div className='ml-8'>
