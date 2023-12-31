@@ -1,7 +1,7 @@
 
 const Banner = () => {
     return (
-        <div className="flex flex-col sm:flex-row justify-between items-center p-4 mb-10">
+        <div className="flex flex-col sm:flex-row justify-between items-center p-2 md:p-4 mb-10">
             <div className="ml-0 sm:ml-6 md:ml-12 lg:ml-16">
                 <h1 className="text-2xl lg:text-3xl pl-6 mb-1 font-bold text-white">Hello 👋</h1>
                 <h1 className="text-4xl lg:text-5xl pl-6 mb-1 font-bold text-white">I'm <span className="text-secondary">Vignesh</span></h1>

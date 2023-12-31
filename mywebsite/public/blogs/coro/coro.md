@@ -2,6 +2,7 @@
 title: Python coroutines
 subtitle: A blog about the most bizarre python syntaxes.
 date: Oct 12, 2022
+cover: /blogs/coro/images/coro.png
 ---
 
 This is a coroutine.

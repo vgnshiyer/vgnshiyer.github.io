@@ -4,7 +4,7 @@ import Markdown from "markdown-to-jsx";
 const Readme = () => {
     const readme = getReadmeData();
     return (
-        <div className="flex flex-col md:flex-row p-6 items-start m-0 mt-8 md:m-8">
+        <div className="flex flex-col md:flex-row items-start mt-8 mx-2 md:mx-12 lg:mx-16 p-0 lg:p-6">
             <img className="w-80 lg:w-96 rounded-md" src="/images/readme_img.jpg" alt="Readme" />
             
             <div className="ml-0 mt-8 md:ml-14 md:mt-0">
