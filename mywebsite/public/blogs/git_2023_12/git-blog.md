@@ -163,3 +163,5 @@ where 'n' is the number of commits you want to modify.
 
 Now you have this excerpt to come back to, the next time you face any issues while merging or rebasing. 
 Drawing these diagrams on the command line was fun. I hope you found this useful. Be sure to leave a feedback. :\)
+
+#### test margin

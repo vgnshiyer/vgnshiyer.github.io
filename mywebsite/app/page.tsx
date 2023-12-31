@@ -14,6 +14,7 @@ export default function page() {
         <>
             <Banner />
             <div className='grid grid-cols-1 gap-4'>
+                <h1 className='text-3xl ml-4 md:ml-8 lg:ml-12 text-white font-bold'>Posts.</h1>
                 {postPreviews}
             </div>
             <Readme />
