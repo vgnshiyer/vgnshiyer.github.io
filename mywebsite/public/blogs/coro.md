@@ -1,7 +1,7 @@
 ---
 title: Python coroutines
-author: Vignesh Iyer
-date: 2023-12-24
+subtitle: A blog about the most bizarre python syntaxes.
+date: Oct 12, 2022
 ---
 
 This is a coroutine.
