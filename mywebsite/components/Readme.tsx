@@ -4,10 +4,10 @@ import Markdown from "markdown-to-jsx";
 const Readme = () => {
     const readme = getReadmeData();
     return (
-        <div className="flex flex-col md:flex-row items-start mt-8 mx-2 md:mx-12 lg:mx-16 p-0 lg:p-6">
-            <img className="w-80 lg:w-96 rounded-md" src="/images/readme_img.jpg" alt="Readme" />
+        <div className="flex flex-col md:flex-row items-start mt-8 sm:mx-8">
+            <img className="max-w-1/2 md:max-w-1/3 rounded-md mr-8 mb-8" src="/images/readme_img.jpg" alt="Readme" />
             
-            <div className="ml-0 mt-8 md:ml-14 md:mt-0">
+            <div className="md:mt-0">
                 <h1 className="text-4xl sm:text-5xl font-bold text-white">Readme</h1>
                 
                 <Markdown className="mt-8 text-white">{readme.content}</Markdown>

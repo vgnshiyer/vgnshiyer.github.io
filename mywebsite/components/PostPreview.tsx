@@ -4,7 +4,7 @@ import { PostMetadata } from "../types/PostMetadata";
 
 const PostPreview = (props: PostMetadata) => {
     return (
-        <div className="mx-0 sm:mx-8  md:mx-16 lg:mx-28 rounded-xl shadow-md bg-semi-dark flex flex-col md:flex-row items-start">
+        <div className="rounded-xl shadow-md bg-semi-dark flex flex-col md:flex-row items-start">
             {props.cover && (
                 <img
                     className="rounded-lg w-full md:w-44 mr-4 object-cover h-48 md:h-full"

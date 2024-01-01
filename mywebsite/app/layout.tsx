@@ -33,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bg-dark">
-        <div className="mx-auto max-w-6xl px-6">
+        <div className="mx-auto max-w-9/10 md:max-w-3/4 lg:max-w-2/3">
           {header}
           {children}
           {footer}

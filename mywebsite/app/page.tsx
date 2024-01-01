@@ -13,8 +13,8 @@ export default function page() {
     return (
         <>
             <Banner />
-            <div className='grid grid-cols-1 gap-4'>
-                <h1 className='text-3xl mx-0 sm:mx-8 md:mx-16 lg:mx-28 text-white font-bold'>Posts.</h1>
+            <div className='grid grid-cols-1 gap-4 sm:mx-8'>
+                <h1 className='text-3xl text-white font-bold'>Posts.</h1>
                 {postPreviews}
             </div>
             <Readme />

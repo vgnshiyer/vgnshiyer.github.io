@@ -15,7 +15,7 @@ const PostPage = ( props: any ) => {
 
     const headings = getMarkdownHeadings(post.content);
     return (
-        <div className='mx-2 md:mx-4 lg:mx-8 mt-16 flex'>
+        <div className='flex'>
             <div className='w-full lg:w-3/4'>
                 <h1 className='text-3xl text-white font-bold'>{post.data.title}</h1>
                 <p className='text-slate-300 mt-4'>{post.data.subtitle}</p>
