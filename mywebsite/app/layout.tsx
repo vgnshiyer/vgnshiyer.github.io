@@ -1,5 +1,5 @@
-import Link from "next/link";
 import '../styles/global.css'
+import Navbar from "@/components/Navbar";
 
 export const metadata = {
   title: 'Vignesh Iyer',
@@ -14,10 +14,7 @@ export default function RootLayout({
   const header = (
     <header>
       <div className="my-6">
-        <Link href="/">
-          <img src="/images/logo.png" alt="Vignesh Iyer" className="w-80" />
-        </Link>
-
+        <Navbar />
       </div>
     </header>
   );
