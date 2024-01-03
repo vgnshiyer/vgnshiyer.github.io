@@ -13,7 +13,7 @@ export default function RootLayout({
 }) {
   const header = (
     <header>
-      <div className="my-6">
+      <div className="my-4 md:my-6">
         <Navbar />
       </div>
     </header>
