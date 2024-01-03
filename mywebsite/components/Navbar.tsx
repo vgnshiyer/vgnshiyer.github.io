@@ -1,69 +1,85 @@
 "use client";
 
-import Link from "next/link";
-import React, { useState } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
+import Link from 'next/link'
+import React, { useState, ReactNode } from 'react'
+
+interface NavBarLinkProps {
+  href: string;
+  children: ReactNode;
+}
 
 const Navbar = () => {
-    const [nav, setNav] = useState(false);
+
+  const [isNavBarToggled, setIsNavBarToggled] = useState(false);
+
+  const toggleNavbar = () : void => {
+    setIsNavBarToggled(!isNavBarToggled);
+  }
+
+  const NavBarLink = ({href, children}: NavBarLinkProps) => {
+    return (
+      <Link href={href}
+        className={`text-white ${isNavBarToggled ? 'block' : ''} hover:bg-white hover:text-black rounded-lg p-2`}
+      >
+        {children}
+      </Link>
+    )
+  };
+
+  const CloseIcon = () => {
+    return (
+      <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    )
+  };
+
+  const MenuIcon = () => {
+    return (
+      <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
+      </svg>
+    )
+  };
 
   const links = [
-    {
-      id: 1,
-      link: "/",
-      text: "posts",
-    },
-    {
-      id: 2,
-      link: "about",
-      text: "about",
-    },
+    {href: "/", text: "Posts"},
+    {href: "/about", text: "Readme"},
   ];
 
   return (
-    <div className="flex justify-between items-center text-white bg-black relative max-w-2/3">
-      <div>
-        <Link href="/">
-            <img src="/images/logo.png" alt="Vignesh Iyer" className="w-80" />
-        </Link>
-      </div>
-
-      <div>
-        <ul className="hidden md:flex">
-            {links.map(({ id, link, text }) => (
-            <li
-                key={id}
-                className="nav-links px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 hover:text-white duration-200 link-underline"
-            >
-                <Link href={link}>{text}</Link>
-            </li>
-            ))}
-        </ul>
-      </div>
-
-      {/* <div
-        onClick={() => setNav(!nav)}
-        className="cursor-pointer pr-4 z-10 text-gray-500 md:hidden"
-      >
-        {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
-      </div>
-
-      {nav && (
-        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-800 text-gray-500">
-          {links.map(({ id, link }) => (
-            <li
-              key={id}
-              className="px-4 cursor-pointer capitalize py-6 text-4xl"
-            >
-              <Link onClick={() => setNav(!nav)} href={link}>
-                {link}
+    <>
+      <nav className="w-full md:px-6">
+        <div className="flex items-center justify-between h-16">
+          <div className="flex items-center">
+            <div className="flex-shrink-0 text-white">
+              <Link href="/">
+                <img className="w-64" src="/images/logo.png" alt="logo" />
               </Link>
-            </li>
-          ))}
-        </ul>
-      )} */}
-    </div>
-  );
-};
+            </div>
+          </div>
+          <div className="hidden md:block">
+            <div className="ml-4 flex items-center space-x-4">
+              {links.map(link => <NavBarLink href={link.href}>{link.text}</NavBarLink>)}
+            </div>
+          </div>
+          <div className="md:hidden flex items-center">
+            <button 
+              className="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+              onClick={toggleNavbar}
+            >
+              {isNavBarToggled ? <CloseIcon /> : <MenuIcon />}
+            </button>
+          </div>
+        </div>
+        {isNavBarToggled && (
+          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+            {links.map(link => <NavBarLink href={link.href}>{link.text}</NavBarLink>)}
+          </div>
+        )}
+      </nav>
+    </>
+  )
+}
 
-export default Navbar;
+export default Navbar
