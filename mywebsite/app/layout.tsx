@@ -1,3 +1,4 @@
+import SocialHandles from '@/components/SocialHandles';
 import '../styles/global.css'
 import Navbar from "@/components/Navbar";
 
@@ -21,8 +22,9 @@ export default function RootLayout({
 
   const footer = (
     <footer>
-      <div className="mt-6 py-6  text-slate-400 text-center">
-        <p>© 2023 Vignesh Iyer</p>
+      <div className="mt-6 py-6 mb-20  text-slate-400 text-center">
+        <SocialHandles />
+        <p>© 2024 Vignesh Iyer</p>
       </div>
     </footer>
   );
