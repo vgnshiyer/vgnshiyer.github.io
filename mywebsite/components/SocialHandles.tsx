@@ -15,7 +15,7 @@ const SocialHandles = () => {
         {items.map((item: any, index) => {
             return (
                 <a href={item.link} key={index} target="_blank" rel="noopener noreferrer">
-                    <item.icon className="hover:text-secondary text-3xl cursor-pointer" />
+                    <item.icon className="hover:text-contrast-light dark:hover:text-contrast-dark text-3xl cursor-pointer" />
                 </a>
             )
         })}

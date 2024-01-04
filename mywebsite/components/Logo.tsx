@@ -6,12 +6,7 @@ const Logo = () => {
   return (
     <div className="flex items-center">
         <Link href="/">
-            <div className="flex flex-row text-xl font-semibold tracking-[1px]">
-            <FaEnvelope className="w-7 h-7 text-secondary mr-2" />
-            <span className="text-black dark:text-white">vgnshiyer</span>
-            <span className="text-secondary">{'@gmail'}</span>
-            <span className="text-black dark:text-white">.com</span>
-            </div>
+            <span className="text-contrast-light dark:text-contrast-dark text-2xl font-poppins font-bold">vgnshiyer.</span>
         </Link>
     </div>
   )

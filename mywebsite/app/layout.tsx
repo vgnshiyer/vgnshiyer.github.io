@@ -22,7 +22,7 @@ export default function RootLayout({
 
   const footer = (
     <footer>
-      <div className="mt-6 py-6 mb-20 text-slate-900 dark:text-slate-400 text-center">
+      <div className="mt-6 py-6 mb-20 text-tertiary-light dark:text-tertiary-dark text-center">
         <SocialHandles />
         <p>© 2024 Vignesh Iyer</p>
       </div>

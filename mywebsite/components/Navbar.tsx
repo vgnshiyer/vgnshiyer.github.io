@@ -3,7 +3,6 @@
 import Link from 'next/link'
 import React, { useState, ReactNode, useEffect } from 'react'
 import ThemeToggle from './ThemeToggle';
-import { FaEnvelope } from 'react-icons/fa';
 import Logo from './Logo';
 
 interface NavBarLinkProps {
@@ -30,18 +29,18 @@ const Navbar = () => {
 
     return (
       <Link href={href}
-        className={`group text-black dark:text-white ${isNavBarToggled ? 'block' : ''} rounded-2xl p-2 tracking-[1px]`}
+        className={`group text-tertiary-light dark:text-white ${isNavBarToggled ? 'block' : ''} font-semibold rounded-2xl p-2 tracking-[1px]`}
         onClick={handleClick}
       >
         {children}
-        <span className="block relative max-w-0 group-hover:max-w-full left-1/2 -translate-x-1/2 duration-500 h-0.5 bg-secondary"></span>
+        <span className="block relative max-w-0 group-hover:max-w-full left-1/2 -translate-x-1/2 duration-500 h-0.5 bg-contrast-light dark:bg-contrast-dark"></span>
       </Link>
     )
   };
 
   const CloseIcon = () => {
     return (
-      <svg className="h-6 w-6 text-secondary" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <svg className="h-6 w-6 text-contrast-light dark:text-contrast-dark" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
       </svg>
     )
@@ -49,7 +48,7 @@ const Navbar = () => {
 
   const MenuIcon = () => {
     return (
-      <svg className="h-6 w-6 text-secondary" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <svg className="h-6 w-6 text-contrast-light dark:text-contrast-dark" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
       </svg>
     )
@@ -66,7 +65,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           <Logo />
           <div className="hidden md:block">
-            <div className="ml-4 flex items-center space-x-4 bg-light dark:bg-semi-dark rounded-3xl px-8 py-1 ">
+            <div className="ml-4 flex items-center space-x-4 bg-semi-light dark:bg-semi-dark rounded-3xl px-8 py-1 ">
               {links.map(link => <NavBarLink key={link.href} href={link.href}>{link.text}</NavBarLink>)}
             </div>
           </div>

@@ -28,18 +28,18 @@ const ThemeToggle = () => {
 
   return (
     <div
-        className="relative w-16 h-8 flex items-center dark:bg-semi-dark bg-light rounded-full p-1 cursor-pointer"
+        className="relative w-16 h-8 flex items-center dark:bg-semi-dark bg-semi-light rounded-full p-1 cursor-pointer shadow-inner"
         onClick={() => setDarkMode(!darkMode)}
     >
-        <FaMoon className="text-light" size={20} />
+        <FaMoon className="text-tertiary-light dark:text-tertiary-dark" size={20} />
         <div 
-            className="absolute bg-light dark:bg-dark w-6 h-6 rounded-full shadow-md transform transition-transform duration-300 ease-in-out"
+            className="absolute bg-white  w-6 h-6 rounded-full shadow-md transform transition-transform duration-300 ease-in-out"
             style={{
                 left: darkMode ? 'calc(100% - 1.5rem)' : '0.1rem'
             }}
         >
         </div>
-        <BsSunFill className="ml-auto text-secondary" size={20} />
+        <BsSunFill className="ml-auto text-contrast-light dark:text-contrast-dark" size={20} />
     </div>
   )
 }

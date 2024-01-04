@@ -17,10 +17,24 @@ const PostPage = ( props: any ) => {
     return (
         <div className="flex sm:mx-8 mt-10 md:mt-20">
             <div className="w-full lg:w-3/4">
+                {/* Post title */}
                 <h1 className="text-3xl text-black dark:text-white font-bold">{post.data.title}</h1>
-                <p className="text-slate-300 mt-4">{post.data.subtitle}</p>
+                {/* Post subtitle */}
+                <p className="text-tertiary-light dark:text-tertiary-dark mt-4">{post.data.subtitle}</p>
+
+                {/* Post content */}
                 <article className="prose lg:prose-xl">
-                    <Markdown>{post.content}</Markdown>
+                    <Markdown
+                        options={{
+                            overrides: {
+                                h3: {
+                                    props: {
+                                        className: 'text-3xl text-black dark:text-white font-bold'
+                                    }
+                                },
+                            },
+                        }}
+                    >{post.content}</Markdown>
                 </article>
             </div>
             <TableOfContents headings={headings} />
