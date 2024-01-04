@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import React, { useState, ReactNode, useEffect } from 'react'
+import ThemeToggle from './ThemeToggle';
 
 interface NavBarLinkProps {
   href: string;
@@ -27,7 +28,7 @@ const Navbar = () => {
 
     return (
       <Link href={href}
-        className={`group text-white ${isNavBarToggled ? 'block' : ''} rounded-2xl p-2 tracking-[1px]`}
+        className={`group text-black dark:text-white ${isNavBarToggled ? 'block' : ''} rounded-2xl p-2 tracking-[1px]`}
         onClick={handleClick}
       >
         {children}
@@ -52,18 +53,6 @@ const Navbar = () => {
     )
   };
 
-  const DarkModeIcon = () => (
-    <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707-.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
-    </svg>
-  );
-
-  const LightModeIcon = () => (
-    <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke="currentColor">
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707-.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
-    </svg>
-  );
-
   const links = [
     {href: "/", text: "Posts"},
     {href: "/about", text: "Readme"},
@@ -74,23 +63,23 @@ const Navbar = () => {
       <nav className="w-full md:px-6">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
-            <div className="flex-shrink-0 text-white">
+            <div className="flex-shrink-0">
               <Link href="/">
                 <img className="w-64" src="/images/logo.png" alt="logo" />
               </Link>
             </div>
           </div>
           <div className="hidden md:block">
-            <div className="ml-4 flex items-center space-x-4 bg-semi-dark rounded-3xl px-8 py-1">
+            <div className="ml-4 flex items-center space-x-4 bg-light dark:bg-semi-dark rounded-3xl px-8 py-1 ">
               {links.map(link => <NavBarLink key={link.href} href={link.href}>{link.text}</NavBarLink>)}
             </div>
           </div>
           <div className="hidden md:block">
-            <LightModeIcon />
+            <ThemeToggle />
           </div>
           <div className="md:hidden flex items-center">
             <button 
-              className="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+              className="inline-flex items-center justify-center p-2 rounded-md text-black dark:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
               onClick={toggleNavbar}
             >
               {isNavBarToggled ? <CloseIcon /> : <MenuIcon />}
@@ -98,7 +87,7 @@ const Navbar = () => {
           </div>
         </div>
         {isNavBarToggled && (
-          <div className="flex flex-col items-center px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <div className="flex flex-col items-center px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-light dark:bg-dark">
             {links.map(link => <NavBarLink href={link.href}>{link.text}</NavBarLink>)}
           </div>
         )}

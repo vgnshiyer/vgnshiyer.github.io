@@ -13,7 +13,7 @@ export default function page() {
         <>
             <Banner />
             <div className='grid grid-cols-1 gap-4 sm:mx-8'>
-                <h1 className='text-3xl text-white font-bold'>Posts.</h1>
+                <h1 className='text-3xl text-black dark:text-white font-bold'>Posts.</h1>
                 {postPreviews}
             </div>
         </>

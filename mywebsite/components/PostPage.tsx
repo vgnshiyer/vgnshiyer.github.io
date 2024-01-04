@@ -17,7 +17,7 @@ const PostPage = ( props: any ) => {
     return (
         <div className="flex sm:mx-8 mt-10 md:mt-20">
             <div className="w-full lg:w-3/4">
-                <h1 className="text-3xl text-white font-bold">{post.data.title}</h1>
+                <h1 className="text-3xl text-black dark:text-white font-bold">{post.data.title}</h1>
                 <p className="text-slate-300 mt-4">{post.data.subtitle}</p>
                 <article className="prose lg:prose-xl">
                     <Markdown>{post.content}</Markdown>
