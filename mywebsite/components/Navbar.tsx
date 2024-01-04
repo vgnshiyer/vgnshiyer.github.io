@@ -3,6 +3,8 @@
 import Link from 'next/link'
 import React, { useState, ReactNode, useEffect } from 'react'
 import ThemeToggle from './ThemeToggle';
+import { FaEnvelope } from 'react-icons/fa';
+import Logo from './Logo';
 
 interface NavBarLinkProps {
   href: string;
@@ -62,13 +64,7 @@ const Navbar = () => {
     <>
       <nav className="w-full md:px-6">
         <div className="flex items-center justify-between h-16">
-          <div className="flex items-center">
-            <div className="flex-shrink-0">
-              <Link href="/">
-                <img className="w-64" src="/images/logo.png" alt="logo" />
-              </Link>
-            </div>
-          </div>
+          <Logo />
           <div className="hidden md:block">
             <div className="ml-4 flex items-center space-x-4 bg-light dark:bg-semi-dark rounded-3xl px-8 py-1 ">
               {links.map(link => <NavBarLink key={link.href} href={link.href}>{link.text}</NavBarLink>)}
