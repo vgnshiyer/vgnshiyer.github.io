@@ -32,6 +32,21 @@ const PostPage = ( props: any ) => {
                                         className: 'text-3xl text-black dark:text-white font-bold'
                                     }
                                 },
+                                p: {
+                                    props: {
+                                        className: 'text-tertiary-light dark:text-tertiary-dark mt-4'
+                                    }
+                                },
+                                pre: {
+                                    props: {
+                                        className: 'rounded-md p-4 bg-semi-light dark:bg-semi-dark'
+                                    }
+                                },
+                                code: {
+                                    props: {
+                                        className: 'text-tertiary-light dark:text-tertiary-dark'
+                                    }
+                                }
                             },
                         }}
                     >{post.content}</Markdown>

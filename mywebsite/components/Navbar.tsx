@@ -69,7 +69,7 @@ const Navbar = () => {
               {links.map(link => <NavBarLink key={link.href} href={link.href}>{link.text}</NavBarLink>)}
             </div>
           </div>
-          <div className="hidden md:block">
+          <div className="ml-auto md:ml-0">
             <ThemeToggle />
           </div>
           <div className="md:hidden flex items-center">
