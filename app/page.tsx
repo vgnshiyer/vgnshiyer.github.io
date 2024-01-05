@@ -2,7 +2,6 @@ import React from 'react'
 import getPostMetadata from '@/helpers/getPostMetadata';
 import PostPreview from '@/components/PostPreview';
 import Banner from '@/components/Banner';
-import Head from 'next/head';
 
 export default function page() {
     const postMetadata = getPostMetadata();
