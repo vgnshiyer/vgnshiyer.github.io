@@ -83,7 +83,7 @@ const Navbar = () => {
         </div>
         {isNavBarToggled && (
           <div className="flex flex-col items-center px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-light dark:bg-dark">
-            {links.map(link => <NavBarLink href={link.href}>{link.text}</NavBarLink>)}
+            {links.map(link => <NavBarLink key={link.href} href={link.href}>{link.text}</NavBarLink>)}
           </div>
         )}
       </nav>
