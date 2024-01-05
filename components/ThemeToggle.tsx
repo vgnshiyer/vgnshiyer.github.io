@@ -5,7 +5,10 @@ import { FaMoon } from 'react-icons/fa';
 import { BsSunFill } from 'react-icons/bs';
 
 const ThemeToggle = () => {
-    const selectedTheme = localStorage.getItem('theme');
+    let selectedTheme;
+    if (typeof window !== 'undefined') {
+        selectedTheme = localStorage.getItem('theme');
+    }
     const [darkMode, setDarkMode] = useState(selectedTheme === 'dark');
 
     useEffect(() => {
