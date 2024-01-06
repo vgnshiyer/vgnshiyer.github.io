@@ -13,7 +13,7 @@ Having a motivation and a drive to learn new things, I keep exploring new techno
 🚀 I try to look for repetitive processes and come up with solutions to improve performance by automation. Streamlining workflows results in increased efficiency, less errors and more free time for me and my colleagues to focus on more complex and strategic tasks. 
 <br>
 <br>
-💡 As a developer, I take proactive approach in leveraging my problem solving skills to find solutions to complex problems. I focus on writing clean and maintainable code. I often obsess about choosing the right variable names.
+💡 As a developer, I take proactive approach in leveraging my problem solving skills to find solutions to complex problems while prioritizing writing clean and maintainable code. I often obsess about choosing the right variable names.
 <br>
 <br>
 💪 During my free time, I love exercising, learning about nutrition, reading biographies and self-help books.
@@ -25,4 +25,3 @@ Having a motivation and a drive to learn new things, I keep exploring new techno
 You can drop me an email at: <span style="color: #FFBD38">[vgnshiyer@asu.edu](mailto:vgnshiyer@asu.edu)</span>
 <br>
 Or connect with me on LinkedIn: <span style="color: #FFBD38">[vgnshiyer](https://www.linkedin.com/in/vgnshiyer/)</span>
-
