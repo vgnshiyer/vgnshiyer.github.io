@@ -3,7 +3,6 @@ import getPostConent from '@/helpers/getPostContent';
 import Markdown from 'markdown-to-jsx';
 import TableOfContents from './TableOfContents';
 import getMarkdownHeadings from '@/helpers/getMarkdownHeadings';
-import Link from 'next/link';
 
 const PostPage = ( props: any ) => {
     const slug = props.slug;
@@ -15,6 +14,7 @@ const PostPage = ( props: any ) => {
     }
 
     const headings = getMarkdownHeadings(post.content);
+
     return (
         <div className="flex sm:mx-8 mt-10 md:mt-20">
             <div className="w-full lg:w-3/4">
@@ -42,6 +42,11 @@ const PostPage = ( props: any ) => {
                                 h3: {
                                     props: {
                                         className: 'text-3xl text-black dark:text-white font-bold'
+                                    }
+                                },
+                                h4: {
+                                    props: {
+                                        className: 'text-2xl text-black dark:text-white font-bold'
                                     }
                                 },
                                 p: {
@@ -77,10 +82,12 @@ const PostPage = ( props: any ) => {
                             },
                         }}
                     >{post.content}</Markdown>
+                    {post.data.read_more && (
                         <div className="absolute bottom-0 left-0 right-0 h-52 bg-gradient-to-b from-transparent to-light dark:from-transparent dark:to-dark"></div>
+                    )}
             </article>
             <br></br>
-            {post.data.link && (
+            {post.data.read_more && (
                 <span className="text-black dark:text-white font-bold text-xl">Read the full article <a href={post.data.link} 
                     className="text-contrast-light dark:text-contrast-dark hover:underline">here</a>
                 .</span>

@@ -3,7 +3,7 @@ title: The Binary Search Template
 subtitle: An easier approach to using binary search algorithm
 date: Jul 29, 2022
 cover: /blogs/binary_search_template/images/cover.png
-link: https://vgnshiyer.medium.com/the-binary-search-template-d5fef04586c8
+read_more: https://vgnshiyer.medium.com/the-binary-search-template-d5fef04586c8
 ---
 
 Binary search is a very efficient way to solve the programming problem of searching an element in a sorted array. Instead of traversing the entire search space, we halve the search space on every iteration. In a problem of finding an element(say ‘k‘), we check whether k exists in the first half or the second half of the array. This simple optimization brings the time taken by a linear search algorithm to logarithmic.

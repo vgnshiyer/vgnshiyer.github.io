@@ -3,7 +3,7 @@ title: Link Prediction in a Social Network
 author: Vignesh Iyer
 date: Apr 21, 2019
 cover: /blogs/link_prediction/images/cover.png
-link: https://vgnshiyer.medium.com/link-prediction-in-a-social-network-df230c3d85e6
+read_more: https://vgnshiyer.medium.com/link-prediction-in-a-social-network-df230c3d85e6
 ---
 
 ## Introduction
