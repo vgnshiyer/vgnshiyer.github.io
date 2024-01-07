@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title><![CDATA[Vignesh Iyer - Blog]]></title>
+        <description><![CDATA[Vignesh Iyer's Blog]]></description>
+        <link>https://vgnshiyer.dev</link>
+        <image>
+            <url>https://vgnshiyer.dev/favicon.ico</url>
+            <title>Vignesh Iyer - Blog</title>
+            <link>https://vgnshiyer.dev</link>
+        </image>
+        <generator>RSS for Node</generator>
+        <lastBuildDate>Sun, 07 Jan 2024 04:02:28 GMT</lastBuildDate>
+        <atom:link href="https://vgnshiyer.dev/feed.xml" rel="self" type="application/rss+xml"/>
+        <pubDate>Sun, 07 Jan 2024 04:02:28 GMT</pubDate>
+        <copyright><![CDATA[All Rights Reserved Sat Jan 06 2024 21:02:28 GMT-0700 (GMT-07:00)]]></copyright>
+        <language><![CDATA[en]]></language>
+        <item>
+            <title><![CDATA[7 Essential Git Workflows made easier.]]></title>
+            <description><![CDATA[Mastering git for streamlined development]]></description>
+            <link>https://vgnshiyer.dev/blog/git_workflows</link>
+            <guid isPermaLink="true">https://vgnshiyer.dev/blog/git_workflows</guid>
+            <pubDate>Fri, 29 Dec 2023 07:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[What are Catalan Numbers?]]></title>
+            <description><![CDATA[Applications of Catalan Numbers in Computer Science.]]></description>
+            <link>https://vgnshiyer.dev/blog/catalan_numbers</link>
+            <guid isPermaLink="true">https://vgnshiyer.dev/blog/catalan_numbers</guid>
+            <pubDate>Fri, 02 Sep 2022 07:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[The Binary Search Template]]></title>
+            <description><![CDATA[An easier approach to using binary search algorithm]]></description>
+            <link>https://vgnshiyer.dev/blog/binary_search_template</link>
+            <guid isPermaLink="true">https://vgnshiyer.dev/blog/binary_search_template</guid>
+            <pubDate>Fri, 29 Jul 2022 07:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Recursion in 3 minutes]]></title>
+            <description><![CDATA[In order to understand recursion, you must understand recursion.]]></description>
+            <link>https://vgnshiyer.dev/blog/recursion</link>
+            <guid isPermaLink="true">https://vgnshiyer.dev/blog/recursion</guid>
+            <pubDate>Thu, 28 Jul 2022 07:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Link Prediction in a Social Network]]></title>
+            <link>https://vgnshiyer.dev/blog/link_prediction</link>
+            <guid isPermaLink="true">https://vgnshiyer.dev/blog/link_prediction</guid>
+            <pubDate>Sun, 21 Apr 2019 07:00:00 GMT</pubDate>
+        </item>
+    </channel>
+</rss>
