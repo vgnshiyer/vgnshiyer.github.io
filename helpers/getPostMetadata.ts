@@ -9,7 +9,7 @@ const getPostMetadata = (): PostMetadata[] => {
     const files = getFilesRecursively(folder);
     const markdownFiles = files.filter((fn) => fn.endsWith('.md'));
     
-    const posts = markdownFiles.map((filename) => {
+    let posts = markdownFiles.map((filename) => {
         const fileContents = fs.readFileSync(filename, 'utf8');
         const matterResult = matter(fileContents);
         return {
@@ -20,6 +20,8 @@ const getPostMetadata = (): PostMetadata[] => {
             slug: path.basename(filename, '.md'),
         };
     });
+
+    posts = posts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
     return posts;
 };

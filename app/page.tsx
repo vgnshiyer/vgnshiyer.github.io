@@ -6,7 +6,6 @@ import Banner from '@/components/Banner';
 export default function page() {
     const postMetadata = getPostMetadata();
     const postPreviews = postMetadata
-        .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
         .map((post) => (
             <PostPreview key={post.slug} {...post} />
         ));

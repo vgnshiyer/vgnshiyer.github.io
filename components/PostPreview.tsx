@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { PostMetadata } from "../types/PostMetadata";
 
-
 const PostPreview = (props: PostMetadata) => {
     return (
         <div className="rounded-xl shadow-md bg-semi-light dark:bg-semi-dark flex flex-col md:flex-row items-start">
