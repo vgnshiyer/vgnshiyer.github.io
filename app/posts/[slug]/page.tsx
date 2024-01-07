@@ -3,8 +3,8 @@ import PostPage from '@/components/PostPage';
 import generateRssFeed from '@/helpers/generateRssFeed';
 
 export const generateStaticParams = async () => {
-    await generateRssFeed();
     const posts = getPostMetadata();
+    await generateRssFeed(posts);
     return posts.map((post: any) => ({
         slug: post.slug,
     }));

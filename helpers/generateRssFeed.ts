@@ -1,11 +1,9 @@
 import fs from 'fs';
 import RSS from 'rss';
-import getPostMetadata from './getPostMetadata';
+import { PostMetadata } from '@/types/PostMetadata';
 
-async function generateRssFeed() {
+async function generateRssFeed(allPosts: PostMetadata[]) {
     const site_url = "https://vgnshiyer.dev";
-
-    const allPosts = await getPostMetadata();
     const feedOptions = {
         title: "Vignesh Iyer - Blog",
         description: "Vignesh Iyer's Blog",

@@ -4,15 +4,15 @@
         <description><![CDATA[Vignesh Iyer's Blog]]></description>
         <link>https://vgnshiyer.dev</link>
         <image>
-            <url>https://vgnshiyer.dev/favicon.ico</url>
+            <url>https://vgnshiyer.dev/images/favicon.ico</url>
             <title>Vignesh Iyer - Blog</title>
             <link>https://vgnshiyer.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sun, 07 Jan 2024 04:02:28 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 07 Jan 2024 04:31:25 GMT</lastBuildDate>
         <atom:link href="https://vgnshiyer.dev/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sun, 07 Jan 2024 04:02:28 GMT</pubDate>
-        <copyright><![CDATA[All Rights Reserved Sat Jan 06 2024 21:02:28 GMT-0700 (GMT-07:00)]]></copyright>
+        <pubDate>Sun, 07 Jan 2024 04:31:25 GMT</pubDate>
+        <copyright><![CDATA[All Rights Reserved Sat Jan 06 2024 21:31:25 GMT-0700 (GMT-07:00)]]></copyright>
         <language><![CDATA[en]]></language>
         <item>
             <title><![CDATA[7 Essential Git Workflows made easier.]]></title>
