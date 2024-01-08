@@ -7,7 +7,7 @@ import path from 'path';
 const getPostMetadata = (): PostMetadata[] => {
     const folder = 'public/blogs/';
     const files = getFilesRecursively(folder);
-    const markdownFiles = files.filter((fn) => fn.endsWith('.md'));
+    const markdownFiles = files.filter((fn) => fn.endsWith('.md') && !fn.includes('ignore'));
     
     let posts = markdownFiles.map((filename) => {
         const fileContents = fs.readFileSync(filename, 'utf8');

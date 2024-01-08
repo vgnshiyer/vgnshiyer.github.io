@@ -19,7 +19,7 @@ Having a motivation and a drive to learn new things, I keep exploring new techno
 💪 During my free time, I love exercising, learning about nutrition, reading biographies and self-help books.
 <br>
 <br>
-🤝 Always eager to collaborate with like-minded individuals on interesting and challenging projects.
+🤝 I am always eager to collaborate with like-minded individuals on interesting and challenging projects.
 <br>
 <br>
 You can drop me an email at: <span style="color: #FFBD38">[vgnshiyer@asu.edu](mailto:vgnshiyer@asu.edu)</span>
