@@ -9,11 +9,18 @@
             <link>https://vgnshiyer.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Mon, 08 Jan 2024 19:19:38 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 10 Jan 2024 06:58:28 GMT</lastBuildDate>
         <atom:link href="https://vgnshiyer.dev/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Mon, 08 Jan 2024 19:19:38 GMT</pubDate>
-        <copyright><![CDATA[All Rights Reserved Mon Jan 08 2024 12:19:38 GMT-0700 (GMT-07:00)]]></copyright>
+        <pubDate>Wed, 10 Jan 2024 06:58:28 GMT</pubDate>
+        <copyright><![CDATA[All Rights Reserved Tue Jan 09 2024 23:58:28 GMT-0700 (GMT-07:00)]]></copyright>
         <language><![CDATA[en]]></language>
+        <item>
+            <title><![CDATA[Introducing PyAppleBooks!]]></title>
+            <description><![CDATA[A Python library that makes interacting with AppleBooks data easy.]]></description>
+            <link>https://vgnshiyer.dev/blog/01_09_2024_PyAppleBooks</link>
+            <guid isPermaLink="true">https://vgnshiyer.dev/blog/01_09_2024_PyAppleBooks</guid>
+            <pubDate>Tue, 09 Jan 2024 07:00:00 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[7 Essential Git Workflows made easier.]]></title>
             <description><![CDATA[Mastering git for streamlined development]]></description>
