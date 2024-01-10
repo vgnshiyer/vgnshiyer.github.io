@@ -76,7 +76,7 @@ const PostPage = ( props: any ) => {
                                 },
                                 a: {
                                     props: {
-                                        className: 'text-black dark:text-white'
+                                        className: 'text-tertiary-light dark:text-tertiary-dark hover:text-contrast-light dark:hover:text-contrast-dark'
                                     }
                                 },
                             },
