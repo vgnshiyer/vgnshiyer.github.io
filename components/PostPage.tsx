@@ -3,6 +3,7 @@ import getPostConent from '@/helpers/getPostContent';
 import Markdown from 'markdown-to-jsx';
 import TableOfContents from './TableOfContents';
 import getMarkdownHeadings from '@/helpers/getMarkdownHeadings';
+import Image from 'next/image';
 
 const PostPage = ( props: any ) => {
     const slug = props.slug;
@@ -27,7 +28,7 @@ const PostPage = ( props: any ) => {
                 <div className="border-b-2 border-gray-200 dark:border-gray-800 mt-8"></div>
 
                 {/* Post cover image */}
-                <img src={post.data.cover} alt="Post cover" className="mt-8 rounded-md" />
+                <Image src={post.data.cover} alt="Post cover" width={700} height={700} className="mt-8 rounded-md" loading="lazy" />
 
                 {/* Post content */}
                 <article className="prose lg:prose-xl relative overflow-hidden">

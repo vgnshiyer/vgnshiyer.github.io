@@ -1,14 +1,17 @@
 import Link from "next/link";
 import { PostMetadata } from "../types/PostMetadata";
+import Image from "next/image";
 
 const PostPreview = (props: PostMetadata) => {
     return (
         <Link href={`/posts/${props.slug}`} className="rounded-xl shadow-md bg-semi-light dark:bg-semi-dark flex flex-col md:flex-row items-start">
             {props.cover && (
-                <img
+                <Image
                     className="rounded-lg w-full md:w-44 mr-4 object-cover h-48 md:h-full"
                     src={props.cover}
                     alt={`Cover image for ${props.title}`}
+                    width={200}
+                    height={200}
                 />
             )}
             <div className="p-6">

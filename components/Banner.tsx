@@ -1,3 +1,4 @@
+import Image from "next/image";
 
 const Banner = () => {
     return (
@@ -10,7 +11,8 @@ const Banner = () => {
                 <p className="text-tertiary-light dark:text-tertiary-dark text-sm sm:text-base md:text-lg mb-4">Writing code to make people's lives better.</p>
             </div>
             <div className="">
-                <img src="/images/banner.png" alt="Vignesh Iyer" className="w-60 sm:w-64 md:w-72 lg:w-80" />
+                {/* <img src="/images/banner.png" alt="Vignesh Iyer" className="w-60 sm:w-64 md:w-72 lg:w-80" loading="lazy" /> */}
+                <Image src="/images/banner.png" alt="Vignesh Iyer" width={500} height={500} className="w-60 sm:w-64 md:w-72 lg:w-80" loading="lazy" />
             </div>
         </div>
     );
