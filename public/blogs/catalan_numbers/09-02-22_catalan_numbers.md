@@ -66,3 +66,60 @@ x       x       x       x       x
 ```
 
 **Problem 2:** Given a value n, find the number of possible combinations of valid parenthesis with n pairs.
+
+```
+Approach:
+1. Just like the above problem, we select 1 pair of brackets which will be our default.
+2. Around our default pair, we will be calculating all possible combinations of brackets.
+Recurrence relation: Same as above
+For a problem n = 3,
+  ( . ) 2 + ( 1 ) 1 + ( 2 ) .  total 5 ways to construct valid parenthesis.
+Below are the 5 ways:
+( )()(), ( )(()), (())(), ((())) , (()()) 
+brackets in bold are the default brackets.
+```
+
+**Problem 3:** Given a value n, find the number of possible full binary trees that can be constructed with n nodes.
+
+```
+Approach:
+1. Unlike the BST problem, we cannot directly take all combinations of nodes in our left and right subtrees. They also need to satisfy the conditions for a full binary tree. (a tree with either 0 or exactly 2 children for every node).
+2. According to the definition, it must be clear that, it is impossible to construct an FBT with even number of nodes. 
+3. Therefore, we need to change our recurrence relation in the first problem.
+4. Here, we will traverse all the valid combinations of FBT's in our left and right subtrees that can be constructed.
+Recurrence relation: 
+if(n is even) NWays(n)= 0
+NWays(n) = NWays(1)*NWays(n-1-1) + NWays(3)*NWays(n-1-3) + ....NWays(n-1-1)*NWays(1)
+Notice that we are taking only odd number of nodes in our left and right subtrees.
+For a problem n = 5,
+  1       1  
+ / \     / \ 
+(1)(3) (3) (1)  2 ways
+Below are the 2 ways:
+  x           x
+ / \         / \
+x   x       x   x
+   / \     / \
+  x   x   x   x
+  (1)       (2)
+```
+
+**Problem 4:** Given a value n and value h, return the number of ways to construct a full binary tree with height h.
+
+```
+Approach:
+1. In this problem we add one more parameter to our state in the 3rd problem.
+2. This parameter represents the height of the tree constructed.
+Recurrence relation:
+if(n is even) NWays(n, h)= 0
+NWays(n, h) = NWays(1, h-1)*NWays(n-1-1, h-1) + NWays(3, h-1)*NWays(n-1-3, h-1) + ....NWays(n-1-1, h-1)*NWays(1, h-1)
+(h-1 because we are excluding our root node from the height)
+where h ranges from 1 to h.
+NWays(n,h) - NWays(n, h-1) will give us the number of ways to construct an FBT with height h.
+The base case for all above problems are 
+NWays(0) = NWays(1) = NWays(1, any_height) = 1
+```
+
+Code them yourself 🙂. Here is my [Github](https://github.com/VigneshIyer25/My-Coding-Library/tree/main/Algorithms/Dynamic%20Programming/Catalan%20Numbers) for some reference.
+
+Hope this was a good enough description of Catalan Numbers and its applications in Computer Science. Thanks!

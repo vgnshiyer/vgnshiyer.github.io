@@ -27,7 +27,7 @@ const TableOfContents = (props: any) => {
         <h3 className='text-2xl text-black dark:text-white font-bold'>On this page</h3>
         <ul className='list-disc list-inside mt-2'>
             {headings.map(( { id, level, text }: any ) => (
-              <li key={id} className={`text-tertiary-light dark:text-tertiary-dark ${getTextSize(level, minLevel)} ml-${(level - minLevel) * 2} mb-1 list-none hover:text-contrast-light dark:hover:text-contrast-dark`}>
+              <li key={id} className={`text-tertiary-light dark:text-tertiary-dark ${getTextSize(level, minLevel)} ml-${(level - minLevel) * 4} mb-1 list-none hover:text-contrast-light dark:hover:text-contrast-dark`}>
                 <a href={`#${id}`}>{text}</a>
               </li>
             ))}

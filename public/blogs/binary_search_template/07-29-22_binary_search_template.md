@@ -3,7 +3,6 @@ title: The Binary Search Template
 subtitle: An easier approach to using binary search algorithm
 date: Jul 29, 2022
 cover: /blogs/binary_search_template/images/cover.png
-read_more: https://vgnshiyer.medium.com/the-binary-search-template-d5fef04586c8
 ---
 
 Binary search is a very efficient way to solve the programming problem of searching an element in a sorted array. Instead of traversing the entire search space, we halve the search space on every iteration. In a problem of finding an element(say ‘k‘), we check whether k exists in the first half or the second half of the array. This simple optimization brings the time taken by a linear search algorithm to logarithmic.
@@ -53,3 +52,12 @@ The idea is to let the loop run until our low and high pointers are equal. That 
 In essence, we are trying to find the first False in the array. Which is, at position 5. Once we find the first False, we recede the ‘high’ pointer, until both our ‘low’ and ‘high’ pointers are at position 5.
 
 And that is our answer.
+
+In this way, it does not matter if the element at position 5 is ‘7’ or not. It just has to be greater than or equal to ‘7’. The lower_bound() function in c++ STL performs a similar operation to find the element which is closest to a given element.
+
+Therefore, binary search algorithm does not have to be changed every time to evaluate the condition in the question. This makes the algorithm much easier to implement. This template can be remembered easily and used across many programming problems.
+
+Credits:
+
+- Shoutout to @zhijun_liao on [leetcode](https://leetcode.com/problems/first-bad-version/discuss/769685/Python-Clear-explanation-Powerful-Ultimate-Binary-Search-Template.-Solved-many-problems.) to post this template.
+- Credits to James Murphy for explaining this on his [channel](https://www.youtube.com/watch?v=tgVSkMA8joQ).

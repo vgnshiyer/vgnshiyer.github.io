@@ -57,7 +57,7 @@ const PostPage = ( props: any ) => {
                                 },
                                 li: {
                                     props: {
-                                        className: 'text-tertiary-light dark:text-tertiary-dark'
+                                        className: 'text-tertiary-light dark:text-tertiary-dark leading-tight'
                                     }
                                 },
                                 strong: {
@@ -83,16 +83,10 @@ const PostPage = ( props: any ) => {
                             },
                         }}
                     >{post.content}</Markdown>
-                    {post.data.read_more && (
-                        <div className="absolute bottom-0 left-0 right-0 h-52 bg-gradient-to-b from-transparent to-light dark:from-transparent dark:to-dark"></div>
-                    )}
-            </article>
-            <br></br>
-            {post.data.read_more && (
-                <span className="text-black dark:text-white font-bold text-xl">Read the full article <a href={post.data.link} 
-                    className="text-contrast-light dark:text-contrast-dark hover:underline">here</a>
-                .</span>
-            )}
+                </article>
+                <div className="border-b-2 border-gray-200 dark:border-gray-800 mt-8"></div>
+                <p className="text-tertiary-light dark:text-tertiary-dark mt-8 text-xl mb-4">Thanks for reading! Your support matters a lot. Cheers!</p>
+                <p className="text-tertiary-light dark:text-tertiary-dark text-xl">Subscribe to my <a href="/feed.xml" className="text-contrast-light dark:text-contrast-dark hover:underline">RSS feed</a> to get notified about new posts.</p>
             </div>
             <TableOfContents headings={headings} />
         </div>

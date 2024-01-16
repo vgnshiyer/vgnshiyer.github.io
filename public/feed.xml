@@ -9,11 +9,18 @@
             <link>https://vgnshiyer.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sun, 14 Jan 2024 02:36:32 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 16 Jan 2024 00:29:44 GMT</lastBuildDate>
         <atom:link href="https://vgnshiyer.dev/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sun, 14 Jan 2024 02:36:32 GMT</pubDate>
-        <copyright><![CDATA[All Rights Reserved Sat Jan 13 2024 19:36:32 GMT-0700 (GMT-07:00)]]></copyright>
+        <pubDate>Tue, 16 Jan 2024 00:29:44 GMT</pubDate>
+        <copyright><![CDATA[All Rights Reserved Mon Jan 15 2024 17:29:44 GMT-0700 (GMT-07:00)]]></copyright>
         <language><![CDATA[en]]></language>
+        <item>
+            <title><![CDATA[The ASU Sparky Sundevil Resume Template]]></title>
+            <description><![CDATA[A rework of the ASU resume LaTex template]]></description>
+            <link>https://vgnshiyer.dev/blog/01-14-2024_ASU_sparky_resume_template</link>
+            <guid isPermaLink="true">https://vgnshiyer.dev/blog/01-14-2024_ASU_sparky_resume_template</guid>
+            <pubDate>Mon, 15 Jan 2024 07:00:00 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[Introducing PyAppleBooks!]]></title>
             <description><![CDATA[A Python library that makes interacting with AppleBooks data easy.]]></description>
@@ -48,12 +55,6 @@
             <link>https://vgnshiyer.dev/blog/07-28-22_recursion</link>
             <guid isPermaLink="true">https://vgnshiyer.dev/blog/07-28-22_recursion</guid>
             <pubDate>Thu, 28 Jul 2022 07:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[Link Prediction in a Social Network]]></title>
-            <link>https://vgnshiyer.dev/blog/04-21-19_link_prediction</link>
-            <guid isPermaLink="true">https://vgnshiyer.dev/blog/04-21-19_link_prediction</guid>
-            <pubDate>Sun, 21 Apr 2019 07:00:00 GMT</pubDate>
         </item>
     </channel>
 </rss>
