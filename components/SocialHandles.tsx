@@ -8,7 +8,7 @@ const SocialHandles = () => {
         { name: "Email", icon: FaEnvelope, link: "mailto:vgnshiyer@asu.edu" },
         { name: "Twitter", icon: FaTwitter, link: "https://www.twitter.com/vgnshiyer" },
         // { name: "YouTube", icon: FaYoutube, link: "https://www.youtube.com/vgnshiyer" },
-        { name: "RSS", icon: FaRss, link: "/feed.xml" },
+        { name: "RSS", icon: FaRss, link: "https://vgnshiyer.dev/feed.xml" },
     ];
 
   return (

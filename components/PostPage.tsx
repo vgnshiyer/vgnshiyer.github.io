@@ -86,7 +86,7 @@ const PostPage = ( props: any ) => {
                 </article>
                 <div className="border-b-2 border-gray-200 dark:border-gray-800 mt-8"></div>
                 <p className="text-tertiary-light dark:text-tertiary-dark mt-8 text-xl mb-4">Thanks for reading! Your support matters a lot. Cheers!</p>
-                <p className="text-tertiary-light dark:text-tertiary-dark text-xl">Subscribe to my <a href="/feed.xml" className="text-contrast-light dark:text-contrast-dark hover:underline">RSS feed</a> to get notified about new posts.</p>
+                <p className="text-tertiary-light dark:text-tertiary-dark text-xl">Subscribe to my <a href="https://vgnshiyer.dev/feed.xml" className="text-contrast-light dark:text-contrast-dark hover:underline">RSS feed</a> to get notified about new posts.</p>
             </div>
             <TableOfContents headings={headings} />
         </div>
