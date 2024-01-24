@@ -20,7 +20,7 @@ Let’s begin studying the form and comparing the implementation with the iterat
 **Recursive Solution:**
 
 - If you are asked for Rs.100, give a Rs.100 to the person who asked for it.
-- Otherwise, give your Rs.100 and ask another person to raise the rest of the amount.
+- Otherwise, give your Rs.10 and ask another person to raise the rest of the amount.
 - At the end, collect all the amount received in a bag.
 - Give it to the person who asked to collect the money.
 
