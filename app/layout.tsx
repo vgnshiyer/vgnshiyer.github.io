@@ -32,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <link rel='icon' href='images/favicon.ico' />
-      <body className="bg-light dark:bg-dark">
+      <body className="bg-light dark:bg-dark transition duration-500 ease-in-out">
         <div className="mx-auto max-w-9/10 md:max-w-3/4 lg:max-w-2/3 selection:bg-contrast-dark dark:selection:text-light">
           {header}
           {children}
