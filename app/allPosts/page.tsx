@@ -10,7 +10,7 @@ const page = () => {
 
   return (
     <>
-      <div className="grid grid-cols-1 gap-4 sm:mx-8 mt-12 md:mt-16 lg:mt-24 2xl:mt-32">
+      <div className="grid grid-cols-1 gap-4 sm:mx-8 mt-12 md:mt-16 lg:mt-20 2xl:mt-24">
         {postPreviews}
       </div>
     </>
