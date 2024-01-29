@@ -9,18 +9,11 @@
             <link>https://vgnshiyer.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Tue, 16 Jan 2024 00:29:44 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 29 Jan 2024 02:06:01 GMT</lastBuildDate>
         <atom:link href="https://vgnshiyer.dev/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Tue, 16 Jan 2024 00:29:44 GMT</pubDate>
-        <copyright><![CDATA[All Rights Reserved Mon Jan 15 2024 17:29:44 GMT-0700 (GMT-07:00)]]></copyright>
+        <pubDate>Mon, 29 Jan 2024 02:06:01 GMT</pubDate>
+        <copyright><![CDATA[All Rights Reserved Sun Jan 28 2024 19:06:01 GMT-0700 (GMT-07:00)]]></copyright>
         <language><![CDATA[en]]></language>
-        <item>
-            <title><![CDATA[The ASU Sparky Sundevil Resume Template]]></title>
-            <description><![CDATA[A rework of the ASU resume LaTex template]]></description>
-            <link>https://vgnshiyer.dev/blog/01-14-2024_ASU_sparky_resume_template</link>
-            <guid isPermaLink="true">https://vgnshiyer.dev/blog/01-14-2024_ASU_sparky_resume_template</guid>
-            <pubDate>Mon, 15 Jan 2024 07:00:00 GMT</pubDate>
-        </item>
         <item>
             <title><![CDATA[Introducing PyAppleBooks!]]></title>
             <description><![CDATA[A Python library that makes interacting with AppleBooks data easy.]]></description>
