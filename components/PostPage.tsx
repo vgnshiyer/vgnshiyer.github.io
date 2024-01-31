@@ -84,10 +84,35 @@ const PostPage = ( props: any ) => {
                         }}
                     >{post.content}</Markdown>
                 </article>
-                <div className="border-b-2 border-gray-200 dark:border-gray-800 mt-8"></div>
-
-                <p className="text-tertiary-light dark:text-tertiary-dark text-xl mt-8 mb-4">Thanks for reading! :)</p>
-                <p className="text-tertiary-light dark:text-tertiary-dark text-xl">Subscribe to my <a href="https://vgnshiyer.dev/feed.xml" className="text-contrast-light dark:text-contrast-dark hover:underline">RSS feed</a> to get notified about new posts.</p>
+                <div className="border-b-2 border-gray-200 dark:border-gray-800 mt-4"></div>
+                {/* Post tags */}
+                {
+                    post.data.tags && (
+                        <div className="mt-8 mb-4">
+                            <div className="flex flex-wrap gap-2 mt-4">
+                                {post.data.tags.map((tag: string, index: number) => (
+                                    <span key={index} 
+                                    className="
+                                        bg-semi-light
+                                        dark:bg-semi-dark
+                                        text-tertiary-light
+                                        dark:text-tertiary-dark 
+                                        px-2 
+                                        py-1 
+                                        rounded-md 
+                                        text-lg
+                                        hover:bg-gray-300
+                                        dark:hover:bg-gray-700
+                                        cursor-pointer"
+                                    >
+                                        {tag}
+                                    </span>
+                                ))}
+                            </div>
+                        </div>
+                    )
+                }
+                <p className="text-tertiary-light dark:text-tertiary-dark text-xl mt-8">Subscribe to my <a href="https://vgnshiyer.dev/feed.xml" className="text-contrast-light dark:text-contrast-dark hover:underline">RSS feed</a> to get notified about new posts.</p>
             </div>
             <TableOfContents headings={headings} />
         </div>

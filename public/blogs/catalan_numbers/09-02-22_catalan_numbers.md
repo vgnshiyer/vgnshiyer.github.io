@@ -3,7 +3,10 @@ title: What are Catalan Numbers?
 subtitle: Applications of Catalan Numbers in Computer Science.
 date: Sep 2, 2022
 cover: /blogs/catalan_numbers/images/cover.png
-read_more: https://vgnshiyer.medium.com/what-are-catalan-numbers-252a40f5d915
+tags:
+  - software engineering
+  - data structures
+  - algorithms
 ---
 
 The Catalan Numbers are a sequence of positive integers which can be used in a wide array of problems that appear in Computer Science. They fall under the realm of Combinatorics, following a fundamental recurrence relation just like the Fibonacci Sequence. They also fit nicely in the method of Dynamic Programming.
