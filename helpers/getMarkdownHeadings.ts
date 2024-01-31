@@ -1,4 +1,4 @@
-import { MarkdownHeading } from "../types/MarkDownHeading";
+import { MarkdownHeading } from "@/types/MarkdownHeading";
 
 const getMarkdownHeadings = (markdown: string): MarkdownHeading[] => {
     const lines = markdown.split("\n");

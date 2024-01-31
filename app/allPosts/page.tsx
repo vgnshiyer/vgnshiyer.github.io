@@ -2,7 +2,9 @@ import PostPreview from '@/components/PostPreview';
 import getPostMetadata from '@/helpers/getPostMetadata'
 import React from 'react'
 
-const page = () => {
+const page = ( props: any ) => {
+  const tag = props.tag;
+
   const postMetadata = getPostMetadata();
   const postPreviews = postMetadata.map((post) => (
     <PostPreview key={post.slug} {...post} />
