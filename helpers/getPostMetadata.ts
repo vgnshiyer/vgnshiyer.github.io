@@ -18,6 +18,7 @@ const getPostMetadata = (): PostMetadata[] => {
             subtitle: matterResult.data.subtitle,
             cover: matterResult.data.cover,
             slug: path.basename(filename, '.md'),
+            tags: matterResult.data.tags,
         };
     });
 

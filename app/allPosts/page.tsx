@@ -1,12 +1,13 @@
 import PostPreview from '@/components/PostPreview';
-import getPostMetadata from '@/helpers/getPostMetadata'
-import React from 'react'
+import getPostMetadata from '@/helpers/getPostMetadata';
+import { PostMetadata } from '@/types/PostMetadata';
+import React from 'react';
+import { useSearchParams } from 'next/navigation';
 
-const page = ( props: any ) => {
-  const tag = props.tag;
-
+const page = () => {
+  // const tag = useSearchParams().get('tag');
   const postMetadata = getPostMetadata();
-  const postPreviews = postMetadata.map((post) => (
+  const postPreviews = postMetadata.map((post: PostMetadata) => (
     <PostPreview key={post.slug} {...post} />
   ));
 

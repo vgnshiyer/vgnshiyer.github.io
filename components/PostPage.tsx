@@ -4,6 +4,7 @@ import Markdown from 'markdown-to-jsx';
 import TableOfContents from './TableOfContents';
 import getMarkdownHeadings from '@/helpers/getMarkdownHeadings';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const PostPage = ( props: any ) => {
     const slug = props.slug;
@@ -91,22 +92,27 @@ const PostPage = ( props: any ) => {
                         <div className="mt-8 mb-4">
                             <div className="flex flex-wrap gap-2 mt-4">
                                 {post.data.tags.map((tag: string, index: number) => (
-                                    <span key={index} 
-                                    className="
-                                        bg-semi-light
-                                        dark:bg-semi-dark
-                                        text-tertiary-light
-                                        dark:text-tertiary-dark 
-                                        px-2 
-                                        py-1 
-                                        rounded-md 
-                                        text-lg
-                                        hover:bg-gray-300
-                                        dark:hover:bg-gray-700
-                                        cursor-pointer"
-                                    >
-                                        {tag}
-                                    </span>
+                                    <Link href={{
+                                        pathname: '/allPosts',
+                                        query: { tag: tag }
+                                    }}>
+                                        <span key={index} 
+                                        className="
+                                            bg-semi-light
+                                            dark:bg-semi-dark
+                                            text-tertiary-light
+                                            dark:text-tertiary-dark 
+                                            px-2 
+                                            py-1 
+                                            rounded-md 
+                                            text-lg
+                                            hover:bg-gray-300
+                                            dark:hover:bg-gray-700
+                                            cursor-pointer"
+                                        >
+                                            {tag}
+                                        </span>
+                                    </Link>
                                 ))}
                             </div>
                         </div>
