@@ -92,8 +92,8 @@ const PostPage = ( { slug }: { slug: string } ) => {
                         <div className="mt-8 mb-4">
                             <div className="flex gap-2 mt-4">
                                 {post.data.tags.map((tag: string, index: number) => (
-                                    <Link href={`/list/${tag}`}>
-                                        <span key={index} 
+                                    <Link key={index} href={`/list/${tag}`}>
+                                        <span
                                         className="
                                             bg-semi-light
                                             dark:bg-semi-dark
