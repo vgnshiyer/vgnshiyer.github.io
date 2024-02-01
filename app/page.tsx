@@ -23,7 +23,7 @@ export default function page() {
                 {postPreviews}
             </div>
             <div className="flex justify-end mt-8 space-x-4 sm:mx-8">
-                <Link href="/allPosts" className="text-tertiary-light dark:text-white bg-semi-light dark:bg-semi-dark hover:text-contrast-light dark:hover:text-contrast-dark font-semibold duration-200 p-4 rounded-full px-8">
+                <Link href="/list/all" className="text-tertiary-light dark:text-white bg-semi-light dark:bg-semi-dark hover:text-contrast-light dark:hover:text-contrast-dark font-semibold duration-200 p-4 rounded-full px-8">
                     More...
                 </Link>
             </div>

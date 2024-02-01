@@ -6,8 +6,7 @@ import getMarkdownHeadings from '@/helpers/getMarkdownHeadings';
 import Image from 'next/image';
 import Link from 'next/link';
 
-const PostPage = ( props: any ) => {
-    const slug = props.slug;
+const PostPage = ( { slug }: { slug: string } ) => {
     const post = getPostConent(slug);
 
     if (!post) {
@@ -92,10 +91,7 @@ const PostPage = ( props: any ) => {
                         <div className="mt-8 mb-4">
                             <div className="flex flex-wrap gap-2 mt-4">
                                 {post.data.tags.map((tag: string, index: number) => (
-                                    <Link href={{
-                                        pathname: '/allPosts',
-                                        query: { tag: tag }
-                                    }}>
+                                    <Link href={`/list/${tag}`}>
                                         <span key={index} 
                                         className="
                                             bg-semi-light
