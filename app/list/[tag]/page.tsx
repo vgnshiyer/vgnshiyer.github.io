@@ -3,7 +3,7 @@ import getAllTags from '@/helpers/getAllTags';
 import React from 'react'
 
 export const generateStaticParams = () => {
-  const tags = getAllTags().map((tag) => tag.replace(/ /g, '%20'));
+  const tags = getAllTags();
   tags.push('all');
   return tags.map((tag) => ({
     tag: tag,

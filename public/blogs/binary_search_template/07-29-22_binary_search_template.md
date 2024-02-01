@@ -4,8 +4,8 @@ subtitle: An easier approach to using binary search algorithm
 date: Jul 29, 2022
 cover: /blogs/binary_search_template/images/cover.png
 tags:
-  - software engineering
-  - data structures
+  - software_engineering
+  - data_structures
   - algorithms
 ---
 

@@ -5,8 +5,8 @@ date: Dec 29, 2023
 cover: /blogs/7_git_workflows/images/cover.png
 tags:
   - git
-  - software development
-  - software engineering
+  - software_development
+  - software_engineering
 ---
 
 Git is an indispensable tool in a software engineer’s toolkit. Whether you are collaborating in a company or working in a group project, Git is one of the most used tool for track software development progress. Besides tracking progress, it also provides a gamut of extremely useful features that enhance your development experience. Knowing how and when to use these seemingly complex features is something that is incumbent on a good software engineer. 

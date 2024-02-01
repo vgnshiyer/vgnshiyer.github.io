@@ -5,7 +5,7 @@ date: Jul 28, 2022
 cover: /blogs/recursion/images/cover.png
 tags:
   - programming
-  - software development
+  - software_development
 ---
 
 Recursion is a technique where a call to a method appears in the method’s body. That is, the method calls itself and repeats this action, until a base condition is reached. This base condition is defined by us, at the start of the function.

@@ -3,7 +3,6 @@ import React from 'react'
 import PostPreview from './PostPreview';
 
 const PostListView = ({ tag }: { tag: string }) => {
-  tag = tag.replace(/%20/g, ' ');
   const allPosts = getPostMetadata();
   const posts = tag  === 'all' ? allPosts : allPosts.filter((post) => post.tags.includes(tag));
   const postPreviews = posts.map((post) => (

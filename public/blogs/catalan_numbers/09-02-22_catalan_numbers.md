@@ -4,8 +4,8 @@ subtitle: Applications of Catalan Numbers in Computer Science.
 date: Sep 2, 2022
 cover: /blogs/catalan_numbers/images/cover.png
 tags:
-  - software engineering
-  - data structures
+  - software_engineering
+  - data_structures
   - algorithms
 ---
 

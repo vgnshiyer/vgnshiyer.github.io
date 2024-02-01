@@ -106,7 +106,7 @@ const PostPage = ( { slug }: { slug: string } ) => {
                                             dark:hover:bg-gray-700
                                             cursor-pointer"
                                         >
-                                            {tag}
+                                            {tag.replace(/_/g, ' ')}
                                         </span>
                                     </Link>
                                 ))}

@@ -4,7 +4,7 @@ subtitle: A Python library that makes interacting with AppleBooks data easy.
 date: Jan 09, 2024
 cover: /blogs/Py-apple-books/images/cover.png
 tags:
-  - software development
+  - software_development
   - Python
 ---
 
