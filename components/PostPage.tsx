@@ -5,6 +5,7 @@ import TableOfContents from './TableOfContents';
 import getMarkdownHeadings from '@/helpers/getMarkdownHeadings';
 import Image from 'next/image';
 import Link from 'next/link';
+import { FaTag } from 'react-icons/fa';
 
 const PostPage = ( { slug }: { slug: string } ) => {
     const post = getPostConent(slug);
@@ -89,7 +90,7 @@ const PostPage = ( { slug }: { slug: string } ) => {
                 {
                     post.data.tags && (
                         <div className="mt-8 mb-4">
-                            <div className="flex flex-wrap gap-2 mt-4">
+                            <div className="flex gap-2 mt-4">
                                 {post.data.tags.map((tag: string, index: number) => (
                                     <Link href={`/list/${tag}`}>
                                         <span key={index} 
@@ -104,9 +105,11 @@ const PostPage = ( { slug }: { slug: string } ) => {
                                             text-lg
                                             hover:bg-gray-300
                                             dark:hover:bg-gray-700
-                                            cursor-pointer"
+                                            cursor-pointer
+                                            flex
+                                            items-center"
                                         >
-                                            {tag.replace(/_/g, ' ')}
+                                            <FaTag className="mr-2" /> {tag.replace(/_/g, ' ')}
                                         </span>
                                     </Link>
                                 ))}
