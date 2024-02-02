@@ -1,9 +1,9 @@
 import PostListView from '@/components/PostListView';
-import getAllTags from '@/helpers/getAllTags';
+import getAllUniqueTags from '@/helpers/getAllUniqueTags';
 import React from 'react'
 
 export const generateStaticParams = () => {
-  const tags = getAllTags();
+  const tags = getAllUniqueTags();
   tags.push('all');
   return tags.map((tag) => ({
     tag: tag,
