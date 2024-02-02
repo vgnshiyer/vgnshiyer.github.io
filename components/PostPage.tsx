@@ -90,7 +90,7 @@ const PostPage = ( { slug }: { slug: string } ) => {
                 {
                     post.data.tags && (
                         <div className="mt-8 mb-4">
-                            <div className="flex gap-2 mt-4">
+                            <div className="flex gap-2 mt-4 flex-wrap">
                                 {post.data.tags.map((tag: string, index: number) => (
                                     <Link key={index} href={`/list/${tag}`}>
                                         <span
@@ -101,8 +101,10 @@ const PostPage = ( { slug }: { slug: string } ) => {
                                             dark:text-tertiary-dark 
                                             px-2 
                                             py-1 
-                                            rounded-md 
-                                            text-lg
+                                            rounded-md
+                                            text-sm
+                                            md:text-base
+                                            lg:text-lg
                                             hover:bg-gray-300
                                             dark:hover:bg-gray-700
                                             cursor-pointer

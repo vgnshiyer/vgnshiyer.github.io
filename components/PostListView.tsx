@@ -25,7 +25,8 @@ const PostListView = ({ tag }: { tag: string }) => {
                 dark:hover:bg-gray-700
                 px-2 py-1
                 rounded-md
-                text-lg
+                text-base
+                lg:text-lg
                 font-semibold
                 flex
                 mb-6

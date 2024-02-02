@@ -25,13 +25,7 @@ export default function RootLayout({
     <footer>
       <div className="mt-6 py-6 mb-20 text-tertiary-light dark:text-tertiary-dark text-center">
         <SocialHandles />
-        <div className="flex justify-center space-x-2 text-sm text-tertiary-light">
-          <p>© 2023 - 2024 Vignesh Iyer</p>
-          <p>·</p>
-          <Link href="/links" className="hover:underline">link tree</Link>
-          <p>·</p>
-          <p>Powered by <a href="https://nextjs.org" className="hover:underline">Next.js</a></p>
-        </div>
+        <p>© 2023 - 2024 Vignesh Iyer</p>
       </div>
     </footer>
   );
