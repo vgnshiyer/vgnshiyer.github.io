@@ -109,7 +109,8 @@ const PostPage = ( { slug }: { slug: string } ) => {
                                             dark:hover:bg-gray-700
                                             cursor-pointer
                                             flex
-                                            items-center"
+                                            items-center
+                                            font-semibold"
                                         >
                                             <FaTag className="mr-2" /> {tag.replace(/_/g, ' ')}
                                         </span>
