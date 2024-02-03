@@ -23,8 +23,8 @@
 
 - New RSS feed is generate on every build using `npm run build`
   - see [/app/posts/\[slug\]/page.tsx](/app/posts/\[slug\]/page.tsx) `generateStaticParams()` method. (Kind of a hacky way tbh.. Can define a separate npm command)
-- /app/posts/[slug]/page.tsx -> is the file used for rendering all the static blog posts.
-  - [slug] is a variable that is replaced with the slug param in the props for page.tsx.
+- `/app/posts/[slug]/page.tsx` -> is the file used for rendering all the static blog posts.
+  - `[slug]` is a variable that is replaced with the slug param in the props for page.tsx.
 - Similar structure followed for tags.
 
 ### License
