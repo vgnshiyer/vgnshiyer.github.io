@@ -1,7 +1,6 @@
 import SocialHandles from '@/components/SocialHandles';
 import '../styles/global.css'
 import Navbar from "@/components/Navbar";
-import Link from 'next/link';
 
 export const metadata = {
   title: 'vgnshiyer\'s blog',

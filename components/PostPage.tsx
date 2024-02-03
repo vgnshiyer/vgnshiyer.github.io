@@ -1,21 +1,52 @@
-import React from 'react'
-import getPostConent from '@/helpers/getPostContent';
+'use client';
+
+import React, { useEffect } from 'react'
 import Markdown from 'markdown-to-jsx';
 import TableOfContents from './TableOfContents';
 import getMarkdownHeadings from '@/helpers/getMarkdownHeadings';
 import Image from 'next/image';
 import Link from 'next/link';
-import { FaTag } from 'react-icons/fa';
+import { FaTag, FaCopy } from 'react-icons/fa';
 
-const PostPage = ( { slug }: { slug: string } ) => {
-    const post = getPostConent(slug);
-
+const PostPage = ( { post }: { post: any } ) => {
     if (!post) {
-        console.error(`No post found for slug: ${slug}`);
+        console.error(`No post found for slug: ${post.slug}`);
         return null;
     }
 
     const headings = getMarkdownHeadings(post.content);
+
+    const addCopyButtons = () => {
+        const codeBlocks = document.querySelectorAll('pre');
+        codeBlocks.forEach((codeBlock) => {
+            if (codeBlock.querySelector('.code-copy-button')) {
+                return;
+            }
+
+            const button = document.createElement('button');
+            button.className = 'code-copy-button absolute top-0 right-0 p-1 bg-semi-light dark:bg-semi-dark rounded-md text-tertiary-light dark:text-tertiary-dark hover:bg-gray-300 dark:hover:bg-gray-700 cursor-pointer text-xs md:text-sm mr-1 mt-1';
+            button.type = 'button';
+            button.innerText = 'Copy';
+            button.title = 'Copy code to clipboard';
+            button.addEventListener('click', () => {
+                let code = codeBlock.querySelector('code');
+                if (code === undefined || code === null) {
+                    return;
+                }
+                navigator.clipboard.writeText(code.innerText);
+                button.innerText = 'Copied!';
+                setTimeout(() => {
+                    button.innerText = 'Copy';
+                }, 1000);
+            });
+            codeBlock.append(button);
+            codeBlock.classList.add('relative');
+        });
+    }
+
+    useEffect(() => {
+        addCopyButtons();
+    },[]);
 
     return (
         <div className="flex sm:mx-8 mt-10 md:mt-20">
@@ -127,4 +158,4 @@ const PostPage = ( { slug }: { slug: string } ) => {
     )
 }
 
-export default PostPage
+export default PostPage;
