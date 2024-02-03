@@ -10,7 +10,7 @@ const Readme = () => {
             <Image className="max-w-1/2 md:max-w-1/3 lg:max-w-1/4 2xl:max-w-4/20 rounded-md mr-8 mb-8" src="/images/readme_img.jpg" alt="Readme" width={500} height={500} loading="lazy" />
             
             <div className="md:mt-0">
-                <h1 className="text-4xl sm:text-5xl font-bold text-black dark:text-white">Readme</h1>
+                <h1 className="text-4xl sm:text-5xl font-bold text-black dark:text-white">Readme.</h1>
                 
                 <Markdown className="mt-8 text-black dark:text-white">{readme.content}</Markdown>
                 

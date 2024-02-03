@@ -4,7 +4,6 @@ import React from 'react'
 
 export const generateStaticParams = () => {
   const tags = getAllUniqueTags();
-  tags.push('all');
   return tags.map((tag) => ({
     tag: tag,
   }));

@@ -55,7 +55,7 @@ const Navbar = () => {
   };
 
   const links = [
-    {href: "/tags/all", text: "Posts"},
+    {href: "/posts", text: "Posts"},
     {href: "/about", text: "Readme"},
   ];
 
