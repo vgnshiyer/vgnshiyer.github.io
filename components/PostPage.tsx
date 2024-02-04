@@ -22,9 +22,9 @@ const PostPage = ( { post }: { post: any } ) => {
             if (codeBlock.querySelector('.code-copy-button')) {
                 return;
             }
-
+    
             const button = document.createElement('button');
-            button.className = 'code-copy-button absolute top-0 right-0 p-1 bg-semi-light dark:bg-semi-dark rounded-md text-tertiary-light dark:text-tertiary-dark hover:bg-gray-300 dark:hover:bg-gray-700 cursor-pointer text-xs md:text-sm mr-1 mt-1';
+            button.className = 'code-copy-button absolute top-0 right-0 p-1 rounded-md text-tertiary-light dark:text-tertiary-dark bg-gray-300 dark:bg-gray-700 hover:text-black dark:hover:text-white cursor-pointer text-xs md:text-sm mr-1 mt-1 hidden group-hover:block';
             button.type = 'button';
             button.innerText = 'Copy';
             button.title = 'Copy code to clipboard';
@@ -40,7 +40,7 @@ const PostPage = ( { post }: { post: any } ) => {
                 }, 1000);
             });
             codeBlock.append(button);
-            codeBlock.classList.add('relative');
+            codeBlock.classList.add('relative', 'group');
         });
     }
 
