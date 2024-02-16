@@ -33,7 +33,7 @@ Fast forwarding is a simplification performed while merging by Git and it happen
 ```
           D--E (feature)
          /
-  A--B--C (main)
+  A--B--C--F (main)
 
   git checkout main
   git merge feature --no-ff
