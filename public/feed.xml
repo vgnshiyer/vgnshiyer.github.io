@@ -9,11 +9,18 @@
             <link>https://vgnshiyer.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sun, 04 Feb 2024 08:17:59 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 20 Feb 2024 20:40:27 GMT</lastBuildDate>
         <atom:link href="https://vgnshiyer.dev/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sun, 04 Feb 2024 08:17:59 GMT</pubDate>
-        <copyright><![CDATA[All Rights Reserved Sun Feb 04 2024 01:17:59 GMT-0700 (Mountain Standard Time)]]></copyright>
+        <pubDate>Tue, 20 Feb 2024 20:40:27 GMT</pubDate>
+        <copyright><![CDATA[All Rights Reserved Tue Feb 20 2024 13:40:27 GMT-0700 (Mountain Standard Time)]]></copyright>
         <language><![CDATA[en]]></language>
+        <item>
+            <title><![CDATA[Logging in Python like a pro.]]></title>
+            <description><![CDATA[Debugging is overrated.]]></description>
+            <link>https://vgnshiyer.dev/blog/02-20-24_loggers</link>
+            <guid isPermaLink="true">https://vgnshiyer.dev/blog/02-20-24_loggers</guid>
+            <pubDate>Tue, 20 Feb 2024 07:00:00 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[Introducing PyAppleBooks!]]></title>
             <description><![CDATA[A Python library that makes interacting with AppleBooks data easy.]]></description>
