@@ -3,6 +3,12 @@ title: Logging in Python like a pro.
 subtitle: Debugging is overrated.
 date: Feb 20, 2024
 cover: /blogs/using_loggers/images/cover.png
+tags:
+  - software_development
+  - software_engineering
+  - Python
+  - Debugging
+  - Logging
 ---
 
 **[TL;DR](#python-logger-on-steroids)**
@@ -56,7 +62,7 @@ Here is how I set my loggers for most of my Python applications.
 - I include the query_id for each log statement for a unique request to my API.
 - I need to log additional context in the log event. (Depends on the log event)
 
-The source file of the log event does not change as long as the control of execution is on that same file. So initializing once at the top of the file should do the job. As for the context, I need to conciously decide what I want to log while writing a log statement. 
+The source file of the log event does not change as long as the control of execution is on that same file. So initializing once at the top of the file should do the job. As for the context, I need to consciously decide what I want to log while writing a log statement. 
 
 Firstly, I set the basicConfig for the root logger.
 
@@ -171,7 +177,7 @@ class LogEvent(metaclass=LogEventMeta):
 
 The Encoder class will be used to encode certain types of objects. This is useful to ensure that the output JSON only consists of ascii characters.
 
-Now you can do this at the beginnging of every module.
+Now you can do this at the beginning of every module.
 
 ```
 logger = logging.getLogger(__name__)
