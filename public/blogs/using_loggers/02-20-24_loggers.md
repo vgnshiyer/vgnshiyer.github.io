@@ -6,9 +6,9 @@ cover: /blogs/using_loggers/images/cover.png
 tags:
   - software_development
   - software_engineering
-  - Python
-  - Debugging
-  - Logging
+  - python
+  - debugging
+  - logging
 ---
 
 **[TL;DR](#python-logger-on-steroids)**
@@ -27,7 +27,7 @@ Here is a nice checklist you can use to evaluate your log statements.
 
 2. Log level: This piece of information captures the nature of an event. The usual ones are INFO, DEBUG, WARN, ERROR and FATAL.
 
-3. Source: A lot of the time when you are working on a huge codebase with multiple modules and packages, it is often helpful to trace the sequence of execution of statements. 
+3. Source: A lot of the time when you are working on a huge codebase with multiple modules and packages, it is often helpful to trace the sequence of execution of statements.
 
 4. Message: The message provides context to understand what was happening during the execution. Anywhere from two to three words are enough. Two words are enough for a developer to understand what's going on.
 
@@ -54,7 +54,7 @@ Here is an example of a well-structured log statement.
 
 ### Python logger on steroids!
 
-There are couple of ways you can achieve the above format for your logs. Usually that entails setting the formatting once in the form of an f-string, which will be used by the python logging module to encapsulate certain information. Other information can be encoded in the form of a json inside the log event. 
+There are couple of ways you can achieve the above format for your logs. Usually that entails setting the formatting once in the form of an f-string, which will be used by the python logging module to encapsulate certain information. Other information can be encoded in the form of a json inside the log event.
 
 Here is how I set my loggers for most of my Python applications.
 
@@ -62,7 +62,7 @@ Here is how I set my loggers for most of my Python applications.
 - I include the query_id for each log statement for a unique request to my API.
 - I need to log additional context in the log event. (Depends on the log event)
 
-The source file of the log event does not change as long as the control of execution is on that same file. So initializing once at the top of the file should do the job. As for the context, I need to consciously decide what I want to log while writing a log statement. 
+The source file of the log event does not change as long as the control of execution is on that same file. So initializing once at the top of the file should do the job. As for the context, I need to consciously decide what I want to log while writing a log statement.
 
 Firstly, I set the basicConfig for the root logger.
 
@@ -184,7 +184,7 @@ logger = logging.getLogger(__name__)
 logger.setLevel('DEBUG')
 log_event = LogEvent()
 
-# how to use 
+# how to use
 logger.debug(log_event.format("test-log", param1="abc", param2="def"))
 ```
 

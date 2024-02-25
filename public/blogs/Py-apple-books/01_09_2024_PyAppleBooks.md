@@ -5,7 +5,7 @@ date: Jan 09, 2024
 cover: /blogs/Py-apple-books/images/cover.png
 tags:
   - software_development
-  - Python
+  - python
 ---
 
 Few weeks ago, I released PyAppleBooks in the official [PyPi](https://pypi.org/project/py-apple-books/) repository. It is an API build on top of Apple Books that makes it very easy to access your Apple books data. The inspiration to build package came from my intent to remember and go through all my annotations from the books I read. It was a slight discomfort going through annotations for all the books from the app and I wished to have all them to be listed as a notion document that I can access anytime.
