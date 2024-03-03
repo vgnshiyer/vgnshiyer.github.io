@@ -2,9 +2,25 @@ import React from "react";
 import getNowData from "@/helpers/getNowData";
 import NowSection from "./NowSection";
 import Link from "next/link";
+import { NowItem } from "@/types/NowItem";
+
+interface nowData {
+  recent: {
+    data: NowItem[];
+    quote: string;
+  };
+  now: {
+    data: NowItem[];
+    quote: string;
+  };
+  upcoming: {
+    data: NowItem[];
+    quote: string;
+  };
+}
 
 const NowPage = () => {
-  const nowData = getNowData();
+  const nowData = getNowData() as nowData;
 
   return (
     <>

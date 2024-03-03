@@ -1,5 +1,6 @@
 import fs from "fs";
 import yaml from "js-yaml";
+import { NowItem } from "@/types/NowItem";
 
 const getNowData = () => {
   const filePath = "public/now.xml";

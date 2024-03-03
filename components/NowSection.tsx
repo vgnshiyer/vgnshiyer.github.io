@@ -1,6 +1,12 @@
 import Markdown from "markdown-to-jsx";
 import { NowItem } from "@/types/NowItem";
 
+interface NowSectionProps {
+  data: Array<NowItem>;
+  title: String;
+  subtitle: String;
+}
+
 const getMarkdown = (data: any) => {
   return (
     <Markdown
@@ -64,7 +70,7 @@ const renderActions = (data: any) => (
   </div>
 );
 
-const NowSection = ({ data, title, subtitle }) => (
+const NowSection = ({ data, title, subtitle }: NowSectionProps) => (
   <div className="mt-12 md:ml-10">
     {renderHeading(title, subtitle)}
     <div className="mt-2 flex">
