@@ -1,0 +1,15 @@
+recent:
+  - date: "2024-01-15"
+    action: "Published [ASU Resume template](https://www.overleaf.com/latex/templates/asu-resume-template/jtwpddspxjtm)"
+  - date: "2024-01-21"
+    action: "Open sourced my [blog](https://github.com/vgnshiyer/vgnshiyer.github.io)"
+  - date: "2024-02-01"
+    action: "Finished reading The Goal by Eliyahu M. Goldratt"
+
+now:
+  - date: "2024-02-02"
+    action: "Juggling between coursework and learning rust"
+
+upcoming:
+  - date: "Dec 2024"
+    action: "Graduating"
