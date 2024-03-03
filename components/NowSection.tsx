@@ -1,4 +1,5 @@
 import Markdown from "markdown-to-jsx";
+import { NowItem } from "@/types/NowItem";
 
 const getMarkdown = (data: any) => {
   return (
@@ -13,7 +14,7 @@ const getMarkdown = (data: any) => {
           },
         },
       }}
-      className="ml-6"
+      className="ml-4 md:ml-6"
     >
       {data}
     </Markdown>
@@ -29,13 +30,16 @@ const renderHeading = (title: String, subtitle: String) => (
   </div>
 );
 
-const renderDates = (data: any) => (
-  <div className="mt-4 flex w-[12%] flex-col items-center">
+const renderDates = (data: Array<NowItem>) => (
+  <div className="mt-1 flex max-w-full flex-col items-center md:mt-2">
     {data
-      .sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime())
-      .map((item, index) => (
+      .sort(
+        (a: NowItem, b: NowItem) =>
+          new Date(a.date).getTime() - new Date(b.date).getTime(),
+      )
+      .map((item: NowItem, index: any) => (
         <div key={index} className="mb-2 flex items-center">
-          <p className="text-contrast-light dark:text-contrast-dark text-base">
+          <p className="text-contrast-light dark:text-contrast-dark text-nowrap text-sm md:text-base">
             {item.date}
           </p>
         </div>
@@ -44,12 +48,15 @@ const renderDates = (data: any) => (
 );
 
 const renderActions = (data: any) => (
-  <div className="bg-semi-light dark:bg-semi-dark ml-8 grid w-[80%] grid-cols-1 rounded-3xl p-4 pr-12 shadow-md sm:mx-8 md:flex-col">
+  <div className="bg-semi-light dark:bg-semi-dark ml-2 grid w-[80%] grid-cols-1 overflow-x-auto rounded-xl p-1 shadow-md md:ml-8 md:p-2">
     {data
-      .sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime())
-      .map((item, index) => (
-        <div key={index} className="mb-2 flex items-center">
-          <div className="text-base text-black dark:text-white">
+      .sort(
+        (a: NowItem, b: NowItem) =>
+          new Date(a.date).getTime() - new Date(b.date).getTime(),
+      )
+      .map((item: NowItem, index: any) => (
+        <div key={index} className="flex items-center">
+          <div className="text-nowrap text-sm text-black md:text-base dark:text-white">
             {getMarkdown(item.action)}
           </div>
         </div>
@@ -58,7 +65,7 @@ const renderActions = (data: any) => (
 );
 
 const NowSection = ({ data, title, subtitle }) => (
-  <div className="ml-10 mt-12">
+  <div className="mt-12 md:ml-10">
     {renderHeading(title, subtitle)}
     <div className="mt-2 flex">
       {renderDates(data)}

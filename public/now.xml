@@ -14,10 +14,10 @@ now:
   quote: "Current activities and focus."
   data:
     - date: "2024-02-02"
-      action: "Juggling between coursework and learning rust"
+      action: "Learning Rust."
 
 upcoming:
   quote: "Anticipated future plans and goals."
   data:
-    - date: "2024"
+    - date: "2024-12-01"
       action: "Graduating"
