@@ -5,23 +5,13 @@ address: Tempe, AZ USA
 pincode: 85281
 ---
 
-👀 I’m excited to explore the vast possibilities of technology that can propel the human race forward towards a brighter future.
-Having a motivation and a drive to learn new things, I keep exploring new technologies, building projects and regularly contributing open source.
-<a style="color: #FFBD38" href="https://github.com/slackapi/bolt-python/pull/918">[1]</a><a style="color: #FFBD38" href="https://github.com/stripe/stripe-cli/pull/1094">[2]</a>
+✨ I’m excited to explore the vast possibilities of technology that can propel the human race forward towards a brighter future.
 <br>
 <br>
-🚀 I try to look for repetitive processes and come up with solutions to improve performance by automation. Streamlining workflows results in increased efficiency, less errors and more free time for me and my colleagues to focus on more complex and strategic tasks. 
+🚀 I write about Software Engineering, Fitness, Nutrition and Personal Development.
 <br>
 <br>
-💡 As a developer, I take proactive approach in leveraging my problem solving skills to find solutions to complex problems while prioritizing writing clean and maintainable code. I often obsess about choosing the right variable names.
+👀 Check out my [now](/now) page. This is where I spill the beans on my current activities and interests. To get updates on my latest posts, subscribe to my [RSS feed](https://vgnshiyer.dev/feed.xml). <br> Read my [reviews](/reviews) on books, podcasts, movies, etc.
 <br>
 <br>
-💪 During my free time, I love exercising, learning about nutrition, reading biographies and self-help books.
-<br>
-<br>
-🤝 I am always eager to collaborate with like-minded individuals on interesting and challenging projects.
-<br>
-<br>
-You can drop me an email at: <span style="color: #FFBD38">[vgnshiyer@asu.edu](mailto:vgnshiyer@asu.edu)</span>
-<br>
-Or connect with me on LinkedIn: <span style="color: #FFBD38">[vgnshiyer](https://www.linkedin.com/in/vgnshiyer/)</span>
+🤝 I am always eager to collaborate with like-minded individuals on interesting and challenging projects. You can reach out to me via [email](mailto:vgnshiyer@asu.edu) or [LinkedIn](https://www.linkedin.com/in/vgnshiyer/). I always respond within 24 hours.
