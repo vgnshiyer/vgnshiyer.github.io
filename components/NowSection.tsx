@@ -71,7 +71,7 @@ const renderActions = (data: any) => (
 );
 
 const NowSection = ({ data, title, subtitle }: NowSectionProps) => (
-  <div className="mt-12 md:ml-10">
+  <div className="mb-12 md:ml-10">
     {renderHeading(title, subtitle)}
     <div className="mt-2 flex">
       {renderDates(data)}

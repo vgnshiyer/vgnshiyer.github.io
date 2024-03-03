@@ -24,7 +24,7 @@ const NowPage = () => {
 
   return (
     <>
-      <div className="items-left flex flex-col sm:mx-8">
+      <div className="items-left mt-6 flex flex-col sm:mx-8 md:mt-12">
         <NowSection
           title="Recent."
           data={nowData.recent.data}
