@@ -9,7 +9,7 @@ const getMarkdown = (data: any) => {
           a: {
             props: {
               className:
-                "border-b border-dotted border-tertiary-light dark:border-tertiary-dark text-black dark:text-white hover:text-contrast-light dark:hover:text-contrast-dark",
+                "underline text-tertiary-light dark:text-tertiary-dark hover:text-contrast-light dark:hover:text-contrast-dark",
             },
           },
         },

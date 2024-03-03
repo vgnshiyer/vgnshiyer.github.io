@@ -24,15 +24,17 @@ const Banner = () => {
           Writing code to make people's lives better.
         </p>
         <br />
-        <Link
-          href="/now"
-          className="text-contrast-light dark:text-contrast-dark text-2xl font-bold hover:underline"
-        >
-          Now »
-        </Link>
+        <div className="bg-semi-light dark:bg-semi-dark flex max-w-[80px] items-center rounded-3xl py-1">
+          <Link
+            href="/now"
+            className="text-tertiary-light group ml-4 rounded-2xl p-2 font-semibold tracking-[1px] dark:text-white"
+          >
+            now
+            <span className="bg-contrast-light dark:bg-contrast-dark relative left-1/2 block h-0.5 max-w-0 -translate-x-1/2 duration-500 group-hover:max-w-full"></span>
+          </Link>
+        </div>
       </div>
       <div className="">
-        {/* <img src="/images/banner.png" alt="Vignesh Iyer" className="w-60 sm:w-64 md:w-72 lg:w-80" loading="lazy" /> */}
         <Image
           src="/images/banner.png"
           alt="Vignesh Iyer"
