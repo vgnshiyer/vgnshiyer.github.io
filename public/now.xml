@@ -5,6 +5,8 @@ recent:
     action: "Open sourced my [blog](https://github.com/vgnshiyer/vgnshiyer.github.io)"
   - date: "2024-02-01"
     action: "Finished reading The Goal by Eliyahu M. Goldratt"
+  - date: "2024-01-25"
+    action: "Built a [CICD](https://github.com/vgnshiyer/apple-books-highlight-bot.git) which helps me remember what I read"
 
 now:
   - date: "2024-02-02"
