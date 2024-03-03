@@ -35,16 +35,21 @@ const NowPage = () => {
           <blockquote className="mb-2 mt-1 italic text-gray-600 dark:text-gray-400">
             "Reflecting on recent accomplishments and endeavors."
           </blockquote>
-          {nowData.recent.map((item, index) => (
-            <div key={index} className="flex items-center">
-              <p className="text-contrast-light dark:text-contrast-dark text-base">
-                {item.date}
-              </p>
-              <p className="text-base text-black dark:text-white">
-                {getMarkdown(item.action)}
-              </p>
-            </div>
-          ))}
+          {nowData.recent
+            .sort(
+              (a: any, b: any) =>
+                new Date(a.date).getTime() - new Date(b.date).getTime(),
+            )
+            .map((item: any, index: any) => (
+              <div key={index} className="flex items-center">
+                <p className="text-contrast-light dark:text-contrast-dark text-base">
+                  {item.date}
+                </p>
+                <p className="text-base text-black dark:text-white">
+                  {getMarkdown(item.action)}
+                </p>
+              </div>
+            ))}
         </div>
         <div>
           <h1 className="mt-20 text-3xl font-bold text-black dark:text-white">
@@ -53,7 +58,7 @@ const NowPage = () => {
           <blockquote className="mb-2 mt-1 italic text-gray-600 dark:text-gray-400">
             "Current activities and focus."
           </blockquote>
-          {nowData.now.map((item, index) => (
+          {nowData.now.map((item: any, index: any) => (
             <div key={index} className="flex items-center">
               <p className="text-contrast-light dark:text-contrast-dark text-base">
                 {item.date}
@@ -71,16 +76,21 @@ const NowPage = () => {
           <blockquote className="mb-2 mt-1 italic text-gray-600 dark:text-gray-400">
             "Anticipated future plans and goals."
           </blockquote>
-          {nowData.upcoming.map((item, index) => (
-            <div key={index} className="flex items-center">
-              <p className="text-contrast-light dark:text-contrast-dark text-base">
-                {item.date}
-              </p>
-              <p className="text-base text-black dark:text-white">
-                {getMarkdown(item.action)}
-              </p>
-            </div>
-          ))}
+          {nowData.upcoming
+            .sort(
+              (a: any, b: any) =>
+                new Date(a.date).getTime() - new Date(b.date).getTime(),
+            )
+            .map((item: any, index: any) => (
+              <div key={index} className="flex items-center">
+                <p className="text-contrast-light dark:text-contrast-dark text-base">
+                  {item.date}
+                </p>
+                <p className="text-base text-black dark:text-white">
+                  {getMarkdown(item.action)}
+                </p>
+              </div>
+            ))}
         </div>
       </div>
     </>
