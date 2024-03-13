@@ -5,8 +5,6 @@ recent:
       action: "Published [ASU Resume template](https://www.overleaf.com/latex/templates/asu-resume-template/jtwpddspxjtm)."
     - date: "2024-01-21"
       action: "Open sourced my [blog](https://github.com/vgnshiyer/vgnshiyer.github.io)."
-    - date: "2024-02-01"
-      action: "Finished reading The Goal by Eliyahu M. Goldratt."
     - date: "2024-01-25"
       action: "Built a [CICD](https://github.com/vgnshiyer/apple-books-highlight-bot.git) which helps me remember what I read."
 
