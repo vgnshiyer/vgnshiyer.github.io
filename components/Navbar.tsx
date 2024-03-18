@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import React, { useState, ReactNode, useEffect } from "react";
+import React, { useState, ReactNode } from "react";
 import ThemeToggle from "./ThemeToggle";
 import Logo from "./Logo";
 
