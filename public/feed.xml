@@ -9,10 +9,10 @@
             <link>https://vgnshiyer.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sun, 03 Mar 2024 20:21:20 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 20 Mar 2024 16:18:17 GMT</lastBuildDate>
         <atom:link href="https://vgnshiyer.dev/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sun, 03 Mar 2024 20:21:20 GMT</pubDate>
-        <copyright><![CDATA[All Rights Reserved Sun Mar 03 2024 13:21:20 GMT-0700 (Mountain Standard Time)]]></copyright>
+        <pubDate>Wed, 20 Mar 2024 16:18:17 GMT</pubDate>
+        <copyright><![CDATA[All Rights Reserved Wed Mar 20 2024 09:18:17 GMT-0700 (Mountain Standard Time)]]></copyright>
         <language><![CDATA[en]]></language>
         <item>
             <title><![CDATA[Logging in Python like a pro.]]></title>
