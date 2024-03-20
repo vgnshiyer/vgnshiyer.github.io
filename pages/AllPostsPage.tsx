@@ -1,10 +1,10 @@
 import getPostMetadata from "@/helpers/getPostMetadata";
 import React from "react";
-import PostPreview from "./PostPreview";
+import PostPreview from "@/components/PostPreview";
 import { FaTag } from "react-icons/fa";
 import Link from "next/link";
 
-const PostListView = ({ tag }: { tag: string }) => {
+const AllPostsPage = ({ tag }: { tag: string }) => {
   const allPosts = getPostMetadata();
   const posts =
     tag === "all"
@@ -56,4 +56,4 @@ const PostListView = ({ tag }: { tag: string }) => {
   );
 };
 
-export default PostListView;
+export default AllPostsPage;

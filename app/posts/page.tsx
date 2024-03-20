@@ -1,10 +1,8 @@
-import PostListView from '@/components/PostListView'
-import React from 'react'
+import AllPostsPage from "@/pages/AllPostsPage";
+import React from "react";
 
 const Posts = () => {
-  return (
-    <PostListView tag="all" />
-  )
-}
+  return <AllPostsPage tag="all" />;
+};
 
-export default Posts
+export default Posts;

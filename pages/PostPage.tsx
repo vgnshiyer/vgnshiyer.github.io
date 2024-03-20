@@ -2,7 +2,7 @@
 
 import React, { useEffect } from "react";
 import Markdown from "markdown-to-jsx";
-import TableOfContents from "./TableOfContents";
+import TableOfContents from "@/components/TableOfContents";
 import getMarkdownHeadings from "@/helpers/getMarkdownHeadings";
 import Image from "next/image";
 import Link from "next/link";
