@@ -1,6 +1,6 @@
 import React from "react";
 import { NowItem } from "@/types/NowItem";
-import getNowData from "@/helpers/getNowData";
+import getYamlData from "@/helpers/getYamlData";
 import Link from "next/link";
 import NowSection from "@/components/NowSection";
 
@@ -20,7 +20,7 @@ interface nowData {
 }
 
 const Now = () => {
-  const nowData = getNowData() as nowData;
+  const nowData = getYamlData("now") as nowData;
   return (
     <>
       <div className="items-left mt-6 flex flex-col sm:mx-8 md:mt-12">
