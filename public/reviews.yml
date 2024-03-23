@@ -1,0 +1,15 @@
+books:
+  reviews:
+    - date: "2024-03-21"
+      stars: 4
+      title: "The Lean Startup"
+      author: "Eric Ries"
+      review: "The Lean Startup is a must-read for entrepreneurs. It provides a scientific approach to creating and managing successful startups in an age when companies have to innovate more than ever."
+
+movies:
+  reviews:
+    - date: "2024-03-21"
+      stars: 5
+      title: "The Matrix"
+      director: "Lana Wachowski, Lilly Wachowski"
+      review: "The Matrix is a classic sci-fi movie that explores the concept of reality and identity. The visual effects and action sequences are still impressive to this day."
