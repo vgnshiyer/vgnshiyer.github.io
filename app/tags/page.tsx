@@ -1,10 +1,8 @@
-import TagListView from '@/components/TagListView';
-import React from 'react'
+import AllTagsPage from "@/components/AllTagsPage";
+import React from "react";
 
 const Tags = () => {
-  return (
-    <TagListView />
-  )
-}
+  return <AllTagsPage />;
+};
 
 export default Tags;

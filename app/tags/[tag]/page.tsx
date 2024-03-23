@@ -1,6 +1,6 @@
-import PostListView from '@/components/PostListView';
-import getAllUniqueTags from '@/helpers/getAllUniqueTags';
-import React from 'react'
+import getAllUniqueTags from "@/helpers/getAllUniqueTags";
+import AllPostsPage from "@/components/AllPostsPage";
+import React from "react";
 
 export const generateStaticParams = () => {
   const tags = getAllUniqueTags();
@@ -12,9 +12,7 @@ export const generateStaticParams = () => {
 const page = (props: any) => {
   const tag = props.params.tag;
 
-  return (
-    <PostListView tag={tag} />
-  )
-}
+  return <AllPostsPage tag={tag} />;
+};
 
-export default page
+export default page;
