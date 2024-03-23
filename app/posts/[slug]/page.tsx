@@ -1,5 +1,5 @@
 import getPostMetadata from "@/helpers/getPostMetadata";
-import PostPage from "@/pages/PostPage";
+import PostPage from "@/components/PostPage";
 import generateRssFeed from "@/helpers/generateRssFeed";
 import getPostContent from "@/helpers/getPostContent";
 

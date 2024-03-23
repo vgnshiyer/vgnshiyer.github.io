@@ -1,5 +1,5 @@
 import getAllUniqueTags from "@/helpers/getAllUniqueTags";
-import AllPostsPage from "@/pages/AllPostsPage";
+import AllPostsPage from "@/components/AllPostsPage";
 import React from "react";
 
 export const generateStaticParams = () => {

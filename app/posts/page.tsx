@@ -1,4 +1,4 @@
-import AllPostsPage from "@/pages/AllPostsPage";
+import AllPostsPage from "@/components/AllPostsPage";
 import React from "react";
 
 const Posts = () => {

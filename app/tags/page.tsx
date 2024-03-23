@@ -1,4 +1,4 @@
-import AllTagsPage from "@/pages/AllTagsPage";
+import AllTagsPage from "@/components/AllTagsPage";
 import React from "react";
 
 const Tags = () => {
