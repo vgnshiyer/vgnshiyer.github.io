@@ -11,8 +11,7 @@ const AllTagsPage = () => {
   });
 
   return (
-    <>
-      <div className="mt-12 grid grid-cols-1 gap-4 sm:mx-8 md:mt-16 lg:mt-20 2xl:mt-24">
+    <div className="mt-12 grid grid-cols-1 gap-4 sm:mx-8 md:mt-16 lg:mt-20 2xl:mt-24">
         <h1 className="text-3xl font-bold text-black dark:text-white">Tags.</h1>
         <div className="flex flex-wrap gap-2">
           {Array.from(uniqueTags).map(([tag, count]) => (
@@ -40,7 +39,6 @@ const AllTagsPage = () => {
           ))}
         </div>
       </div>
-    </>
   );
 };
 

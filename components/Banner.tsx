@@ -29,8 +29,7 @@ const Banner = () => {
             href="/now"
             className="text-tertiary-light group ml-4 rounded-2xl p-2 font-semibold tracking-[1px] dark:text-white"
           >
-            Now
-            <span className="bg-contrast-light dark:bg-contrast-dark relative left-1/2 block h-0.5 max-w-0 -translate-x-1/2 duration-500 group-hover:max-w-full"></span>
+            Now<span className="bg-contrast-light dark:bg-contrast-dark relative left-1/2 block h-0.5 max-w-0 -translate-x-1/2 duration-500 group-hover:max-w-full"></span>
           </Link>
         </div>
       </div>

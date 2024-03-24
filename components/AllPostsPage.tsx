@@ -15,8 +15,7 @@ const AllPostsPage = ({ tag }: { tag: string }) => {
   ));
 
   return (
-    <>
-      <div className="mt-12 grid grid-cols-1 gap-4 sm:mx-8 md:mt-16 lg:mt-20 2xl:mt-24">
+    <div className="mt-12 grid grid-cols-1 gap-4 sm:mx-8 md:mt-16 lg:mt-20 2xl:mt-24">
         <h1 className="text-3xl font-bold text-black dark:text-white">
           Posts.
         </h1>
@@ -52,7 +51,6 @@ const AllPostsPage = ({ tag }: { tag: string }) => {
         )}
         {postPreviews}
       </div>
-    </>
   );
 };
 
