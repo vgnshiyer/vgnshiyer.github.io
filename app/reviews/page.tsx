@@ -1,4 +1,4 @@
-import Review from "@/components/review";
+import Review from "@/components/Review";
 import getYamlData from "@/helpers/getYamlData";
 import React from "react";
 
