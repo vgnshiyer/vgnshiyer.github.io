@@ -15,10 +15,13 @@ const Review = ({ review }: {review: any}) => {
 
   return (
     <div>
-      <h1 className="text-xl font-bold text-black dark:text-white mt-4">{bookTitle}</h1>
+      <div className="flex justify-between mt-4">
+        <h1 className="text-xl font-bold text-black dark:text-white">{bookTitle}</h1>
+        <div className="flex mt-1">{stars}</div>
+      </div>
       <p className="text-sm text-tertiary-light dark:text-tertiary-dark">{lineTwo}</p>
-      <div className="flex mt-1">{stars}</div>
-      <p className="text-tertiary-light dark:text-tertiary-dark mt-4">{review.review}</p>
+      
+      <p className="bg-semi-light dark:bg-semi-dark rounded-xl p-4 text-tertiary-light dark:text-tertiary-dark mt-4">{review.review}</p>
     </div>
   )
 }
