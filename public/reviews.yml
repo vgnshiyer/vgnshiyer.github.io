@@ -1,4 +1,4 @@
-books:
+Books:
   reviews:
     - date: "2024-03-21"
       stars: 4
@@ -6,7 +6,7 @@ books:
       author: "Eric Ries"
       review: "The Lean Startup is a must-read for entrepreneurs. It provides a scientific approach to creating and managing successful startups in an age when companies have to innovate more than ever."
 
-movies:
+Movies & TV Shows:
   reviews:
     - date: "2024-03-21"
       stars: 5
