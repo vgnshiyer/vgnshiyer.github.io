@@ -1,5 +1,6 @@
 import React from "react"
 import { FaStar, FaRegStar } from "react-icons/fa";
+import getMarkdown from "./MarkdownText";
 
 const Review = ({ review }: {review: any}) => {
   const bookTitle = review.title;
@@ -21,7 +22,7 @@ const Review = ({ review }: {review: any}) => {
       </div>
       <p className="text-sm text-tertiary-light dark:text-tertiary-dark">{lineTwo}</p>
       
-      <p className="bg-semi-light dark:bg-semi-dark rounded-xl p-4 text-tertiary-light dark:text-tertiary-dark mt-4">{review.review}</p>
+      <p className="bg-semi-light dark:bg-semi-dark rounded-xl p-4 text-tertiary-light dark:text-tertiary-dark mt-4">{getMarkdown({data: review.review})}</p>
     </div>
   )
 }

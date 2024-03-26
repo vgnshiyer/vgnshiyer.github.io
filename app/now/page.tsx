@@ -1,26 +1,11 @@
 import React from "react";
-import { NowItem } from "@/types/NowItem";
 import getYamlData from "@/helpers/getYamlData";
 import Link from "next/link";
 import NowSection from "@/components/NowSection";
-
-interface nowData {
-  recent: {
-    data: NowItem[];
-    quote: string;
-  };
-  now: {
-    data: NowItem[];
-    quote: string;
-  };
-  upcoming: {
-    data: NowItem[];
-    quote: string;
-  };
-}
+import { NowData } from "@/types/NowData";
 
 const Now = () => {
-  const nowData = getYamlData("now") as nowData;
+  const nowData = getYamlData("now") as NowData;
   return (
     <>
       <div className="items-left mt-6 flex flex-col sm:mx-8 md:mt-12">

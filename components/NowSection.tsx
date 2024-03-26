@@ -1,31 +1,12 @@
 import Markdown from "markdown-to-jsx";
 import { NowItem } from "@/types/NowItem";
+import getMarkdown from "./MarkdownText";
 
 interface NowSectionProps {
   data: Array<NowItem>;
   title: String;
   subtitle: String;
 }
-
-const getMarkdown = (data: any) => {
-  return (
-    <Markdown
-      options={{
-        overrides: {
-          a: {
-            props: {
-              className:
-                "underline text-tertiary-light dark:text-tertiary-dark hover:text-contrast-light dark:hover:text-contrast-dark",
-            },
-          },
-        },
-      }}
-      className="ml-4 md:ml-6"
-    >
-      {data}
-    </Markdown>
-  );
-};
 
 const renderHeading = (title: String, subtitle: String) => (
   <div>
@@ -62,8 +43,8 @@ const renderActions = (data: any) => (
       )
       .map((item: NowItem, index: any) => (
         <div key={index} className="flex items-center">
-          <div className="text-nowrap text-sm text-black md:text-base dark:text-white">
-            {getMarkdown(item.action)}
+          <div className="text-nowrap text-sm text-black md:text-base dark:text-white ml-4 md:ml-6">
+            {getMarkdown({data: item.action})}
           </div>
         </div>
       ))}
