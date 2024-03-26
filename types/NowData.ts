@@ -1,6 +1,6 @@
 import { NowItem } from "./NowItem";
 
-export interface nowData {
+export interface NowData {
     recent: {
         data: NowItem[];
         quote: string;
