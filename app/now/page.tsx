@@ -1,23 +1,8 @@
 import React from "react";
-import { NowItem } from "@/types/NowItem";
 import getYamlData from "@/helpers/getYamlData";
 import Link from "next/link";
 import NowSection from "@/components/NowSection";
-
-interface nowData {
-  recent: {
-    data: NowItem[];
-    quote: string;
-  };
-  now: {
-    data: NowItem[];
-    quote: string;
-  };
-  upcoming: {
-    data: NowItem[];
-    quote: string;
-  };
-}
+import { nowData } from "@/types/NowData";
 
 const Now = () => {
   const nowData = getYamlData("now") as nowData;

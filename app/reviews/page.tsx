@@ -1,9 +1,15 @@
 import Review from "@/components/Review";
 import getYamlData from "@/helpers/getYamlData";
 import React from "react";
+import { ReviewData } from "@/types/ReviewData";
 
 const Reviews = () => {
-  const reviewsData = getYamlData("reviews");
+  const reviewsData: ReviewData = getYamlData("reviews") as ReviewData;
+  for (let category in reviewsData) {
+    reviewsData[category].reviews.sort((a: any, b: any) => {
+      return new Date(b.date).getTime() - new Date(a.date).getTime();
+    });
+  }
 
   return (
     <>

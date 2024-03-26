@@ -1,21 +1,45 @@
 Books:
   reviews:
-    - date: "2024-03-21"
+    - date: "2023-06-24"
       rating: 4
-      title: "The Lean Startup"
-      author: "Eric Ries"
-      review: "The Lean Startup is a must-read for entrepreneurs. It provides a scientific approach to creating and managing successful startups in an age when companies have to innovate more than ever."
+      title: "The 5AM Club"
+      author: "Robin Sharma"
+      review: "Was life changing for me. I found going to bed early more challenging. Although, I don't find it practical to wake up at 5 everyday. Been waking up comfortably at 6:30 without having to force myself out of bed."
 
-    - date: "2024-03-21"
-      rating: 5
-      title: "The Alchemist"
-      author: "Paulo Coelho"
-      review: "The Alchemist is a timeless tale of self-discovery and following your dreams. It's a book that inspires and motivates readers to pursue their own personal legends."
+    - date: "2023-08-11"
+      rating: 3
+      title: "Richest Man in Babylon"
+      author: "George S. Clason"
+      review: "Great starter into finance for a computer nerd. No jargons (Balance Sheet, Income Statement, etc). Just simple anecdotes stressing on building healthy financial habits."
 
-Movies & TV Shows:
-  reviews:
-    - date: "2024-03-21"
+    - date: "2023-08-02"
       rating: 5
-      title: "The Matrix"
-      director: "Lana Wachowski, Lilly Wachowski"
-      review: "The Matrix is a classic sci-fi movie that explores the concept of reality and identity. The visual effects and action sequences are still impressive to this day."
+      title: "Pragmatic Version Control Using Git"
+      author: "Travis Swicegood"
+      review: "I use this book as a manual. It's a great reference for all things Git. Wrote this [blog](/posts/12-29-24_git_workflows) inspired by this book."
+
+    - date: "2024-01-12"
+      rating: 4
+      title: "The 4 Hour Work Week"
+      author: "Tim Ferriss"
+      review: "I like the New Rich concept. Plus the cool techniques of avoiding distracting things/people. Also, the idea of outsourcing and automating tasks was interesting. I probably took working remotely to the extreme, so much that my manager thinks I was slacking off. And no, I don't work from a hammock in Bali or something. "
+
+    - date: "2024-02-21"
+      rating: 5
+      title: "The Goal: A Process of Ongoing Improvement"
+      author: "Eliyahu M. Goldratt"
+      review: "A cool peak into business operations management. The story was too engaging that I kept coming back to it. Although I stopped reading after the protagonist got promoted as the division manager. The bottleneck concept was interesting. I have been killing Herbie's in my life ever since."
+
+    - date: "2023-10-18"
+      rating: 5
+      title: "Elon Musk"
+      author: "Walter Isaacson"
+      review: "Another Walter Isaacson masterpiece. Inspiring read. Although I feel like there could be more volumes to this book about this person. The man has no intention of slowing down."
+
+# Movies & TV Shows:
+#   reviews:
+#     - date: "2024-03-21"
+#       rating: 5
+#       title: "The Matrix"
+#       director: "Lana Wachowski, Lilly Wachowski"
+#       review: "The Matrix is a classic sci-fi movie that explores the concept of reality and identity. The visual effects and action sequences are still impressive to this day."

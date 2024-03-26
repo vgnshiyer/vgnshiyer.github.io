@@ -11,7 +11,7 @@ pincode: 85281
 🚀 I write about Software Engineering, Fitness, Nutrition and Personal Development.
 <br>
 <br>
-👀 Check out my [now](/now) page. This is where I spill the beans on my current activities and interests. To get updates on my latest posts, subscribe to my [RSS feed](https://vgnshiyer.dev/feed.xml). <!--- <br> Read my [reviews](/reviews) on books, podcasts, movies, etc. -->
+👀 Check out my [now](/now) page. This is where I spill the beans on my current activities and interests. I also review [books, podcasts, movies, etc](/reviews). To get updates on my latest posts, subscribe to my [RSS feed](https://vgnshiyer.dev/feed.xml).
 <br>
 <br>
 🤝 I am always eager to collaborate with like-minded individuals on interesting and challenging projects. You can reach out to me via [email](mailto:vgnshiyer@asu.edu) or [LinkedIn](https://www.linkedin.com/in/vgnshiyer/). I always respond within 24 hours.
