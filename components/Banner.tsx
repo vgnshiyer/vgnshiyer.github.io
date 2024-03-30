@@ -24,10 +24,10 @@ const Banner = () => {
           Writing code to make people's lives better.
         </p>
         <br />
-        <div className="bg-semi-light dark:bg-semi-dark flex max-w-[80px] items-center rounded-3xl py-1">
+        <div className="bg-semi-light dark:bg-semi-dark flex max-w-[80px] items-center rounded-3xl py-1 justify-center">
           <Link
             href="/now"
-            className="text-tertiary-light group ml-4 rounded-2xl p-2 font-semibold tracking-[1px] dark:text-white"
+            className="text-tertiary-light group rounded-2xl p-2 font-semibold tracking-[1px] dark:text-white"
           >
             Now<span className="bg-contrast-light dark:bg-contrast-dark relative left-1/2 block h-0.5 max-w-0 -translate-x-1/2 duration-500 group-hover:max-w-full"></span>
           </Link>

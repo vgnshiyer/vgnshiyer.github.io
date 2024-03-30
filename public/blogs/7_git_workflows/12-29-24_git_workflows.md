@@ -67,11 +67,11 @@ You would do this when the base branch has drifted since you branched out to fea
 
 ps: When your project has multiple branches and you want all of them to stay updated with your main, here are your options.
 
-**a. Rebasing**
+#### a. Rebasing
 
 You can rebase all the feature branches onto main, so that it includes the latest changes in main. This will keep the history of the project clean and linear. However, you will lose the true information of your project history as your history will be rewritten.
 
-**b. Merging**
+#### b. Merging
 
 Another option you have to keep all your feature branches up-to-date is using a merge. Git will create a new merge commit in every single one of your feature branches. While this does help you preserve the true history of your project, it tend to make your commit graph look a bit messy, especially when you are working on a large project with multiple branches.
 
