@@ -11,8 +11,8 @@ recent:
 now:
   quote: "Current activities and focus."
   data:
-    - date: "2024-03-30"
-      action: "Learning to draw on my ipad for 10 minutes a day.. 30 day challenge, ends 2024-04-30"
+- date: "2024-03-17"
+      action: "Learning [accounting](https://englianhu.files.wordpress.com/2016/03/financial-statements-a-step-by-step-guide-to-understanding-and-creating-financial-reports.pdf)."
 
 upcoming:
   quote: "Anticipated future plans and goals."

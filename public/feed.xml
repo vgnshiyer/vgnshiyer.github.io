@@ -9,11 +9,18 @@
             <link>https://vgnshiyer.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Tue, 26 Mar 2024 16:54:48 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 05 Apr 2024 18:51:03 GMT</lastBuildDate>
         <atom:link href="https://vgnshiyer.dev/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Tue, 26 Mar 2024 16:54:48 GMT</pubDate>
-        <copyright><![CDATA[All Rights Reserved Tue Mar 26 2024 09:54:48 GMT-0700 (Mountain Standard Time)]]></copyright>
+        <pubDate>Fri, 05 Apr 2024 18:51:03 GMT</pubDate>
+        <copyright><![CDATA[All Rights Reserved Fri Apr 05 2024 11:51:03 GMT-0700 (Mountain Standard Time)]]></copyright>
         <language><![CDATA[en]]></language>
+        <item>
+            <title><![CDATA[Practice Ansible without spending on AWS]]></title>
+            <description><![CDATA[A lightweight container based network using docker]]></description>
+            <link>https://vgnshiyer.dev/blog/03-27-2024_container_net</link>
+            <guid isPermaLink="true">https://vgnshiyer.dev/blog/03-27-2024_container_net</guid>
+            <pubDate>Fri, 05 Apr 2024 07:00:00 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[Logging in Python like a pro.]]></title>
             <description><![CDATA[Debugging is overrated.]]></description>

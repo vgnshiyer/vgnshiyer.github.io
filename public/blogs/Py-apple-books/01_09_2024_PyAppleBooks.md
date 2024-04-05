@@ -57,7 +57,7 @@ Checkout the project [page](https://github.com/vgnshiyer/py-apple-books) to view
 
 ### Found any issues?
 
-Raise a [PR](https://github.com/vgnshiyer/py-apple-books/issues) with a terse description.
+Raise an [issue](https://github.com/vgnshiyer/py-apple-books/issues) with a terse description.
 
 ### Final thoughts
 
