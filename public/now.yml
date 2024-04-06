@@ -7,11 +7,13 @@ recent:
       action: "Open sourced my [blog](https://github.com/vgnshiyer/vgnshiyer.github.io)."
     - date: "2024-01-25"
       action: "Built a [CICD](https://github.com/vgnshiyer/apple-books-highlight-bot.git) which helps me remember what I read."
+    - date: "2024-04-05"
+      action: "Released [Container-Net](https://github.com/vgnshiyer/Container-Net). A minimalistic tool for DevOps engineers to practice Ansible."
 
 now:
   quote: "Current activities and focus."
   data:
-- date: "2024-03-17"
+    - date: "2024-03-17"
       action: "Learning [accounting](https://englianhu.files.wordpress.com/2016/03/financial-statements-a-step-by-step-guide-to-understanding-and-creating-financial-reports.pdf)."
 
 upcoming:
