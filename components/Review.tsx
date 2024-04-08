@@ -13,7 +13,6 @@ const Review = ({ review }: {review: any}) => {
       stars.push(<FaRegStar key={i} className="text-contrast-light dark:text-contrast-dark" />);
   }
 
-
   return (
     <div>
       <div className="flex justify-between mt-4">

@@ -7,12 +7,17 @@ import getMarkdownHeadings from "@/helpers/getMarkdownHeadings";
 import Image from "next/image";
 import Link from "next/link";
 import { FaTag } from "react-icons/fa";
+import hljs from "highlight.js";
 
 const PostPage = ({ post }: { post: any }) => {
   if (!post) {
     console.error(`No post found for slug: ${post.slug}`);
     return null;
   }
+
+  useEffect(() => {
+    hljs.highlightAll();
+  }, []);
 
   const headings = getMarkdownHeadings(post.content);
 
