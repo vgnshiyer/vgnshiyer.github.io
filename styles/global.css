@@ -3,18 +3,7 @@
 @tailwind utilities;
 
 .hljs {
-    color: inherit !important;
     background: inherit !important;
-}
-
-/* Light mode */
-body:not(.dark) .hljs pre,
-body:not(.dark) .hljs code {
-    color: #1a202c; /* Replace with your light mode text color */
-}
-
-/* Dark mode */
-body.dark .hljs pre,
-body.dark .hljs code {
-    color: #f7fafc; /* Replace with your dark mode text color */
+    padding: inherit !important;
+    display: inherit !important;
 }

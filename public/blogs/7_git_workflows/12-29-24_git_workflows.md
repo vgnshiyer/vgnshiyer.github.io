@@ -15,7 +15,7 @@ Here is a simplified breakdown of 7 essential Git workflows that you will likely
 
 ### 1. Fast-forward merge
 
-```
+```css
           D--E (feature)
          /
   A--B--C (main)
@@ -30,7 +30,7 @@ Fast forwarding is a simplification performed while merging by Git and it happen
 
 ### 2. No Fast-forward merge
 
-```
+```css
           D--E (feature)
          /
   A--B--C--F (main)
@@ -50,7 +50,7 @@ While this preserves the branched structure, it makes the history non-linear. To
 ### 3. Rebasing main
 The rebase command tells Git to reapply all the commits that are in current branch (and not in the other branch), on the tip of the other branch. In this example, it is telling Git to take all the commits of the feature branch and reapply them on the new HEAD (F in the example) of the main branch.
 
-```
+```css
           D--E (feature)
          /
   A--B--C--F (main)
@@ -77,7 +77,7 @@ Another option you have to keep all your feature branches up-to-date is using a 
 
 ### 3. Rebasing releases
 
-```
+```css
           D--E (feature)
          /
   A--B--C--F (main)
@@ -95,7 +95,7 @@ The resulting graph will maintain a linear commit history, appearing as though b
 
 ### 4. Rebase & Merge
 
-```
+```css
           D--E (feature)
          /
   A--B--C--F (main)
@@ -117,7 +117,7 @@ This is a neat use of both commands together helping you maintain a clean and li
 
 ### 5. Squash Merge
 
-```
+```css
           D--E (feature)
          /
   A--B--C (main)
@@ -135,7 +135,7 @@ This is a cool feature of Git that allows you to summarize multiple commits into
 
 ### 6. Cherrypicking
 
-```
+```css
           D--E (feature)
          /
   A--B--C--F (main)
@@ -156,7 +156,7 @@ With the help of interactive rebasing, you can rewrite the commit history of you
 
 Running below command will open an editor with all ’n’ commits.
 
-```
+```css
 # n is the number of commits you want to modify
 git rebase -i HEAD~n
 ```

@@ -119,12 +119,12 @@ const PostPage = ({ post }: { post: any }) => {
                 },
                 pre: {
                   props: {
-                    className: "rounded-md p-4 bg-semi-light dark:bg-semi-dark",
+                    className: "rounded-md !p-2 !bg-semi-light dark:!bg-semi-dark",
                   },
                 },
                 code: {
                   props: {
-                    className: "text-tertiary-light dark:text-tertiary-dark",
+                    className: "!text-tertiary-light dark:!text-tertiary-dark",
                   },
                 },
                 a: {

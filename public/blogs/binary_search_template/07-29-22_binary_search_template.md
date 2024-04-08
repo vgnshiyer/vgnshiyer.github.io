@@ -35,7 +35,7 @@ What if the element does not exist? In that case we could return a bool as False
 
 Here is the standardized **Binary Search Template** which works for most problems based on the algorithm.
 
-```
+```python
 def search(nums, target):
     low, high = 0, len(nums)
     while low < high:

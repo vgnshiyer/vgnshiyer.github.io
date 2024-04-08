@@ -1,7 +1,7 @@
 import SocialHandles from "@/components/SocialHandles";
 import "../styles/global.css";
 import Navbar from "@/components/Navbar";
-import "highlight.js/styles/github.css";
+import "highlight.js/styles/an-old-hope.css";
 
 export const metadata = {
   title: "vgnshiyer's blog",
