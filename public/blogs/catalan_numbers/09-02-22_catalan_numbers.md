@@ -13,15 +13,19 @@ The Catalan Numbers are a sequence of positive integers which can be used in a w
 
 This article will be exploring the topic in detail and apply it to some of the popular CS problems. Just like the Fibonacci Sequence, Catalan numbers also follow a pattern. The first few numbers in the sequence are listed below.
 
-`1, 1, 2, 5, 14, 42, 132, …`
+```txt
+1, 1, 2, 5, 14, 42, 132, …
+```
 
 The recurrence relation goes something like:
 
-`C3 = C0 * C2 + C1 * C1 + C2 * C0`
+```txt
+C3 = C0 * C2 + C1 * C1 + C2 * C0
+```
 
 This can be solved recursively for smaller sub problems starting from n = 2 with base case (C0 = C1 = 1), working our way to the final problem n. As we can see, similar to the Fibonacci sequence, this also contains overlapping subproblems, which allows us to memoize the answer for our subproblems to avoid repeated computation. Below code uses recursion and memoization to return the nth Catalan Number.
 
-```
+```c++
 int catalan_number(int n){
   if(n <= 1) return 1;
   
@@ -54,7 +58,7 @@ Below are some problems which can be solved using the above code:
 
 NWays(n) = NWays(0)*NWays(n-1-0) + NWays(1)*NWays(n-1-1) + ....NWays(n-1)*NWays(0)
 
-```
+```txt
 For a problem n = 3,
   1       1       1
  / \     / \     / \
@@ -70,7 +74,7 @@ x       x       x       x       x
 
 **Problem 2:** Given a value n, find the number of possible combinations of valid parenthesis with n pairs.
 
-```
+```txt
 Approach:
 1. Just like the above problem, we select 1 pair of brackets which will be our default.
 2. Around our default pair, we will be calculating all possible combinations of brackets.
@@ -84,7 +88,7 @@ brackets in bold are the default brackets.
 
 **Problem 3:** Given a value n, find the number of possible full binary trees that can be constructed with n nodes.
 
-```
+```txt
 Approach:
 1. Unlike the BST problem, we cannot directly take all combinations of nodes in our left and right subtrees. They also need to satisfy the conditions for a full binary tree. (a tree with either 0 or exactly 2 children for every node).
 2. According to the definition, it must be clear that, it is impossible to construct an FBT with even number of nodes. 
@@ -109,7 +113,7 @@ x   x       x   x
 
 **Problem 4:** Given a value n and value h, return the number of ways to construct a full binary tree with height h.
 
-```
+```txt
 Approach:
 1. In this problem we add one more parameter to our state in the 3rd problem.
 2. This parameter represents the height of the tree constructed.

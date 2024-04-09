@@ -39,7 +39,7 @@ These points make sure you have all the necessary information for understanding 
 
 Here is an example of a well-structured log statement.
 
-```
+```bash
 "2024-01-01T14:32:28Z" [ERROR] [requestId] Failed_connect {
   "source": "my-app:my-module:my-function",
   "context": {
@@ -66,7 +66,7 @@ The source file of the log event does not change as long as the control of execu
 
 Firstly, I set the basicConfig for the root logger.
 
-```
+```python
 # utils.py
 def setup_logging(log_level, requestId):
   logging.basicConfig(
@@ -95,7 +95,7 @@ This will be done once, in our entrypoint file (main.py).
 
 The next thing to do is to get the name of the module which we can be extracted from the \__file\__ dunder attribute.
 
-```
+```python
 module = __file__
 
 log_data = {
@@ -108,8 +108,10 @@ log_data['table_name'] = 'ScoreTable'
 log_data['index_name'] = 'PlayerScoreIndex'
 logger.debug("read_table" + json.dumps(log_data))
 ```
+
 Sample log statement:
-```
+
+```bash
 2024-02-20 14:30:15 [DEBUG] 123e4567-e89b-12d3-a456-426614174000 read_table
 {
   "source": "main.py",
@@ -121,7 +123,7 @@ Sample log statement:
 
 This aligns with the desired log format. But it really becomes ugly as I add more logging statements to our modules. The following code encapsulates this into an object.
 
-```
+```python
 class LogEvent:
   def __init__(self, source: str):
     self.source = source
@@ -133,7 +135,7 @@ class LogEvent:
 
 Now I would have to just create an object of the LogEvent with the name of my module.
 
-```
+```python
 logger = logging.getLogger(__name__)
 log_event = LogEvent(source=__file__)
 
@@ -142,7 +144,7 @@ logger.debug(log_event.format(db_name='GameDB', table_name='ScoreTable', index_n
 
 The code below is optional. It uses a MetaClass to autoconfigure the filename when an instance is created. It also makes sure that only one instance is created per module.
 
-```
+```python
 class Encoder(json.JSONEncoder):
   def default(self, o):
     if isinstance(o, set):
@@ -153,7 +155,8 @@ class Encoder(json.JSONEncoder):
       return o.__repr__()
     return super().default(o)
 ```
-```
+
+```python
 class LogEventMeta(type):
   _instances = {}
 
@@ -179,7 +182,7 @@ The Encoder class will be used to encode certain types of objects. This is usefu
 
 Now you can do this at the beginning of every module.
 
-```
+```python
 logger = logging.getLogger(__name__)
 logger.setLevel('DEBUG')
 log_event = LogEvent()

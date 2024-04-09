@@ -40,7 +40,7 @@ Recursive methods are often more powerful than their iterative equivalents. All 
 
 **Recursive Solution:**
 
-```
+```c++
 void printReverse(ListNode* head){
     if(head == NULL) return; // base case
     printReverse(head->next);
@@ -60,7 +60,7 @@ Below are some more problems on Linked List using Recursion.
 
 #### Search an element in a linked list.
 
-```
+```c++
 ListNode search(ListNode* head, val){
     if(head == NULL || head->val == val) return head; // base case
     return search(head->next, val);
@@ -69,7 +69,7 @@ ListNode search(ListNode* head, val){
 
 #### Insert a node at the end of the list.
 
-```
+```c++
 ListNode insertAtEnd(ListNode* head, val) {
     if(head == NULL) return ListNode(val,NULL); // base case
     head->next = insertAtEnd(head->next, val);
@@ -79,7 +79,7 @@ ListNode insertAtEnd(ListNode* head, val) {
 
 #### Insert a node in a sorted Linked List.
 
-```
+```c++
 ListNode insertInSort(ListNode* head, val) {
     if(head == NULL || head->val > val) return ListNode(val,head);
     head->next = insertInSort(head->next, val);
@@ -89,7 +89,7 @@ ListNode insertInSort(ListNode* head, val) {
 
 #### Remove all nodes with ‘val’ from a list.
 
-```
+```c++
 ListNode removeAll(ListNode* head, val) {
     if(head == NULL) return head;
     head->next = removeAll(head->next, val);
@@ -99,7 +99,7 @@ ListNode removeAll(ListNode* head, val) {
 
 #### Reverse a Linked List.
 
-```
+```c++
 ListNode reverseLL(ListNode* head) {
     if(head == NULL || head->next == NULL) return head;
     ListNode newHead = reverse(head->next);

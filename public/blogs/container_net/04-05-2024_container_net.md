@@ -25,7 +25,7 @@ Get a set of servers(containers) running with your docker engine with these mini
 
 1. Run below commands.
 
-```
+```bash
 git clone https://github.com/vgnshiyer/Container-Net
 cd Container-Net && docker-compose up
 ```
@@ -40,13 +40,13 @@ The following is a short example running an ansible playbook to run an HTTP serv
 * Login to ubuntu1 with the guest (guest1:guest1) user credentials set in the `.env` file. (Alternatively, you can login as a root user using username: root, password: root)
 * Create an empty ansible playbook file.
 
-```
+```bash
 mkdir ansible-example && touch ansible-example/playbook.yml
 ```
 
 * Copy below code to the playbook file.
 
-```
+```yaml
 - hosts: app
   become: yes
 
@@ -70,7 +70,7 @@ mkdir ansible-example && touch ansible-example/playbook.yml
 
 * Create an index.html file inside `/ansible-example` with below contents.
 
-```
+```html
 <html>
     <head>
         <title>Welcome!</title>
@@ -83,14 +83,14 @@ mkdir ansible-example && touch ansible-example/playbook.yml
 
 * Create an inventory file for ansible.
 
-```
+```bash
 sudo mkdir -p /etc/ansible
 sudo touch /etc/ansible/hosts
 ```
 
 * Copy below contents into the inventory file.
 
-```
+```ini
 # /etc/ansible/hosts
 
 [app]
@@ -104,13 +104,13 @@ ansible_sudo_pass=guest1
 ```
 * Run the ansbile playbook. 
 
-```
+```bash
 ansible-playbook playbook.yml
 ```
 
 * Once, the playbook has run successfully, verify that our HTTP server is up and running on the Fedora1 container.
 
-```
+```bash
 curl ubuntu2
 ```
 

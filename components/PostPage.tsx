@@ -124,7 +124,7 @@ const PostPage = ({ post }: { post: any }) => {
                 },
                 code: {
                   props: {
-                    className: "!text-tertiary-light dark:!text-tertiary-dark",
+                    className: "!text-tertiary-light dark:!text-tertiary-dark !text-black dark:!text-white",
                   },
                 },
                 a: {
