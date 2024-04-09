@@ -18,7 +18,9 @@ Here is a brief about how to use the package.
 
 ### Installation
 
-`pip install py_apple_books`
+```bash
+pip install py_apple_books
+```
 
 #### Using PyAppleBooks
 
@@ -40,7 +42,7 @@ for book in books:
     print(f"Author: {book.author}")
 ```
 
-```
+```bash
 # Sample output
 --------------------------------------------------
 Title: Think & Grow Rich

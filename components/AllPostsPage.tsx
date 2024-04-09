@@ -23,7 +23,7 @@ const AllPostsPage = ({ tag }: { tag: string }) => {
           href="/tags"
           className="text-tertiary-light dark:text-tertiary-dark -mb-2 text-sm font-semibold hover:underline md:text-base"
         >
-          View tags »
+          Explore tags »
         </Link>
         {tag !== "all" && (
           <div className="flex">

@@ -15,7 +15,7 @@ Here is a simplified breakdown of 7 essential Git workflows that you will likely
 
 ### 1. Fast-forward merge
 
-```
+```bash
           D--E (feature)
          /
   A--B--C (main)
@@ -30,7 +30,7 @@ Fast forwarding is a simplification performed while merging by Git and it happen
 
 ### 2. No Fast-forward merge
 
-```
+```bash
           D--E (feature)
          /
   A--B--C--F (main)
@@ -50,7 +50,7 @@ While this preserves the branched structure, it makes the history non-linear. To
 ### 3. Rebasing main
 The rebase command tells Git to reapply all the commits that are in current branch (and not in the other branch), on the tip of the other branch. In this example, it is telling Git to take all the commits of the feature branch and reapply them on the new HEAD (F in the example) of the main branch.
 
-```
+```bash
           D--E (feature)
          /
   A--B--C--F (main)
@@ -77,7 +77,7 @@ Another option you have to keep all your feature branches up-to-date is using a 
 
 ### 3. Rebasing releases
 
-```
+```bash
           D--E (feature)
          /
   A--B--C--F (main)
@@ -95,7 +95,7 @@ The resulting graph will maintain a linear commit history, appearing as though b
 
 ### 4. Rebase & Merge
 
-```
+```bash
           D--E (feature)
          /
   A--B--C--F (main)
@@ -117,7 +117,7 @@ This is a neat use of both commands together helping you maintain a clean and li
 
 ### 5. Squash Merge
 
-```
+```bash
           D--E (feature)
          /
   A--B--C (main)
@@ -135,7 +135,7 @@ This is a cool feature of Git that allows you to summarize multiple commits into
 
 ### 6. Cherrypicking
 
-```
+```bash
           D--E (feature)
          /
   A--B--C--F (main)
@@ -156,12 +156,12 @@ With the help of interactive rebasing, you can rewrite the commit history of you
 
 Running below command will open an editor with all ’n’ commits.
 
-```
+```bash
 # n is the number of commits you want to modify
 git rebase -i HEAD~n
 ```
 
-```
+```bash
 pick 9b5d36e added user input for name 
 pick df04b1b revert this commit 
 pick 2b90f4f added comment to hello world
@@ -179,32 +179,32 @@ Here are certain scenarios where you may consider using this feature.
 
 a] You realize that you have a lot of micro-commits in your project history and you want to squash some of them into one.
 
-```
+```bash
 # Replace 'pick' with 'squash' for the commits you want to squash into the previous commit.
 ```
 
 b] You find that files/changes related to certain commits are not required and you want to remove those commits.
 
-```
+```bash
 # Delete the lines corresponding to the commits you want to remove.
 ```
 
 c] You think that the some commits in your history should come over the others and you want to reorder the commits.
 
-```
+```bash
 # Reorder the lines to change the order of the commits.
 ```
 
 d] You noticed that the commit messages for certain commits are misleading and you want to change some of them.
 
-```
+```bash
 # Replace 'pick' with 'reword' for the commits you want to change the message of.
 # Save and close the editor. You will be prompted to change the commit messages.
 ```
 
 e] You found that a commit includes major changes to multiple files and you would like to split it into multiple commits.
 
-```
+```bash
 # Replace 'pick' with 'edit' for the commit you want to split.
 # Save and close the editor. Git will pause at the commit you want to split.
 # Use 'git reset --soft HEAD^' to unstage the commit.

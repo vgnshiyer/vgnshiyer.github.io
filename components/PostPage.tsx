@@ -7,12 +7,17 @@ import getMarkdownHeadings from "@/helpers/getMarkdownHeadings";
 import Image from "next/image";
 import Link from "next/link";
 import { FaTag } from "react-icons/fa";
+import hljs from "highlight.js";
 
 const PostPage = ({ post }: { post: any }) => {
   if (!post) {
     console.error(`No post found for slug: ${post.slug}`);
     return null;
   }
+
+  useEffect(() => {
+    hljs.highlightAll();
+  }, []);
 
   const headings = getMarkdownHeadings(post.content);
 
@@ -114,12 +119,12 @@ const PostPage = ({ post }: { post: any }) => {
                 },
                 pre: {
                   props: {
-                    className: "rounded-md p-4 bg-semi-light dark:bg-semi-dark",
+                    className: "rounded-md !p-2 !bg-semi-light dark:!bg-semi-dark",
                   },
                 },
                 code: {
                   props: {
-                    className: "text-tertiary-light dark:text-tertiary-dark",
+                    className: "!text-tertiary-light dark:!text-tertiary-dark !text-black dark:!text-white",
                   },
                 },
                 a: {

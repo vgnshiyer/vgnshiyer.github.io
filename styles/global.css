@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('highlight.js/styles/an-old-hope.css');
+
+.hljs {
+    background: inherit !important;
+    padding: inherit !important;
+    display: inherit !important;
+}
