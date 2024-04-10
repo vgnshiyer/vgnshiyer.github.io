@@ -13,11 +13,13 @@ recent:
 now:
   quote: "Current activities and focus."
   data:
-    - date: "2024-03-17"
-      action: "Learning [accounting](https://englianhu.files.wordpress.com/2016/03/financial-statements-a-step-by-step-guide-to-understanding-and-creating-financial-reports.pdf)."
+    - date: "2024-04-10"
+      action: "Learning [Rust](https://github.com/vgnshiyer/learn-rust)."
 
 upcoming:
   quote: "Anticipated future plans and goals."
   data:
     - date: "2024-12-01"
       action: "Graduating."
+    - date: "2024-04-20"
+      action: "New post coming on asynchronous programming with python"
