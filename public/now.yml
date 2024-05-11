@@ -21,5 +21,3 @@ upcoming:
   data:
     - date: "2024-12-01"
       action: "Graduating."
-    - date: "2024-05-10"
-      action: "New post coming on asynchronous programming with python"
