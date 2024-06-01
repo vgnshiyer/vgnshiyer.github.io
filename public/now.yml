@@ -13,11 +13,13 @@ recent:
 now:
   quote: "Current activities and focus."
   data:
-    - date: "2024-05-06"
-      action: "Vacationing 🇮🇳"
+    - date: "2024-05-31"
+      action: "Focussing"
 
 upcoming:
   quote: "Anticipated future plans and goals."
   data:
     - date: "2024-12-01"
       action: "Graduating."
+    - date: "2024-06-03"
+      action: "New Job."
