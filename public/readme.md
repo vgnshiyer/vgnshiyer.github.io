@@ -1,8 +1,8 @@
 ---
 name: Vignesh Iyer
 dob: July, 1998
-address: Tempe, AZ USA
-pincode: 85281
+address: San Jose, CA USA
+pincode: 95126
 ---
 
 ✨ I’m excited to explore the vast possibilities of technology that can propel the human race forward towards a brighter future.
