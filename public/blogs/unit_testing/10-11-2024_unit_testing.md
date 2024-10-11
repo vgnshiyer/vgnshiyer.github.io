@@ -38,7 +38,7 @@ class MathTest:
 
         result = add(a, b)  # Act
 
-        self.assertEqual(result, 5)
+        self.assertEqual(result, 5) # Assert
 ```
 
 ### What makes a successful test suite?
