@@ -4,37 +4,73 @@ Books:
       rating: 4
       title: "The 5AM Club"
       author: "Robin Sharma"
-      review: "Was life changing for me. I found going to bed early more challenging. Although, I don't find it practical to wake up at 5 everyday. Been waking up comfortably at 6:30 without having to force myself out of bed."
+      review: "Always been a morning person. Was cool implementing this for a few weeks. Although 6-6:30 am has always been a good effortless time for me to wake up."
 
     - date: "2023-08-11"
       rating: 3
       title: "Richest Man in Babylon"
       author: "George S. Clason"
-      review: "Great starter into finance for a computer nerd. No jargons (Balance Sheet, Income Statement, etc). Just simple anecdotes stressing on building healthy financial habits."
+      review: "Great starter into finance. No jargons (Balance Sheet, Income Statement, etc). Just simple anecdotes stressing on building healthy financial habits."
 
     - date: "2023-08-02"
       rating: 5
       title: "Pragmatic Version Control Using Git"
       author: "Travis Swicegood"
-      review: "I use this book as a manual. It's a great reference for all things Git. Wrote this [blog](/posts/12-29-24_git_workflows) inspired by this book."
+      review: "All things git. No documentation could ever cover `git` in such detail for me yet. I use this book as a manual. Wrote this [blog](/posts/12-29-24_git_workflows) inspired by this book."
 
     - date: "2024-01-12"
       rating: 4
       title: "The 4 Hour Work Week"
       author: "Tim Ferriss"
-      review: "I like the New Rich concept. Plus the cool techniques of avoiding distracting things/people. Also, the idea of outsourcing and automating tasks was interesting. I probably took working remotely to the extreme, so much that my manager thinks I was slacking off. And no, I don't work from a hammock in Bali or something. "
+      review: "I like the New Rich concept. Plus the nice techniques of avoiding distracting things/people. Also, the idea of outsourcing and automating life was interesting."
 
     - date: "2024-02-21"
       rating: 5
       title: "The Goal: A Process of Ongoing Improvement"
       author: "Eliyahu M. Goldratt"
-      review: "A cool peak into business operations management. The story was too engaging that I kept coming back to it. Although I stopped reading after the protagonist got promoted as the division manager. The bottleneck concept was interesting. I have been killing Herbie's in my life ever since."
+      review: "A cool peak into business operations management."
 
     - date: "2023-10-18"
       rating: 5
       title: "Elon Musk"
       author: "Walter Isaacson"
-      review: "Another Walter Isaacson masterpiece. Inspiring read. Although I feel like there could be more volumes to this book about this person. The man has no intention of slowing down."
+      review: "Another great piece of work from Walter Isaacson. Inspiring read. Although I feel like its still too soon to write about Elon Musk."
+
+    - date: "2024-10-12"
+      rating: 4
+      title: "Arnold: Education of a Bodybuilder"
+      author: "Arnold Schwarzenegger"
+      review: "Could really feel his drive while reading his story. Great read."
+
+    - date: "2022-10-12"
+      rating: 5
+      title: "Steve Jobs"
+      author: "Walter Isaacson"
+      review: "By far my favourite biography yet."
+
+    - date: "2020-07-19"
+      rating: 5
+      title: "Atomic Habits"
+      author: "James Clear"
+      review: "By far the most useful self help book I ever read. Profoundly impacted my life."
+
+    - date: "2023-12-11"
+      rating: 5
+      title: "Shoe Dog"
+      author: "Phil Night"
+      review: "The commodity brand that formed out of a betrayal. Was a good read."
+
+    - date: "2024-09-20"
+      rating: 5
+      title: "The Almanack of Naval Ravikanth"
+      author: "Eric Jorgenson"
+      review: "A compilation of all of Naval's wisdom in one book."
+
+    - date: "2024-07-02"
+      rating: 4
+      title: "Think and Grow rich"
+      author: "Napolean Hill"
+      review: "Always brings me in a different state of mind when I read this."
 
 # Movies & TV Shows:
 #   reviews:

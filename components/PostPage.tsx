@@ -1,25 +1,27 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Markdown from "markdown-to-jsx";
-import TableOfContents from "@/components/TableOfContents";
-import getMarkdownHeadings from "@/helpers/getMarkdownHeadings";
 import Image from "next/image";
 import Link from "next/link";
 import { FaTag } from "react-icons/fa";
 import hljs from "highlight.js";
+
+import TableOfContents from "@/components/TableOfContents";
+import FullScreenImage from "@/components/FullScreenImage";
+import getMarkdownHeadings from "@/helpers/getMarkdownHeadings";
 
 const PostPage = ({ post }: { post: any }) => {
   if (!post) {
     console.error(`No post found for slug: ${post.slug}`);
     return null;
   }
+  const [imgSrc, setImgSrc] = useState(null);
+  const headings = getMarkdownHeadings(post.content);
 
   useEffect(() => {
-    hljs.highlightAll();
+    hljs.highlightAll()
   }, []);
-
-  const headings = getMarkdownHeadings(post.content);
 
   const addCopyButtons = () => {
     const codeBlocks = document.querySelectorAll("pre");
@@ -49,6 +51,7 @@ const PostPage = ({ post }: { post: any }) => {
       codeBlock.classList.add("relative", "group");
     });
   };
+
 
   useEffect(() => {
     addCopyButtons();
@@ -86,6 +89,16 @@ const PostPage = ({ post }: { post: any }) => {
           <Markdown
             options={{
               overrides: {
+                img: {
+                  component: ({src, alt}) => (
+                    <img
+                      src={src}
+                      alt={alt}
+                      className="cursor-pointer"
+                      onClick={() => setImgSrc(src)}
+                    />
+                  ),
+                },
                 h2: {
                   props: {
                     className: "text-4xl text-black dark:text-white font-bold",
@@ -138,6 +151,7 @@ const PostPage = ({ post }: { post: any }) => {
           >
             {post.content}
           </Markdown>
+          {imgSrc && <FullScreenImage src={imgSrc} onClick={() => setImgSrc(null)} />}
         </article>
         <div className="mt-4 border-b-2 border-gray-200 dark:border-gray-800"></div>
         {/* Post tags */}

@@ -9,7 +9,7 @@ const page = () => {
     <div className="mt-8 flex flex-col items-start sm:mx-8 md:flex-row">
       <Image
         className="max-w-1/2 md:max-w-1/3 lg:max-w-1/4 2xl:max-w-4/20 mb-8 mr-8 rounded-md"
-        src="/images/readme_img.jpg"
+        src="/images/readme.png"
         alt="Readme"
         width={500}
         height={500}
