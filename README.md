@@ -12,8 +12,8 @@
 
 ### Project Structure
 
-- `/app`: main folder contains app routes (about, posts, tags)
-- `/components`: react components
+- `/app`: main folder contains app routes (about, posts, tags, etc.)
+- `/components`: react/next components
 - `/public/blogs`: static blog content (markdown files)
 - `/types`: custom datatypes
 - `/helpers`: helper methods
