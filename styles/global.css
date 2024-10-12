@@ -4,6 +4,11 @@
 
 @import url('highlight.js/styles/an-old-hope.css');
 
+* {
+  scrollbar-color: grey #25282E
+}
+
+
 .hljs {
     background: inherit !important;
     padding: inherit !important;
