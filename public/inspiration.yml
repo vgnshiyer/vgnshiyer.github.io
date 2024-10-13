@@ -1,5 +1,5 @@
 Books:
-  reviews:
+  inspirations:
     - date: "2023-06-24"
       rating: 4
       title: "The 5AM Club"
@@ -71,6 +71,12 @@ Books:
       title: "Think and Grow rich"
       author: "Napolean Hill"
       review: "Always brings me in a different state of mind when I read this."
+
+Quotes:
+  inspirations:
+    - date: "2024-10-13"
+      author: "Naval Ravikanth"
+      text: "Don't take yourself too seriously. You are just a monkey with a plan."
 
 # Movies & TV Shows:
 #   reviews:

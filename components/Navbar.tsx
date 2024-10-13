@@ -79,6 +79,7 @@ const Navbar = () => {
   const links = [
     { href: "/posts", text: "Posts" },
     { href: "/about", text: "Readme" },
+    { href: "/inspiration", text: "Inspiration" },
   ];
 
   return (

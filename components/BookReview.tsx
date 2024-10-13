@@ -1,12 +1,9 @@
-import React from "react";
-import { FaStar, FaRegStar } from "react-icons/fa";
+import { FaRegStar, FaStar } from "react-icons/fa";
 import getMarkdown from "./MarkdownText";
 
-const Review = ({ review }: { review: any }) => {
+const BookReview = ({ review }: { review: any }) => {
   const bookTitle = review.title;
-  const lineTwo = `${review.author ? "By " + review.author + " | " : ""}${
-    review.date
-  }`;
+  const by = `${review.author ? "By " + review.author + " | " : ""}${review.date}`;
   const stars = [];
   for (let i = 0; i < 5; i++) {
     if (i < review.rating)
@@ -34,7 +31,7 @@ const Review = ({ review }: { review: any }) => {
         <div className="flex mt-1">{stars}</div>
       </div>
       <p className="text-sm text-tertiary-light dark:text-tertiary-dark">
-        {lineTwo}
+        {by}
       </p>
       <p className="bg-semi-light dark:bg-semi-dark rounded-xl p-4 text-tertiary-light dark:text-tertiary-dark mt-4">
         {getMarkdown({ data: review.review })}
@@ -43,4 +40,4 @@ const Review = ({ review }: { review: any }) => {
   );
 };
 
-export default Review;
+export default BookReview;
