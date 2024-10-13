@@ -2,6 +2,14 @@ import getReadmeData from "@/helpers/getReadmeData";
 import React from "react";
 import Markdown from "markdown-to-jsx";
 import Image from "next/image";
+import { InfoItem } from "@/types/InfoItem";
+
+const Info = ({label, value, margin}: InfoItem) => (
+  <div className="text-l mb-4 text-black dark:text-white">
+    <span className={`font-bold ${margin}`} >{label}:</span>
+    <span>{value}</span>
+  </div>
+);
 
 const page = () => {
   const readme = getReadmeData();
@@ -37,18 +45,9 @@ const page = () => {
         </Markdown>
 
         <div className="mt-8">
-          <div className="text-l mb-4 text-black dark:text-white">
-            <span className="mr-9 font-bold">Name:</span>
-            <span>{readme.data.name}</span>
-          </div>
-          <div className="text-l mb-4 text-black dark:text-white">
-            <span className="mr-4 font-bold">Address:</span>
-            <span>{readme.data.address}</span>
-          </div>
-          <div className="text-l text-black dark:text-white">
-            <span className="mr-14 font-bold">Pin:</span>
-            <span>{readme.data.pincode}</span>
-          </div>
+          <Info label="Name" value={readme.data.name} margin="mr-9" />
+          <Info label="Address" value={readme.data.address} margin="mr-4" />
+          <Info label="Pin" value={readme.data.pincode} margin="mr-14" />
         </div>
       </div>
     </div>

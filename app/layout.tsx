@@ -24,7 +24,6 @@ export default function RootLayout({
     <footer>
       <div className="text-tertiary-light dark:text-tertiary-dark mb-20 mt-6 py-6 text-center">
         <SocialHandles />
-        <p>© 2023 - 2024 Vignesh Iyer</p>
       </div>
     </footer>
   );
