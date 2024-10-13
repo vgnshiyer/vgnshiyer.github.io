@@ -11,7 +11,6 @@ export const generateStaticParams = () => {
 
 const page = (props: any) => {
   const tag = props.params.tag;
-
   return <AllPostsPage tag={tag} />;
 };
 

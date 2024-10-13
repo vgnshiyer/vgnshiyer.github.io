@@ -2,6 +2,7 @@ import getPostMetadata from "@/helpers/getPostMetadata";
 import PostPage from "@/components/PostPage";
 import generateRssFeed from "@/helpers/generateRssFeed";
 import getPostContent from "@/helpers/getPostContent";
+import { PostData } from "@/types/PostData";
 
 export const generateStaticParams = async () => {
   const posts = getPostMetadata();
@@ -13,10 +14,9 @@ export const generateStaticParams = async () => {
 
 const Post = (props: any) => {
   const slug = props.params.slug;
-
   const post = getPostContent(slug);
 
-  const PostData = {
+  const PostData: PostData = {
     content: post?.content,
     data: {
       title: post?.data.title,
@@ -25,6 +25,7 @@ const Post = (props: any) => {
       cover: post?.data.cover,
       tags: post?.data.tags,
     },
+    slug: slug
   };
 
   return <PostPage post={PostData} />;

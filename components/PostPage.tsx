@@ -11,6 +11,32 @@ import TableOfContents from "@/components/TableOfContents";
 import FullScreenImage from "@/components/FullScreenImage";
 import getMarkdownHeadings from "@/helpers/getMarkdownHeadings";
 
+const addCopyButtons = () => {
+  const codeBlocks = document.querySelectorAll("pre");
+  codeBlocks.forEach((codeBlock) => {
+    if (codeBlock.querySelector(".code-copy-button")) {
+      return;
+    }
+    const button = document.createElement("button");
+    button.className =
+      "code-copy-button absolute top-0 right-0 p-1 rounded-md text-tertiary-light dark:text-tertiary-dark bg-gray-300 dark:bg-gray-700 hover:text-black dark:hover:text-white cursor-pointer text-xs md:text-sm mr-1 mt-1 hidden group-hover:block";
+    button.type = "button";
+    button.innerText = "Copy";
+    button.title = "Copy code to clipboard";
+    button.addEventListener("click", () => {
+      let code = codeBlock.querySelector("code");
+      if (code === undefined || code === null) { return; }
+      navigator.clipboard.writeText(code.innerText);
+      button.innerText = "Copied!";
+      setTimeout(() => {
+        button.innerText = "Copy";
+      }, 1000);
+    });
+    codeBlock.append(button);
+    codeBlock.classList.add("relative", "group");
+  });
+};
+
 const PostPage = ({ post }: { post: any }) => {
   if (!post) {
     console.error(`No post found for slug: ${post.slug}`);
@@ -21,39 +47,6 @@ const PostPage = ({ post }: { post: any }) => {
 
   useEffect(() => {
     hljs.highlightAll()
-  }, []);
-
-  const addCopyButtons = () => {
-    const codeBlocks = document.querySelectorAll("pre");
-    codeBlocks.forEach((codeBlock) => {
-      if (codeBlock.querySelector(".code-copy-button")) {
-        return;
-      }
-
-      const button = document.createElement("button");
-      button.className =
-        "code-copy-button absolute top-0 right-0 p-1 rounded-md text-tertiary-light dark:text-tertiary-dark bg-gray-300 dark:bg-gray-700 hover:text-black dark:hover:text-white cursor-pointer text-xs md:text-sm mr-1 mt-1 hidden group-hover:block";
-      button.type = "button";
-      button.innerText = "Copy";
-      button.title = "Copy code to clipboard";
-      button.addEventListener("click", () => {
-        let code = codeBlock.querySelector("code");
-        if (code === undefined || code === null) {
-          return;
-        }
-        navigator.clipboard.writeText(code.innerText);
-        button.innerText = "Copied!";
-        setTimeout(() => {
-          button.innerText = "Copy";
-        }, 1000);
-      });
-      codeBlock.append(button);
-      codeBlock.classList.add("relative", "group");
-    });
-  };
-
-
-  useEffect(() => {
     addCopyButtons();
   }, []);
 
@@ -73,7 +66,6 @@ const PostPage = ({ post }: { post: any }) => {
           {post.data.date}
         </p>
         <div className="mt-8 border-b-2 border-gray-200 dark:border-gray-800"></div>
-
         {/* Post cover image */}
         <Image
           src={post.data.cover}
@@ -83,12 +75,19 @@ const PostPage = ({ post }: { post: any }) => {
           className="mt-8 rounded-md"
           loading="lazy"
         />
-
         {/* Post content */}
         <article className="prose lg:prose-xl relative overflow-hidden">
           <Markdown
             options={{
               overrides: {
+                h2: { props: { className: "text-4xl text-black dark:text-white font-bold", }, },
+                h3: { props: { className: "text-3xl text-black dark:text-white font-bold", }, },
+                h4: { props: { className: "text-2xl text-black dark:text-white font-bold", }, },
+                p: { props: { className: "text-tertiary-light dark:text-tertiary-dark", }, },
+                li: { props: { className: "text-tertiary-light dark:text-tertiary-dark leading-tight", }, },
+                strong: { props: { className: "font-bold text-black dark:text-white", }, },
+                pre: { props: { className: "rounded-md !p-2 !bg-semi-dark", }, },
+                code: { props: { className: "!text-tertiary-dark !text-white", }, },
                 img: {
                   component: ({src, alt}) => (
                     <img
@@ -98,47 +97,6 @@ const PostPage = ({ post }: { post: any }) => {
                       onClick={() => setImgSrc(src)}
                     />
                   ),
-                },
-                h2: {
-                  props: {
-                    className: "text-4xl text-black dark:text-white font-bold",
-                  },
-                },
-                h3: {
-                  props: {
-                    className: "text-3xl text-black dark:text-white font-bold",
-                  },
-                },
-                h4: {
-                  props: {
-                    className: "text-2xl text-black dark:text-white font-bold",
-                  },
-                },
-                p: {
-                  props: {
-                    className: "text-tertiary-light dark:text-tertiary-dark",
-                  },
-                },
-                li: {
-                  props: {
-                    className:
-                      "text-tertiary-light dark:text-tertiary-dark leading-tight",
-                  },
-                },
-                strong: {
-                  props: {
-                    className: "font-bold text-black dark:text-white",
-                  },
-                },
-                pre: {
-                  props: {
-                    className: "rounded-md !p-2 !bg-semi-dark",
-                  },
-                },
-                code: {
-                  props: {
-                    className: "!text-tertiary-dark !text-white",
-                  },
                 },
                 a: {
                   props: {
@@ -162,23 +120,23 @@ const PostPage = ({ post }: { post: any }) => {
                 <Link key={index} href={`/tags/${tag}`}>
                   <span
                     className="
-                                            bg-semi-light
-                                            dark:bg-semi-dark
-                                            text-tertiary-light
-                                            dark:text-tertiary-dark
-                                            flex
-                                            cursor-pointer
-                                            items-center
-                                            rounded-md
-                                            px-2
-                                            py-1
-                                            text-sm
-                                            font-semibold
-                                            hover:bg-gray-300
-                                            md:text-base
-                                            lg:text-lg
-                                            dark:hover:bg-gray-700"
-                  >
+                      bg-semi-light
+                      dark:bg-semi-dark
+                      text-tertiary-light
+                      dark:text-tertiary-dark
+                      flex
+                      cursor-pointer
+                      items-center
+                      rounded-md
+                      px-2
+                      py-1
+                      text-sm
+                      font-semibold
+                      hover:bg-gray-300
+                      md:text-base
+                      lg:text-lg
+                      dark:hover:bg-gray-700"
+                    >
                     <FaTag className="mr-2" /> {tag.replace(/_/g, " ")}
                   </span>
                 </Link>
