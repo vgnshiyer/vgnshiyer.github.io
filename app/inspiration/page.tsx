@@ -3,6 +3,7 @@ import React from "react";
 import { InspirationData } from "@/types/InspirationData";
 import BookReview from "@/components/BookReview";
 import Quote from "@/components/Quote";
+import Podcast from "@/components/Podcast";
 
 const Inspiration = () => {
   const categories: InspirationData = getYamlData(
@@ -20,11 +21,16 @@ const Inspiration = () => {
 
   return (
     <>
+    <div className="md:mt-10 mb-[-20px] items-center justify-center">
+      <q className="sm:mx-8 text-contrast-light dark:text-contrast-dark italic">
+        This page is a collection—curated for myself as reminders along the way.
+      </q>
+    </div>
       {categories &&
         Object.entries(categories).map(([category, data], index) => (
           <div
             key={index}
-            className="mt-12 grid grid-cols-1 gap-4 sm:mx-8 md:mt-16 lg:mt-20 2xl:mt-24"
+            className="mt-14 grid grid-cols-1 gap-4 sm:mx-8 lg:mt-16 2xl:mt-18"
           >
             <h1 className="text-3xl font-bold text-black dark:text-white">
               {category}.
@@ -35,6 +41,8 @@ const Inspiration = () => {
                   return <BookReview key={index} review={inspiration} />;
                 } else if (category === "Quotes") {
                   return <Quote key={index} quote={inspiration} />;
+                } else if (category === "Podcasts") {
+                  return <Podcast key={index} podcast={inspiration} />;
                 } else {
                   return null;
                 }

@@ -72,6 +72,18 @@ Books:
       author: "Napolean Hill"
       review: "Always brings me in a different state of mind when I read this."
 
+Podcasts:
+  inspirations:
+    - date: "2022-12-29"
+      rating: 5
+      title: "Joe Rogan Experience #1309 - Naval Ravikanth"
+      review: "The first time I heard Naval, I was on a flight to the US, about to start a new chapter of my life. What a remarkable way to get started."
+
+    - date: "2023-7-18"
+      rating: 5
+      title: "Joe Rogan & Firas Zahabi Debate Scientific Truth"
+      review: "One of the favourite arguments I have watched yet. I share the same thoughts about determinism and free will."
+
 Quotes:
   inspirations:
     - date: "2024-10-13"
