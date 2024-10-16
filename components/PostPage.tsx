@@ -19,7 +19,7 @@ const addCopyButtons = () => {
     }
     const button = document.createElement("button");
     button.className =
-      "code-copy-button absolute top-0 right-0 p-1 rounded-md text-tertiary-light dark:text-tertiary-dark bg-gray-300 dark:bg-gray-700 hover:text-black dark:hover:text-white cursor-pointer text-xs md:text-sm mr-1 mt-1 hidden group-hover:block";
+      "code-copy-button absolute top-0 right-0 p-1 rounded-md text-tertiary-dark bg-gray-700 hover:text-white cursor-pointer text-xs md:text-sm mr-1 mt-1 hidden group-hover:block";
     button.type = "button";
     button.innerText = "Copy";
     button.title = "Copy code to clipboard";
