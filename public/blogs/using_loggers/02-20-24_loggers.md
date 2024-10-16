@@ -165,7 +165,6 @@ class LogEventMeta(type):
 
     # singleton - only one instance per file
     if source not in cls._instances:
-
         cls._instances[source] = super().__call__(source=source)
     return cls._instances[source]
 
