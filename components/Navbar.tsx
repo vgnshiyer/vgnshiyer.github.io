@@ -19,11 +19,9 @@ const Navbar = () => {
 
   const NavBarLink = ({ href, children }: NavBarLinkProps) => {
     const handleClick = () => {
-      if (window.innerWidth <= 768) {
-        setTimeout(() => {
-          setIsNavBarToggled(false);
-        }, 100);
-      }
+      setTimeout(() => {
+        setIsNavBarToggled(false);
+      }, 100);
     };
 
     return (
@@ -79,7 +77,7 @@ const Navbar = () => {
   const links = [
     { href: "/posts", text: "Posts" },
     { href: "/about", text: "Readme" },
-    { href: "/inspiration", text: "Inspiration" },
+    { href: "/inspiration", text: "Food for thought" },
   ];
 
   return (
@@ -87,7 +85,7 @@ const Navbar = () => {
       <nav className="w-full md:px-6">
         <div className="flex h-16 items-center justify-between">
           <Logo />
-          <div className="hidden md:block">
+          <div className="hidden lg:block">
             <div className="bg-semi-light dark:bg-semi-dark ml-4 flex items-center space-x-4 rounded-3xl px-8 py-1 ">
               {links.map((link) => (
                 <NavBarLink key={link.href} href={link.href}>
@@ -96,10 +94,10 @@ const Navbar = () => {
               ))}
             </div>
           </div>
-          <div className="ml-auto md:ml-0">
+          <div className="ml-auto lg:ml-0">
             <ThemeToggle />
           </div>
-          <div className="flex items-center md:hidden">
+          <div className="flex items-center lg:hidden">
             <button
               className="inline-flex items-center justify-center rounded-md p-2 text-black focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white dark:text-white"
               onClick={toggleNavbar}
