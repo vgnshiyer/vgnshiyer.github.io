@@ -1,6 +1,6 @@
 ---
-title: Logging in Python like a pro.
-subtitle: Debugging is overrated.
+title: Debugging is overrated.
+subtitle: A guide to good logs in Python.
 date: Feb 20, 2024
 cover: /blogs/using_loggers/images/cover.png
 tags:
