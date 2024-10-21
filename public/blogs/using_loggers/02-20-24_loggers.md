@@ -13,11 +13,11 @@ tags:
 
 **[TL;DR](#python-logger-on-steroids)**
 
-### Why ?
+#### Why ?
 
 Debugging is an integral part in the journey of a software engineer. According to this [research](https://www.researchgate.net/publication/345843594_Reversible_Debugging_Software_Quantify_the_time_and_cost_saved_using_reversible_debuggers) done in 2020, we spend around 50% of our time in debugging. Think about the amount of time and effort wasted in debugging the code we write. While adopting practices like, [Test Driven development(TDD)](https://en.wikipedia.org/wiki/Test-driven_development#:~:text=Test%20Driven%20Development%20(TDD)%20is,leading%20to%20more%20robust%20software.), [Code reviews](https://en.wikipedia.org/wiki/Code_review) or just in general writing simple readable code can help reduce the time and effort, writing useful and meaningful log messages is paramount.
 
-### What should you log ?
+#### What should you log ?
 
 A well-structured log message should be terse in terms of the information it tries to convey. What does that mean? It should not be too verbose, encapsulating a barrage of information confounding the programmar from what matters the most. At the same time, it should not be too frugal in what it tries to convey. It should have "just the right" amount of information.
 
@@ -52,7 +52,7 @@ Here is an example of a well-structured log statement.
 }
 ```
 
-### Python logger on steroids!
+#### Python logger on steroids!
 
 There are couple of ways you can achieve the above format for your logs. Usually that entails setting the formatting once in the form of an f-string, which will be used by the python logging module to encapsulate certain information. Other information can be encoded in the form of a json inside the log event.
 
