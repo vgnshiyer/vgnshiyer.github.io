@@ -9,11 +9,18 @@
             <link>https://vgnshiyer.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 16 Oct 2024 15:24:46 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 21 Oct 2024 01:31:25 GMT</lastBuildDate>
         <atom:link href="https://vgnshiyer.dev/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Wed, 16 Oct 2024 15:24:46 GMT</pubDate>
-        <copyright><![CDATA[All Rights Reserved Wed Oct 16 2024 08:24:46 GMT-0700 (Pacific Daylight Time)]]></copyright>
+        <pubDate>Mon, 21 Oct 2024 01:31:25 GMT</pubDate>
+        <copyright><![CDATA[All Rights Reserved Sun Oct 20 2024 18:31:25 GMT-0700 (Pacific Daylight Time)]]></copyright>
         <language><![CDATA[en]]></language>
+        <item>
+            <title><![CDATA[Supercharge Database Performance with Indexing]]></title>
+            <description><![CDATA[Maximize speed and efficiency with the right indexing techniques.]]></description>
+            <link>https://vgnshiyer.dev/blog/21-10-2024_db_indexing</link>
+            <guid isPermaLink="true">https://vgnshiyer.dev/blog/21-10-2024_db_indexing</guid>
+            <pubDate>Mon, 21 Oct 2024 07:00:00 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[From Dread to Discipline]]></title>
             <description><![CDATA[A minimalist guide to Unit Testing]]></description>

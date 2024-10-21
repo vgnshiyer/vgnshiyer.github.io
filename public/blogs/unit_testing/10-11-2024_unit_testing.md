@@ -9,9 +9,9 @@ tags:
   - unit_testing
 ---
 
-### The Big Picture
+#### The Big Picture
 
-#### What?
+##### What?
 
 A Unit Test is a test that:
 
@@ -19,7 +19,7 @@ A Unit Test is a test that:
 2. Provides quick feedback.
 3. Does it in an isolated manner.
 
-#### Why?
+##### Why?
 
 Over the past few decades, the question has shifted from "Should we even write Unit Tests?" to "Why should we write Unit Tests?" Having unit tests ensures sustainable project growth. When you start a new project, everything runs smoothly, and the project maintains a good pace initially. However, as more code is added, it becomes harder to maintain. Soon, you realize you're putting in more and more hours without gaining much value from the effort.
 
@@ -27,7 +27,7 @@ Over the past few decades, the question has shifted from "Should we even write U
 
 Unit tests protect your code from regressions caused by new features being added to the application. In a growing project, where new features are introduced frequently, it's inevitable that something working in the application may break. A test suite helps you catch these regressions. It also helps you identify the important parts of your application. If part of your tests is failing, it signals that the relevant code is critical. Additionally, unit tests complement the code review process.
 
-#### How?
+##### How?
 
 I follow a simple AAA (Arrange, Act and Assert) pattern that is easy to maintain and understand. 
 
@@ -42,9 +42,9 @@ class MathTest:
         self.assertEqual(result, 5) # Assert
 ```
 
-### What makes a successful test suite?
+#### What makes a successful test suite?
 
-#### Three traits
+##### Three traits
 
 A successful test suite:
 
@@ -58,23 +58,23 @@ A successful test suite:
 
 Staying within the optimal range of tests will give you the most value.
 
-### Making your tests work for you
+#### Making your tests work for you
 
-#### Example
+##### Example
 
 <img src="/blogs/unit_testing/images/example.png" alt="Example" style="width: 100%; border-radius: 5px;"/>
 
 Notice that the test cases do not target individual units of code but instead focus on the application’s use cases.
 
-#### External dependencies
+##### External dependencies
 
 When your application depends on external systems outside its control, your tests go beyond unit testing because they violate the principle of quick feedback. In such cases, you can use mocking to spoof the external calls. However, this concept does not apply to internal dependencies, such as other classes or your database.
 
 <img src="/blogs/unit_testing/images/mocking.png" alt="Mocking Example" style="width: 100%; border-radius: 5px;"/>
 
-### Avoiding pitfalls
+#### Avoiding pitfalls
 
-#### Chasing a coverage goal
+##### Chasing a coverage goal
 
 When writing unit tests, don’t treat code coverage as a goal. Code coverage is just an indicator, not a goal. It only tells you which part of the code was executed during a test, not whether that code was verified.
 An extreme example of coverage misuse is "assert-less testing":
@@ -88,7 +88,7 @@ This test technically adds to the coverage but doesn't verify anything, making t
 
 The trick with code coverage is that it’s a good negative indicator. If coverage is low, there's likely risk in your code. Unfortunately, it’s a poor positive indicator — high coverage doesn’t guarantee quality.
 
-#### Getting too granular
+##### Getting too granular
 
 It’s tempting to write tests for every single operation, but this is an anti-pattern. Consider this example:
 
@@ -100,12 +100,12 @@ versus
 
 I don’t care if the cat lifts its left leg or right leg first — I only care that it comes to me. Similarly, unit tests should focus on the behavior that users will experience, not the internal details of how it's implemented. Unit tests don't require a 1:1 relationship between functions and test cases but between use cases and test cases.
 
-#### Using cryptic names
+##### Using cryptic names
 
 Although unit tests are primarily for developers, it’s better to use clear, descriptive names to make them easier to understand and maintain. Spare your teammates the extra mental effort.
 
 <span style="color: lightgreen;">*Write your code as if a novice were to maintain it someday.*</span>
 
-### References
+#### References
 
 - Unit testing Principles - *By Vladimir Khorikov*

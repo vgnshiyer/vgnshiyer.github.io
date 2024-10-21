@@ -16,7 +16,7 @@ I discovered that Apple Books uses sqlite3 files to maintain local databases for
 
 Here is a brief about how to use the package.
 
-### Installation
+#### Installation
 
 ```bash
 pip install py_apple_books
@@ -32,7 +32,7 @@ from py_apple_books import PyAppleBooks
 api = PyAppleBooks()
 ```
 
-#### Get list of all books
+##### Get list of all books
 
 ```python
 books = api.list_books()
@@ -57,10 +57,10 @@ Author: Yuval Noah Harari
 
 Checkout the project [page](https://github.com/vgnshiyer/py-apple-books) to view the source code and the comprehensive documentation.
 
-### Found any issues?
+#### Found any issues?
 
 Raise an [issue](https://github.com/vgnshiyer/py-apple-books/issues) with a terse description.
 
-### Final thoughts
+#### Final thoughts
 
 PyAppleBooks is very early stage and there are a lot of room for new additions. I encourage everyone to use the package, and report any issues/bugs or requests for new features. Any contribution is highly appreciated.

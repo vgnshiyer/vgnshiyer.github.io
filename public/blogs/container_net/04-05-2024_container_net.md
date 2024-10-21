@@ -11,7 +11,7 @@ tags:
 
 Introducing Container Net! A fully functional minimalistic network of servers on your local machine using Docker. 
 
-### Background
+#### Background
 
 Couple weeks ago, I had a DevOps interview and I found myself in a pursuit for a more efficient sandbox environment. I wanted a way to run linux administration, networking commands, active directories, run tools like ansible. I toiled hard to rummage some resource on the internet, and every single blog and online forums pointed me towards two things. The cloud and virtual machines. While Vagrant offers a free-to-use solution using virtual machines, its provisioning can be slothful and taxing on the system. Cloud on the other hand although quick to provision, comes with complexities and cost.
 
@@ -19,7 +19,7 @@ Docker containers emerge as a conspicuously sleeker alternative, yet crafting a 
 
 Below is a quick tutorial for you to get started with practicing ansible without much effort. Feel free to modify it to fit your usecase.
 
-### Quickstart
+#### Quickstart
 
 Get a set of servers(containers) running with your docker engine with these minimum steps.
 
@@ -32,7 +32,7 @@ cd Container-Net && docker-compose up
 
 2. Open [localhost:7681](http://localhost:7681) in your browser
 
-### Bonus
+#### Bonus
 
 The following is a short example running an ansible playbook to run an HTTP server on one of the servers in the network.
 
@@ -116,14 +116,14 @@ curl ubuntu2
 
 View the project source code at [vgnshiyer/Container-Net](https://github.com/vgnshiyer/Container-Net/). Refer the `/examples` directory for more ansible examples.
 
-### Advanced
+#### Advanced
 
 Visit [https://github.com/vgnshiyer/Container-Net](https://github.com/vgnshiyer/Container-Net) for additional information.
 
-### Have suggestions?
+#### Have suggestions?
 
 Submit an [issue](https://github.com/vgnshiyer/Container-Net/issues) with an apt description.
 
-### Final thoughts
+#### Final thoughts
 
 The above resource has been invaluable free-to-run alternative for practicing ansible, linux administration, networking for me. I believe that this can be made better, for which I ask for your active contribution. Peace!
