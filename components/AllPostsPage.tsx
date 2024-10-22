@@ -40,11 +40,10 @@ const AllPostsPage = ({ tag }: { tag: string }) => {
               text-base
               font-semibold
               hover:bg-gray-300
-              lg:text-lg
               dark:hover:bg-gray-700
             "
           >
-            <FaTag className="mr-2" /> {tag.replace(/_/g, " ")}
+            <FaTag className="mr-2 text-sm" /> {tag.replace(/_/g, " ")}
           </span>
         </div>
       )}
