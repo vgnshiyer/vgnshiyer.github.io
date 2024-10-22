@@ -2,79 +2,79 @@
     <channel>
         <title><![CDATA[Vignesh Iyer - Blog]]></title>
         <description><![CDATA[Vignesh Iyer's Blog]]></description>
-        <link>https://vgnshiyer.dev</link>
+        <link>https://blog.vgnshiyer.dev</link>
         <image>
-            <url>https://vgnshiyer.dev/images/favicon.ico</url>
+            <url>https://blog.vgnshiyer.dev/images/favicon.ico</url>
             <title>Vignesh Iyer - Blog</title>
-            <link>https://vgnshiyer.dev</link>
+            <link>https://blog.vgnshiyer.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Mon, 21 Oct 2024 01:31:25 GMT</lastBuildDate>
-        <atom:link href="https://vgnshiyer.dev/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Mon, 21 Oct 2024 01:31:25 GMT</pubDate>
-        <copyright><![CDATA[All Rights Reserved Sun Oct 20 2024 18:31:25 GMT-0700 (Pacific Daylight Time)]]></copyright>
+        <lastBuildDate>Tue, 22 Oct 2024 15:27:49 GMT</lastBuildDate>
+        <atom:link href="https://blog.vgnshiyer.dev/feed.xml" rel="self" type="application/rss+xml"/>
+        <pubDate>Tue, 22 Oct 2024 15:27:49 GMT</pubDate>
+        <copyright><![CDATA[All Rights Reserved Tue Oct 22 2024 08:27:49 GMT-0700 (Pacific Daylight Time)]]></copyright>
         <language><![CDATA[en]]></language>
         <item>
             <title><![CDATA[Supercharge Database Performance with Indexing]]></title>
             <description><![CDATA[Maximize speed and efficiency with the right indexing techniques.]]></description>
-            <link>https://vgnshiyer.dev/blog/21-10-2024_db_indexing</link>
-            <guid isPermaLink="true">https://vgnshiyer.dev/blog/21-10-2024_db_indexing</guid>
+            <link>https://blog.vgnshiyer.dev/blog/21-10-2024_db_indexing</link>
+            <guid isPermaLink="true">https://blog.vgnshiyer.dev/blog/21-10-2024_db_indexing</guid>
             <pubDate>Mon, 21 Oct 2024 07:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[From Dread to Discipline]]></title>
             <description><![CDATA[A minimalist guide to Unit Testing]]></description>
-            <link>https://vgnshiyer.dev/blog/10-11-2024_unit_testing</link>
-            <guid isPermaLink="true">https://vgnshiyer.dev/blog/10-11-2024_unit_testing</guid>
+            <link>https://blog.vgnshiyer.dev/blog/10-11-2024_unit_testing</link>
+            <guid isPermaLink="true">https://blog.vgnshiyer.dev/blog/10-11-2024_unit_testing</guid>
             <pubDate>Fri, 11 Oct 2024 07:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Practice Ansible without spending on AWS]]></title>
             <description><![CDATA[A lightweight container based network using docker]]></description>
-            <link>https://vgnshiyer.dev/blog/04-05-2024_container_net</link>
-            <guid isPermaLink="true">https://vgnshiyer.dev/blog/04-05-2024_container_net</guid>
+            <link>https://blog.vgnshiyer.dev/blog/04-05-2024_container_net</link>
+            <guid isPermaLink="true">https://blog.vgnshiyer.dev/blog/04-05-2024_container_net</guid>
             <pubDate>Fri, 05 Apr 2024 07:00:00 GMT</pubDate>
         </item>
         <item>
-            <title><![CDATA[Logging in Python like a pro.]]></title>
-            <description><![CDATA[Debugging is overrated.]]></description>
-            <link>https://vgnshiyer.dev/blog/02-20-24_loggers</link>
-            <guid isPermaLink="true">https://vgnshiyer.dev/blog/02-20-24_loggers</guid>
+            <title><![CDATA[Debugging is overrated.]]></title>
+            <description><![CDATA[A guide to good logs in Python.]]></description>
+            <link>https://blog.vgnshiyer.dev/blog/02-20-24_loggers</link>
+            <guid isPermaLink="true">https://blog.vgnshiyer.dev/blog/02-20-24_loggers</guid>
             <pubDate>Tue, 20 Feb 2024 08:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Introducing PyAppleBooks!]]></title>
             <description><![CDATA[A Python library that makes interacting with AppleBooks data easy.]]></description>
-            <link>https://vgnshiyer.dev/blog/01_09_2024_PyAppleBooks</link>
-            <guid isPermaLink="true">https://vgnshiyer.dev/blog/01_09_2024_PyAppleBooks</guid>
+            <link>https://blog.vgnshiyer.dev/blog/01_09_2024_PyAppleBooks</link>
+            <guid isPermaLink="true">https://blog.vgnshiyer.dev/blog/01_09_2024_PyAppleBooks</guid>
             <pubDate>Tue, 09 Jan 2024 08:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[7 Essential Git Workflows made easier.]]></title>
             <description><![CDATA[Mastering git for streamlined development]]></description>
-            <link>https://vgnshiyer.dev/blog/12-29-24_git_workflows</link>
-            <guid isPermaLink="true">https://vgnshiyer.dev/blog/12-29-24_git_workflows</guid>
+            <link>https://blog.vgnshiyer.dev/blog/12-29-24_git_workflows</link>
+            <guid isPermaLink="true">https://blog.vgnshiyer.dev/blog/12-29-24_git_workflows</guid>
             <pubDate>Fri, 29 Dec 2023 08:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[What are Catalan Numbers?]]></title>
             <description><![CDATA[Applications of Catalan Numbers in Computer Science.]]></description>
-            <link>https://vgnshiyer.dev/blog/09-02-22_catalan_numbers</link>
-            <guid isPermaLink="true">https://vgnshiyer.dev/blog/09-02-22_catalan_numbers</guid>
+            <link>https://blog.vgnshiyer.dev/blog/09-02-22_catalan_numbers</link>
+            <guid isPermaLink="true">https://blog.vgnshiyer.dev/blog/09-02-22_catalan_numbers</guid>
             <pubDate>Fri, 02 Sep 2022 07:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[The Binary Search Template]]></title>
             <description><![CDATA[An easier approach to using binary search algorithm]]></description>
-            <link>https://vgnshiyer.dev/blog/07-29-22_binary_search_template</link>
-            <guid isPermaLink="true">https://vgnshiyer.dev/blog/07-29-22_binary_search_template</guid>
+            <link>https://blog.vgnshiyer.dev/blog/07-29-22_binary_search_template</link>
+            <guid isPermaLink="true">https://blog.vgnshiyer.dev/blog/07-29-22_binary_search_template</guid>
             <pubDate>Fri, 29 Jul 2022 07:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Recursion in 3 minutes]]></title>
             <description><![CDATA[In order to understand recursion, you must understand recursion.]]></description>
-            <link>https://vgnshiyer.dev/blog/07-28-22_recursion</link>
-            <guid isPermaLink="true">https://vgnshiyer.dev/blog/07-28-22_recursion</guid>
+            <link>https://blog.vgnshiyer.dev/blog/07-28-22_recursion</link>
+            <guid isPermaLink="true">https://blog.vgnshiyer.dev/blog/07-28-22_recursion</guid>
             <pubDate>Thu, 28 Jul 2022 07:00:00 GMT</pubDate>
         </item>
     </channel>

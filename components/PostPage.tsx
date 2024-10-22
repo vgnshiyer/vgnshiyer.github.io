@@ -130,21 +130,19 @@ const PostPage = ({ post }: { post: any }) => {
                       rounded-md
                       px-2
                       py-1
-                      text-sm
+                      text-base
                       font-semibold
                       hover:bg-gray-300
-                      md:text-base
-                      lg:text-lg
                       dark:hover:bg-gray-700"
                     >
-                    <FaTag className="mr-2" /> {tag.replace(/_/g, " ")}
+                    <FaTag className="mr-2 text-sm" /> {tag.replace(/_/g, " ")}
                   </span>
                 </Link>
               ))}
             </div>
           </div>
         )}
-        <p className="text-tertiary-light dark:text-tertiary-dark mt-8 text-xl">
+        <p className="text-tertiary-light dark:text-tertiary-dark mt-8 text-base">
           Subscribe to my{" "}
           <a
             href="https://vgnshiyer.dev/feed.xml"
