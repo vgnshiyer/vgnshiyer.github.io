@@ -5,14 +5,13 @@ import { PostMetadata } from '@/types/PostMetadata';
 async function generateRssFeed(allPosts: PostMetadata[]) {
     const site_url = "https://blog.vgnshiyer.dev";
     const feedOptions = {
-        title: "Vignesh Iyer - Blog",
+        title: "vgnshiyer's - Blog",
         description: "Vignesh Iyer's Blog",
         site_url: site_url,
         feed_url: `${site_url}/feed.xml`,
         image_url: `${site_url}/images/favicon.ico`,
         language: "en",
         pubDate: new Date().toISOString(),
-        copyright: `All Rights Reserved ${new Date()}`,
     };
     const feed = new RSS(feedOptions);
 
