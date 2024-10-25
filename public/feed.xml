@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title><![CDATA[Vignesh Iyer - Blog]]></title>
+        <title><![CDATA[vgnshiyer's - Blog]]></title>
         <description><![CDATA[Vignesh Iyer's Blog]]></description>
         <link>https://blog.vgnshiyer.dev</link>
         <image>
             <url>https://blog.vgnshiyer.dev/images/favicon.ico</url>
-            <title>Vignesh Iyer - Blog</title>
+            <title>vgnshiyer&apos;s - Blog</title>
             <link>https://blog.vgnshiyer.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Tue, 22 Oct 2024 15:27:49 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 25 Oct 2024 03:38:56 GMT</lastBuildDate>
         <atom:link href="https://blog.vgnshiyer.dev/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Tue, 22 Oct 2024 15:27:49 GMT</pubDate>
-        <copyright><![CDATA[All Rights Reserved Tue Oct 22 2024 08:27:49 GMT-0700 (Pacific Daylight Time)]]></copyright>
+        <pubDate>Fri, 25 Oct 2024 03:38:56 GMT</pubDate>
         <language><![CDATA[en]]></language>
         <item>
             <title><![CDATA[Supercharge Database Performance with Indexing]]></title>
