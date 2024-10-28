@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "fuse.js": "^7.0.0",
     "gray-matter": "^4.0.3",
     "highlight.js": "^11.9.0",
     "js-yaml": "^4.1.0",

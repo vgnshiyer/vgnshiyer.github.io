@@ -1,8 +1,8 @@
 import fs from 'fs';
 import matter from 'gray-matter';
+import path from 'path';
 import { PostMetadata } from '../types/PostMetadata';
 import getFilesRecursively from './getFilesRecursively';
-import path from 'path';
 
 const getPostMetadata = (): PostMetadata[] => {
     const folder = 'public/blogs/';

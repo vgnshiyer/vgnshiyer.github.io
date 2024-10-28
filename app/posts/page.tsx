@@ -1,8 +1,10 @@
 import AllPostsPage from "@/components/AllPostsPage";
+import getPostMetadata from "@/helpers/getPostMetadata";
 import React from "react";
 
 const Posts = () => {
-  return <AllPostsPage tag="all" />;
+  const allPosts = getPostMetadata();
+  return <AllPostsPage posts={allPosts} tag="all" />;
 };
 
 export default Posts;
