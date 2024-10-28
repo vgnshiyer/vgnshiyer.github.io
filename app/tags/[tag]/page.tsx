@@ -1,4 +1,5 @@
 import getAllUniqueTags from "@/helpers/getAllUniqueTags";
+import getPostMetadata from "@/helpers/getPostMetadata";
 import AllPostsPage from "@/components/AllPostsPage";
 import React from "react";
 
@@ -11,7 +12,8 @@ export const generateStaticParams = () => {
 
 const page = (props: any) => {
   const tag = props.params.tag;
-  return <AllPostsPage tag={tag} />;
+  const posts = tag === "all" ? getPostMetadata() : getPostMetadata().filter((post) => post.tags.includes(tag));
+  return <AllPostsPage posts={posts} tag={tag} />;
 };
 
 export default page;

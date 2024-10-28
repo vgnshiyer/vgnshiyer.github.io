@@ -27,7 +27,7 @@ const SocialHandles = () => {
     { name: "Links", icon: FaLink, link: "https://vgnshiyer.dev/links" },
     // { name: "Twitter", icon: FaTwitter, link: "https://www.twitter.com/vgnshiyer" },
     // { name: "YouTube", icon: FaYoutube, link: "https://www.youtube.com/vgnshiyer" },
-    { name: "RSS", icon: FaRss, link: "https://vgnshiyer.dev/feed.xml" },
+    { name: "RSS", icon: FaRss, link: "https://blog.vgnshiyer.dev/feed.xml" },
   ];
 
   return (
