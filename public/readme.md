@@ -5,7 +5,7 @@ address: San Jose, CA USA
 pincode: 95112
 ---
 
-✨ I write in this space mostly to document my thoughts, experiences and ideas. This blog serves as a notes for my future self to refer. They are a record of my growth, exploration and creativity. Feel free to browse through. I hope you will find something useful.
+✨ I write in this space mostly to document my thoughts, experiences and ideas. This blog serves as notes for my future self to refer. They are a record of my growth, exploration and creativity. Feel free to browse through. I hope you will find something useful.
 <br>
 <br>
 👀 You can check out my [now](/now) page. This is where I spill the beans on my current activities and interests. I also review [books, podcasts, movies, etc](/inspiration). To get updates on my latest posts, subscribe to my [RSS feed](https://vgnshiyer.dev/feed.xml).
