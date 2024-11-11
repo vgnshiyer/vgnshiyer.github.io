@@ -10,6 +10,7 @@ import {
   FaRss,
   FaLink,
 } from "react-icons/fa";
+import Link from "next/link";
 
 const SocialHandles = () => {
   const items = [
@@ -35,14 +36,14 @@ const SocialHandles = () => {
       <div className="my-8 flex flex-row justify-center space-x-10">
         {items.map((item: any, index) => {
           return (
-            <a
+            <Link
               href={item.link}
               key={index}
               target="_blank"
               rel="noopener noreferrer"
             >
               <item.icon className="hover:text-contrast-light dark:hover:text-contrast-dark cursor-pointer text-3xl" />
-            </a>
+            </Link>
           );
         })}
       </div>

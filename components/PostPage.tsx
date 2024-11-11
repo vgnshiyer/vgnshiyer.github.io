@@ -144,12 +144,12 @@ const PostPage = ({ post }: { post: any }) => {
         )}
         <p className="text-tertiary-light dark:text-tertiary-dark mt-8 text-base">
           Subscribe to my{" "}
-          <a
-            href="https://vgnshiyer.dev/feed.xml"
+          <Link
+            href="https://blog.vgnshiyer.dev/feed.xml"
             className="text-contrast-light dark:text-contrast-dark hover:underline"
           >
             RSS feed
-          </a>{" "}
+          </Link>{" "}
           to get notified about new posts.
         </p>
       </div>
