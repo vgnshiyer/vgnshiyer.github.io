@@ -1,14 +1,16 @@
-import getYamlData from "@/helpers/getYamlData";
 import React from "react";
+import getYamlData from "@/helpers/getYamlData";
 import { InspirationData } from "@/types/InspirationData";
-import BookReview from "@/components/BookReview";
-import Quote from "@/components/Quote";
-import Podcast from "@/components/Podcast";
+import PageTitle from "@/components/PageTitle";
+import BookReview from "@/components/inspiration/BookReview";
+import Quote from "@/components/inspiration/Quote";
+import Podcast from "@/components/inspiration/Podcast";
 
 const Inspiration = () => {
   const categories: InspirationData = getYamlData(
     "inspiration"
   ) as InspirationData;
+
   for (let category in categories) {
     if (categories.hasOwnProperty(category)) {
       categories[category].inspirations.sort((a, b) => {
@@ -32,9 +34,7 @@ const Inspiration = () => {
             key={index}
             className="mt-14 grid grid-cols-1 gap-4 sm:mx-8 lg:mt-16 2xl:mt-18"
           >
-            <h1 className="text-3xl font-bold text-black dark:text-white">
-              {category}.
-            </h1>
+            <PageTitle title={`${category}.`} />
             {data.inspirations.map(
               (inspiration: any, index: React.Key | null | undefined) => {
                 if (category === "Books") {

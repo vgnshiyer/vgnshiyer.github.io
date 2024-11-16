@@ -1,8 +1,8 @@
+import { PostData } from "@/types/PostData";
 import getPostMetadata from "@/helpers/getPostMetadata";
-import PostPage from "@/components/PostPage";
 import generateRssFeed from "@/helpers/generateRssFeed";
 import getPostContent from "@/helpers/getPostContent";
-import { PostData } from "@/types/PostData";
+import PostContent from "@/components/posts/PostContent";
 
 export const generateStaticParams = async () => {
   const posts = getPostMetadata();
@@ -28,7 +28,7 @@ const Post = (props: any) => {
     slug: slug
   };
 
-  return <PostPage post={PostData} />;
+  return <PostContent post={PostData} />;
 };
 
 export default Post;

@@ -1,8 +1,9 @@
 import React from "react";
 import Link from "next/link";
 import getPostMetadata from "@/helpers/getPostMetadata";
-import PostPreview from "@/components/PostPreview";
+import PostPreview from "@/components/posts/PostPreview";
 import Banner from "@/components/Banner";
+import PageTitle from "@/components/PageTitle";
 
 export default function page() {
   const getFiveRecentPosts = () => {
@@ -17,9 +18,7 @@ export default function page() {
     <>
       <Banner />
       <div className="grid grid-cols-1 gap-4 sm:mx-8">
-        <h1 className="text-3xl font-bold text-black dark:text-white">
-          Posts.
-        </h1>
+        <PageTitle title="Posts." />
         {postPreviews}
       </div>
       <div className="mt-8 flex justify-end space-x-4 sm:mx-8">

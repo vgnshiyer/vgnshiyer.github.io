@@ -9,9 +9,9 @@
             <link>https://blog.vgnshiyer.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Mon, 11 Nov 2024 19:51:43 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 16 Nov 2024 05:26:36 GMT</lastBuildDate>
         <atom:link href="https://blog.vgnshiyer.dev/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Mon, 11 Nov 2024 19:51:43 GMT</pubDate>
+        <pubDate>Sat, 16 Nov 2024 05:26:36 GMT</pubDate>
         <language><![CDATA[en]]></language>
         <item>
             <title><![CDATA[Supercharge Database Performance with Indexing]]></title>

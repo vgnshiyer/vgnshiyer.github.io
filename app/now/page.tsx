@@ -1,8 +1,9 @@
 import React from "react";
-import getYamlData from "@/helpers/getYamlData";
 import Link from "next/link";
-import NowSection from "@/components/NowSection";
+
 import { NowData } from "@/types/NowData";
+import getYamlData from "@/helpers/getYamlData";
+import NowSection from "@/components/now/NowSection";
 
 const Now = () => {
   const nowData = getYamlData("now") as NowData;

@@ -1,4 +1,4 @@
-import getMarkdown from "./MarkdownText";
+import getMarkdown from "../MarkdownText";
 import ReviewStars from "./ReviewStars";
 
 const BookReview = ({ review }: { review: any }) => {
