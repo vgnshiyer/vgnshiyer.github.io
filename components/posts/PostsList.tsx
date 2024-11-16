@@ -1,11 +1,12 @@
 "use client";
 
-import PostPreview from "@/components/posts/PostPreview";
-import PageTitle from "@/components/PageTitle";
-import Link from "next/link";
-import { FaTag } from "react-icons/fa";
 import Fuse from "fuse.js";
-import { useState, useEffect } from "react";
+import Link from "next/link";
+import { useEffect, useState } from "react";
+
+import PageTitle from "@/components/PageTitle";
+import PostPreview from "@/components/posts/PostPreview";
+import TagsList from "../tags/TagsList";
 
 const PostsList = ({ posts, tag }: { posts: Array<any>, tag: string }) => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -67,27 +68,7 @@ const PostsList = ({ posts, tag }: { posts: Array<any>, tag: string }) => {
       </Link>
 
       {tag !== "all" && (
-        <div className="flex">
-          <span
-            className="
-              bg-semi-light
-              dark:bg-semi-dark
-              text-tertiary-light
-              dark:text-tertiary-dark
-              mb-6
-              flex
-              items-center rounded-md
-              px-2
-              py-1
-              text-base
-              font-semibold
-              hover:bg-gray-300
-              dark:hover:bg-gray-700
-            "
-          >
-            <FaTag className="mr-2 text-sm" /> {tag.replace(/_/g, " ")}
-          </span>
-        </div>
+        <TagsList tags={[tag]} ignoreCount={true} />
       )}
       {postPreviews && postPreviews.length > 0 ? (
         postPreviews

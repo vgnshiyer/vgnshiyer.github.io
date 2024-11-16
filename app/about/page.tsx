@@ -1,12 +1,14 @@
-import getReadmeData from "@/helpers/getReadmeData";
 import React from "react";
-import Markdown from "markdown-to-jsx";
 import Image from "next/image";
+import Link from "next/link";
+import Markdown from "markdown-to-jsx";
+
+import getReadmeData from "@/helpers/getReadmeData";
 import { InfoItem } from "@/types/InfoItem";
 
 const Info = ({label, value, margin}: InfoItem) => (
   <div className="text-l mb-4 text-black dark:text-white">
-    <span className={`font-bold ${margin}`} >{label}:</span>
+    <span className={`font-bold ${margin}`}>{label}:</span>
     <span>{value}</span>
   </div>
 );
@@ -32,10 +34,11 @@ const page = () => {
           options={{
             overrides: {
               a: {
-                props: {
-                  className:
-                    "text-contrast-light dark:text-contrast-dark hover:underline",
-                },
+                component: ({ href, children, ...props }: { href: string; children: React.ReactNode }) => (
+                  <Link href={href} {...props} className="text-contrast-light dark:text-contrast-dark hover:underline">
+                    {children}
+                  </Link>
+                ),
               },
             },
           }}

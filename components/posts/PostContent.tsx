@@ -1,14 +1,14 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
-import Markdown from "markdown-to-jsx";
-import Image from "next/image";
-import Link from "next/link";
-import { FaTag } from "react-icons/fa";
 import hljs from "highlight.js";
+import { useEffect, useState } from "react";
 
-import TableOfContents from "@/components/posts/TableOfContents";
 import FullScreenImage from "@/components/posts/FullScreenImage";
+import TableOfContents from "@/components/posts/TableOfContents";
+import TagsList from "@/components/tags/TagsList";
+import PostMarkdown from "@/components/posts/PostMarkdown";
+import SubscriptionLink from "@/components/posts/Subscription";
+import PostHeader from "@/components/posts/PostHeader";
 import getMarkdownHeadings from "@/helpers/getMarkdownHeadings";
 
 const addCopyButtons = () => {
@@ -25,7 +25,9 @@ const addCopyButtons = () => {
     button.title = "Copy code to clipboard";
     button.addEventListener("click", () => {
       let code = codeBlock.querySelector("code");
-      if (code === undefined || code === null) { return; }
+      if (code === undefined || code === null) {
+        return;
+      }
       navigator.clipboard.writeText(code.innerText);
       button.innerText = "Copied!";
       setTimeout(() => {
@@ -42,49 +44,27 @@ const PostContent = ({ post }: { post: any }) => {
     console.error(`No post found for slug: ${post.slug}`);
     return null;
   }
-  const [imgSrc, setImgSrc] = useState(null);
+  const [imgSrc, setImgSrc] = useState<string | null>(null);
   const headings = getMarkdownHeadings(post.content);
 
   useEffect(() => {
-    hljs.highlightAll()
+    hljs.highlightAll();
     addCopyButtons();
   }, []);
 
   return (
     <div className="mt-10 flex sm:mx-8 md:mt-20">
       <div className="w-full lg:w-3/4">
-        <h1 className="text-3xl font-bold text-black dark:text-white">
-          {post.data.title}
-        </h1>
-        <p className="text-tertiary-light dark:text-tertiary-dark mt-4">
-          {post.data.subtitle}
-        </p>
-        <p className="text-contrast-light dark:text-contrast-dark mt-2 text-sm">
-          {post.data.date}
-        </p>
-        <div className="mt-8 border-b-2 border-gray-200 dark:border-gray-800"></div>
-        <Image
-          src={post.data.cover}
-          alt="Post cover"
-          width={700}
-          height={700}
-          className="mt-8 rounded-md"
-          loading="lazy"
-        />
+        {/* Header */}
+        <PostHeader post={post} />
+        {/* Body */}
         <article className="prose lg:prose-xl relative overflow-hidden">
-          <Markdown
+          <PostMarkdown
+            content={post.content}
             options={{
               overrides: {
-                h2: { props: { className: "text-black dark:text-white font-bold", }, },
-                h3: { props: { className: "text-black dark:text-white font-bold", }, },
-                h4: { props: { className: "text-black dark:text-white font-bold", }, },
-                p: { props: { className: "text-tertiary-light dark:text-tertiary-dark text-base", }, },
-                li: { props: { className: "text-tertiary-light dark:text-tertiary-dark text-base", }, },
-                strong: { props: { className: "font-bold text-black dark:text-white text-base", }, },
-                pre: { props: { className: "rounded-md !p-2 !bg-semi-dark !text-base", }, },
-                code: { props: { className: "!text-white !font-mono !text-sm", }, },
                 img: {
-                  component: ({src, alt}) => (
+                  component: ({ src, alt }: { src: string; alt: string }) => (
                     <img
                       src={src}
                       alt={alt}
@@ -93,60 +73,28 @@ const PostContent = ({ post }: { post: any }) => {
                     />
                   ),
                 },
-                a: {
-                  props: {
-                    className:
-                      "text-tertiary-light dark:text-tertiary-dark hover:text-contrast-light dark:hover:text-contrast-dark text-base",
-                  },
-                },
               },
             }}
-          >
-            {post.content}
-          </Markdown>
-          {imgSrc && <FullScreenImage src={imgSrc} onClick={() => setImgSrc(null)} />}
+          />
+          {imgSrc && (
+            <FullScreenImage src={imgSrc} onClick={() => setImgSrc(null)} />
+          )}
         </article>
+        {/* Tags */}
         <div className="mt-4 border-b-2 border-gray-200 dark:border-gray-800"></div>
         {post.data.tags && (
           <div className="mb-4 mt-8">
-            <div className="mt-4 flex flex-wrap gap-2">
-              {post.data.tags.map((tag: string, index: number) => (
-                <Link key={index} href={`/tags/${tag}`}>
-                  <span
-                    className="
-                      bg-semi-light
-                      dark:bg-semi-dark
-                      text-tertiary-light
-                      dark:text-tertiary-dark
-                      flex
-                      cursor-pointer
-                      items-center
-                      rounded-md
-                      px-2
-                      py-1
-                      text-base
-                      font-semibold
-                      hover:bg-gray-300
-                      dark:hover:bg-gray-700"
-                    >
-                    <FaTag className="mr-2 text-sm" /> {tag.replace(/_/g, " ")}
-                  </span>
-                </Link>
-              ))}
-            </div>
+            <TagsList
+              tags={post.data.tags}
+              classNames="mt-4"
+              ignoreCount={true}
+            />
           </div>
         )}
-        <p className="text-tertiary-light dark:text-tertiary-dark mt-8 text-base">
-          Subscribe to my{" "}
-          <Link
-            href="https://blog.vgnshiyer.dev/feed.xml"
-            className="text-contrast-light dark:text-contrast-dark hover:underline"
-          >
-            RSS feed
-          </Link>{" "}
-          to get notified about new posts.
-        </p>
+        {/* Footer */}
+        <SubscriptionLink />
       </div>
+      {/* Index */}
       <TableOfContents headings={headings} />
     </div>
   );

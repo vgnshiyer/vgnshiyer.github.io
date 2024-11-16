@@ -1,16 +1,14 @@
 import Link from "next/link";
-import getAllTags from "@/helpers/getAllTags";
 import { FaTag } from "react-icons/fa";
 
-const TagsList = () => {
-  const tags = getAllTags();
+const TagsList = ({ tags, classNames = "", ignoreCount = false }: { tags: String[], classNames?: string, ignoreCount?: boolean }) => {
   const uniqueTags = new Map();
-  tags.forEach((tag) => {
+  tags.forEach((tag: String) => {
     uniqueTags.set(tag, uniqueTags.get(tag) + 1 || 1);
   });
 
   return (
-    <div className="flex flex-wrap gap-2">
+    <div className={`flex flex-wrap gap-2 ${classNames}`}>
       {Array.from(uniqueTags).map(([tag, count]) => (
         <Link key={tag} href={`/tags/${tag}`}>
           <span
@@ -30,7 +28,7 @@ const TagsList = () => {
 							dark:hover:bg-gray-700
 							"
           >
-            <FaTag className="mr-2" /> {tag.replace(/_/g, " ")} ({count})
+            <FaTag className="mr-2" /> {tag.replace(/_/g, " ")} {!ignoreCount && `(${count})`}
           </span>
         </Link>
       ))}

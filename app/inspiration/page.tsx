@@ -23,11 +23,11 @@ const Inspiration = () => {
 
   return (
     <>
-    <div className="sm:mx-8 md:mt-10 mb-[-20px] items-center justify-center">
-      <q className="text-contrast-light dark:text-contrast-dark italic">
-        This page is a collection—curated for myself as reminders along the way.
-      </q>
-    </div>
+      <div className="sm:mx-8 md:mt-10 mb-[-20px] items-center justify-center">
+        <q className="text-contrast-light dark:text-contrast-dark italic">
+          This page is a collection—curated for myself as reminders along the way.
+        </q>
+      </div>
       {categories &&
         Object.entries(categories).map(([category, data], index) => (
           <div
@@ -49,7 +49,8 @@ const Inspiration = () => {
               }
             )}
           </div>
-        ))}
+        ))
+      }
     </>
   );
 };
