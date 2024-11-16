@@ -1,12 +1,13 @@
 "use client";
 
-import PostPreview from "@/components/PostPreview";
+import PostPreview from "@/components/posts/PostPreview";
+import PageTitle from "@/components/PageTitle";
 import Link from "next/link";
 import { FaTag } from "react-icons/fa";
 import Fuse from "fuse.js";
 import { useState, useEffect } from "react";
 
-const AllPostsPage = ({ posts, tag }: { posts: Array<any>, tag: string }) => {
+const PostsList = ({ posts, tag }: { posts: Array<any>, tag: string }) => {
   const [searchQuery, setSearchQuery] = useState("");
   const [filteredPosts, setFilteredPosts] = useState(posts);
 
@@ -29,11 +30,9 @@ const AllPostsPage = ({ posts, tag }: { posts: Array<any>, tag: string }) => {
   ));
 
   return (
-    <div className="mt-12 grid grid-cols-1 gap-4 sm:mx-8 md:mt-16 lg:mt-20 2xl:mt-24">
+    <>
       <div className="flex flex-row justify-between gap-2">
-        <h1 className="text-3xl font-bold text-black dark:text-white">
-          Posts.
-        </h1>
+        <PageTitle title="Posts." />
         <input
           type="text"
           placeholder="Search posts..."
@@ -41,6 +40,7 @@ const AllPostsPage = ({ posts, tag }: { posts: Array<any>, tag: string }) => {
           onChange={(e) => setSearchQuery(e.target.value)}
           className="
             p-2
+            mt-2
             px-4
             text-lg
             text-black
@@ -96,8 +96,8 @@ const AllPostsPage = ({ posts, tag }: { posts: Array<any>, tag: string }) => {
           No posts found ? 🤔 Try seaching something else...
         </p>
       )}
-    </div>
+    </>
   );
 };
 
-export default AllPostsPage;
+export default PostsList;

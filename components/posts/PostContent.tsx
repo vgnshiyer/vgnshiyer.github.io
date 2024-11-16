@@ -7,8 +7,8 @@ import Link from "next/link";
 import { FaTag } from "react-icons/fa";
 import hljs from "highlight.js";
 
-import TableOfContents from "@/components/TableOfContents";
-import FullScreenImage from "@/components/FullScreenImage";
+import TableOfContents from "@/components/posts/TableOfContents";
+import FullScreenImage from "@/components/posts/FullScreenImage";
 import getMarkdownHeadings from "@/helpers/getMarkdownHeadings";
 
 const addCopyButtons = () => {
@@ -37,7 +37,7 @@ const addCopyButtons = () => {
   });
 };
 
-const PostPage = ({ post }: { post: any }) => {
+const PostContent = ({ post }: { post: any }) => {
   if (!post) {
     console.error(`No post found for slug: ${post.slug}`);
     return null;
@@ -53,20 +53,16 @@ const PostPage = ({ post }: { post: any }) => {
   return (
     <div className="mt-10 flex sm:mx-8 md:mt-20">
       <div className="w-full lg:w-3/4">
-        {/* Post title */}
         <h1 className="text-3xl font-bold text-black dark:text-white">
           {post.data.title}
         </h1>
-        {/* Post subtitle */}
         <p className="text-tertiary-light dark:text-tertiary-dark mt-4">
           {post.data.subtitle}
         </p>
-        {/* Post date */}
         <p className="text-contrast-light dark:text-contrast-dark mt-2 text-sm">
           {post.data.date}
         </p>
         <div className="mt-8 border-b-2 border-gray-200 dark:border-gray-800"></div>
-        {/* Post cover image */}
         <Image
           src={post.data.cover}
           alt="Post cover"
@@ -75,7 +71,6 @@ const PostPage = ({ post }: { post: any }) => {
           className="mt-8 rounded-md"
           loading="lazy"
         />
-        {/* Post content */}
         <article className="prose lg:prose-xl relative overflow-hidden">
           <Markdown
             options={{
@@ -112,7 +107,6 @@ const PostPage = ({ post }: { post: any }) => {
           {imgSrc && <FullScreenImage src={imgSrc} onClick={() => setImgSrc(null)} />}
         </article>
         <div className="mt-4 border-b-2 border-gray-200 dark:border-gray-800"></div>
-        {/* Post tags */}
         {post.data.tags && (
           <div className="mb-4 mt-8">
             <div className="mt-4 flex flex-wrap gap-2">
@@ -158,4 +152,4 @@ const PostPage = ({ post }: { post: any }) => {
   );
 };
 
-export default PostPage;
+export default PostContent;
